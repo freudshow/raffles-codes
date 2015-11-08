@@ -1,0 +1,87 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7095982A-4569-4DD3-B93F-83A450D6F81B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AttributeBrowserAddin</RootNamespace>
+    <AssemblyName>AttributeBrowserAddin</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aveva.ApplicationFramework, Version=1.1.11.0, Culture=neutral, PublicKeyToken=17c64733a9775004">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\PD001\CommonApplicationFramework\Releases\Release\Aveva.ApplicationFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Aveva.ApplicationFramework.Presentation, Version=108.6128.11.0, Culture=neutral, PublicKeyToken=17c64733a9775004">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\PD001\CommonApplicationFramework\Releases\Release\Aveva.ApplicationFramework.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Aveva.Pdms.Database, Version=12.0.0.1023, Culture=neutral, PublicKeyToken=17c64733a9775004">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Aveva.Pdms.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Aveva.Pdms.Shared, Version=12.0.0.1023, Culture=neutral, PublicKeyToken=17c64733a9775004">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Aveva.Pdms.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Aveva.Pdms.Utilities, Version=12.0.0.1023, Culture=neutral, PublicKeyToken=17c64733a9775004">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Aveva.Pdms.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttributeBrowserAddin.cs" />
+    <Compile Include="AttributeListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AttributeListControl.Designer.cs">
+      <DependentUpon>AttributeListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowAttributeBrowserCommand.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AttributeListControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AttributeListControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

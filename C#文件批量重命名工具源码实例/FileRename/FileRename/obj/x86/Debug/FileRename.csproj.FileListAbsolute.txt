@@ -1,0 +1,22 @@
+C:\Users\FStudio\Desktop\FileRename\FileRename\bin\Debug\FileRename.exe
+C:\Users\FStudio\Desktop\FileRename\FileRename\bin\Debug\FileRename.pdb
+C:\Users\FStudio\Desktop\FileRename\FileRename\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\FStudio\Desktop\FileRename\FileRename\obj\x86\Debug\FileRename.Properties.Resources.resources
+C:\Users\FStudio\Desktop\FileRename\FileRename\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\FStudio\Desktop\FileRename\FileRename\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\FStudio\Desktop\FileRename\FileRename\obj\x86\Debug\FileRename.exe
+C:\Users\FStudio\Desktop\FileRename\FileRename\obj\x86\Debug\FileRename.pdb
+C:\Users\FStudio\Desktop\FileRename\FileRename\obj\x86\Debug\FileRename.MainForm.resources
+E:\MyStudio\CSharp\FileRename\FileRename\obj\x86\Debug\FileRename.exe
+E:\MyStudio\CSharp\FileRename\FileRename\obj\x86\Debug\FileRename.pdb
+F:\baoshan.song\code\C#文件批量重命名工具源码实例\FileRename\FileRename\obj\x86\Debug\FileRename.exe
+F:\baoshan.song\code\C#文件批量重命名工具源码实例\FileRename\FileRename\obj\x86\Debug\FileRename.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\C#文件批量重命名工具源码实例\FileRename\FileRename\obj\x86\Debug\FileRename.exe
+F:\baoshan.song\Visual Studio 2005\Projects\C#文件批量重命名工具源码实例\FileRename\FileRename\obj\x86\Debug\FileRename.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\C#文件批量重命名工具源码实例\FileRename\FileRename\bin\Debug\FileRename.exe
+F:\baoshan.song\Visual Studio 2005\Projects\C#文件批量重命名工具源码实例\FileRename\FileRename\bin\Debug\FileRename.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\C#文件批量重命名工具源码实例\FileRename\FileRename\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\C#文件批量重命名工具源码实例\FileRename\FileRename\obj\x86\Debug\FileRename.MainForm.resources
+F:\baoshan.song\Visual Studio 2005\Projects\C#文件批量重命名工具源码实例\FileRename\FileRename\obj\x86\Debug\FileRename.Properties.Resources.resources
+F:\baoshan.song\Visual Studio 2005\Projects\C#文件批量重命名工具源码实例\FileRename\FileRename\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+F:\baoshan.song\Visual Studio 2005\Projects\C#文件批量重命名工具源码实例\FileRename\FileRename\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog

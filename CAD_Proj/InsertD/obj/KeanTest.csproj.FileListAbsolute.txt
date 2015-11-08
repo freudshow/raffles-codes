@@ -1,0 +1,4 @@
+C:\CAD_Proj\InsertD\obj\Debug\ResolveAssemblyReference.cache
+C:\CAD_Proj\InsertD\obj\Debug\KeanTest.csproj.ResolveComReference.cache
+C:\CAD_Proj\InsertD\obj\Debug\InsertD.dll
+C:\CAD_Proj\InsertD\obj\Debug\InsertD.pdb

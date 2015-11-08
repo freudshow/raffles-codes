@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright 1974 to current year. AVEVA Solutions Limited and its subsidiaries. All rights reserved in original code only.-->
+<UserInterfaceCustomization xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="www.aveva.com">
+    <Version>1.0</Version>
+    <Tools>
+        <ButtonTool Name="CoreConnectionsDiagram.New">
+            <Command>
+                <Type>CoreCommand</Type>
+                <CommandId>CoreConnectionsDiagram.New.Command</CommandId>
+            </Command>
+            <Caption>Generate Core Connections Diagram</Caption>
+            <Tooltip>Generate New Core Connections Diagram</Tooltip>
+        </ButtonTool>
+    </Tools>
+    <InstanceTools />
+    <MenuBar />
+    <CommandBars>
+        <CommandBar Name="CoreConnectionsDiagram.Toolbar">
+            <Tools>
+                <Tool Name="CoreConnectionsDiagram.New" />
+            </Tools>
+            <Command>
+                <Type>CoreCommand</Type>
+                <CommandId>CoreConnectionsDiagram.Toolbar.Command</CommandId>
+            </Command>
+            <DockedColumn>2</DockedColumn>
+            <DockedRow>4</DockedRow>
+            <DockedPosition>Top</DockedPosition>
+            <AllowFloating>true</AllowFloating>
+            <AllowHiding>true</AllowHiding>
+            <FillEntireRow>false</FillEntireRow>
+            <ShowInToolbarList>true</ShowInToolbarList>
+            <Caption>Core Connections Diagram</Caption>
+        </CommandBar>
+    </CommandBars>
+    <TaskPanes />
+    <ContextMenus />
+</UserInterfaceCustomization>

@@ -1,0 +1,68 @@
+Microsoft (R) Visual C# 2005 编译器 版本 8.00.50727.3053
+用于 Microsoft (R) Windows (R) 2005 Framework 版本 2.0.50727
+版权所有(C) Microsoft Corporation 2001-2005。保留所有权利。
+
+                      Visual C# 2005 编译器选项
+
+                        - 输出文件 -
+/out:<file>                   指定输出文件名(默认值: 包含主类的文件或第一个文件的基名称)
+/target:exe                   生成控制台可执行文件(默认) (缩写: /t:exe)
+/target:winexe                生成 Windows 可执行文件 (缩写: /t:winexe)
+/target:library               生成库 (缩写: /t:library)
+/target:module                生成能添加到其他程序集的模块 (缩写: /t:module)
+/delaysign[+|-]               仅使用强名称密钥的公共部分对程序集进行延迟签名
+/doc:<file>                   要生成的 XML 文档文件
+/keyfile:<file>               指定强名称密钥文件
+/keycontainer:<string>        指定强名称密钥容器
+/platform:<string>            限制可以在其上运行此代码的平台: x86、Itanium、x64 或 anycpu。默认值为 anycpu。
+
+                        - 输入文件 -
+/recurse:<wildcard>           根据通配符规范，包括当前目录和子目录下的所有文件
+/reference:<alias>=<file>     使用给定的别名从指定的程序集文件引用元数据 (缩写: /r)
+/reference:<file list>        从指定的程序集文件引用元数据 (缩写: /r)
+/addmodule:<file list>        将指定的模块链接到此程序集中
+
+                        - 资源 -
+/win32res:<file>              指定 Win32 资源文件(.res)
+/win32icon:<file>             使用该图标输出
+/resource:<resinfo>           嵌入指定的资源 (缩写: /res)
+/linkresource:<resinfo>       将指定的资源链接到此程序集 (缩写: /linkres)
+                              其中 resinfo 的格式是 <file>[,<string name>[,public|private]]
+
+                        - 代码生成 -
+/debug[+|-]                   发出调试信息
+/debug:{full|pdbonly}         指定调试类型(“full”是默认类型，可以将调试程序附加到正在运行的程序)
+/optimize[+|-]                启用优化 (缩写: /o)
+
+                        - 错误和警告 -
+/warnaserror[+|-]             将所有警告报告为错误
+/warnaserror[+|-]:<warn list> 将特定警告报告为错误
+/warn:<n>                     设置警告等级(0-4) (缩写: /w)
+/nowarn:<warn list>           禁用特定的警告消息
+
+                        - 语言 -
+/checked[+|-]                 生成溢出检查
+/unsafe[+|-]                  允许“不安全”代码
+/define:<symbol list>         定义条件编译符号 (缩写: /d)
+/langversion:<string>         指定语言版本模式: ISO-1 或 Default
+
+                        - 杂项 -
+@<file>                       有关更多选项，请阅读响应文件
+/help                         显示此用法信息 (缩写: /?)
+/nologo                       取消编译器版权信息
+/noconfig                     不要自动包含 CSC.RSP 文件
+
+                        - 高级 -
+/baseaddress:<address>        要生成的库的基址
+/bugreport:<file>             创建“Bug 报告”文件。
+/codepage:<n>                 指定打开源文件时要使用的代码页
+/utf8output                   以 UTF-8 编码格式输出编译器消息
+/main:<type>                  指定包含入口点的类型(忽略所有其他可能的入口点) (缩写: /m)
+/fullpaths                    编译器生成完全限定路径
+/filealign:<n>                指定用于输出文件节的对齐方式
+/pdb:<file>                   指定调试信息文件名(默认值: 扩展名为 .pdb 的输出文件名)
+/nostdlib[+|-]                不引用标准库(mscorlib.dll)
+/lib:<file list>              指定要在其中搜索引用的附加目录
+/errorreport:<string>         指定如何处理内部编译器错误: prompt、send、queue 或 none。默认值为 queue。
+/moduleassemblyname:<string>  此模块所属程序集的名称。
+

@@ -1,0 +1,674 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+    <LastAuthor>lin.zhang</LastAuthor>
+    <Created>1996-10-14T23:33:28Z</Created>
+    <LastSaved>2011-09-08T07:31:10Z</LastSaved>
+    <Version>11.6568</Version>
+  </DocumentProperties>
+  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+    <WindowHeight>9300</WindowHeight>
+    <WindowWidth>15135</WindowWidth>
+    <WindowTopX>120</WindowTopX>
+    <WindowTopY>120</WindowTopY>
+    <ActiveSheet>1</ActiveSheet>
+    <AcceptLabelsInFormulas/>
+    <ProtectStructure>False</ProtectStructure>
+    <ProtectWindows>False</ProtectWindows>
+  </ExcelWorkbook>
+  <Styles>
+    <Style ss:ID="Default" ss:Name="Normal">
+      <Alignment ss:Vertical="Bottom"/>
+      <Borders/>
+      <Font x:Family="Swiss"/>
+      <Interior/>
+      <NumberFormat/>
+      <Protection/>
+    </Style>
+    <Style ss:ID="m102720276">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+      <Font ss:FontName="宋体" x:CharSet="134" ss:Size="18" ss:Bold="1"/>
+    </Style>
+    <Style ss:ID="m102725254">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+    </Style>
+    <Style ss:ID="m102725264">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+    </Style>
+    <Style ss:ID="s21">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+    </Style>
+    <Style ss:ID="s23">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+      <Borders/>
+      <Font ss:FontName="宋体" x:CharSet="134" ss:Size="18" ss:Bold="1"/>
+    </Style>
+    <Style ss:ID="s24">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+      <Borders/>
+      <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Bold="1"/>
+    </Style>
+    <Style ss:ID="s25">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+      <Borders/>
+    </Style>
+    <Style ss:ID="s27">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+      <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Bold="1"/>
+    </Style>
+    <Style ss:ID="s28">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+    </Style>
+    <Style ss:ID="s35">
+      <Alignment ss:Vertical="Center"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+      <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Bold="1"/>
+    </Style>
+    <Style ss:ID="s36">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+      <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Bold="1"/>
+    </Style>
+    <Style ss:ID="s38">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+      <Font ss:FontName="宋体" x:CharSet="134" ss:Size="18" ss:Bold="1"/>
+    </Style>
+    <Style ss:ID="s39">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+      <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12"/>
+    </Style>
+  </Styles>
+  <Worksheet ss:Name="AccessoriesExcel">
+    <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="{N4}" x:FullColumns="1"
+     x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="14.25">
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="80.25"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="67.5"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="203.25"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="76.5"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="81.75"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="78.75"/>
+      <Row ss:AutoFitHeight="0" ss:Height="24">
+        <Cell ss:MergeAcross="5" ss:StyleID="s23">
+          <Data ss:Type="String">附  件  材  料  表</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="s24">
+          <Data ss:Type="String">工程号:</Data>
+        </Cell>
+        <Cell ss:StyleID="s25"/>
+        <Cell ss:StyleID="s25"/>
+        <Cell ss:StyleID="s24">
+          <Data ss:Type="String">图号:</Data>
+        </Cell>
+        <Cell ss:MergeAcross="1" ss:StyleID="s25">
+          <Data ss:Type="String">{drawingno}</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="s24">
+          <Data ss:Type="String">托盘名称:</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">{blockno}</Data>
+        </Cell>
+        <Cell ss:StyleID="s25"/>
+        <Cell ss:StyleID="s25"/>
+        <Cell ss:StyleID="s25"/>
+        <Cell ss:StyleID="s25"/>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">序    号</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">附件名称</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">规    格</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">数量</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">重量(kg)</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">备    注</Data>
+        </Cell>
+      </Row>
+     {item4}
+    </Table>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <Unsynced/>
+      <Print>
+        <ValidPrinterInfo/>
+        <PaperSizeIndex>9</PaperSizeIndex>
+        <HorizontalResolution>600</HorizontalResolution>
+        <VerticalResolution>0</VerticalResolution>
+      </Print>
+      <Panes>
+        <Pane>
+          <Number>3</Number>
+          <ActiveRow>4</ActiveRow>
+          <RangeSelection>R5C1:R5C6</RangeSelection>
+        </Pane>
+      </Panes>
+      <ProtectObjects>False</ProtectObjects>
+      <ProtectScenarios>False</ProtectScenarios>
+    </WorksheetOptions>
+  </Worksheet>
+  <Worksheet ss:Name="AccessoriesRation">
+    <Table ss:ExpandedColumnCount="16" ss:ExpandedRowCount="{N5}" x:FullColumns="1"
+     x:FullRows="1" ss:StyleID="s21" ss:DefaultColumnWidth="54"
+     ss:DefaultRowHeight="14.25">
+      <Column ss:Index="5" ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="162.75"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="189.75"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="114.75"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="68.25"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="103.5"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="135.75"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="64.5"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="81"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="71.25"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="114"/>
+      <Row ss:AutoFitHeight="0" ss:Height="27.75">
+        <Cell ss:MergeAcross="15" ss:StyleID="m102720276">
+          <Data ss:Type="String">材料设备定额表</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="s28"/>
+        <Cell ss:StyleID="s28"/>
+        <Cell ss:StyleID="s28"/>
+        <Cell ss:StyleID="s28"/>
+        <Cell ss:StyleID="s28"/>
+        <Cell ss:StyleID="s28"/>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">申请人CREATED BY:</Data>
+        </Cell>
+        <Cell ss:StyleID="s28"/>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">主管SUPERVISOR:</Data>
+        </Cell>
+        <Cell ss:StyleID="s28"/>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">日期DATE:</Data>
+        </Cell>
+        <Cell ss:StyleID="s28"/>
+        <Cell ss:StyleID="s28"/>
+        <Cell ss:StyleID="s28"/>
+        <Cell ss:StyleID="s28"/>
+        <Cell ss:StyleID="s28"/>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">NO.:</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">项目 </Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">系统 </Data>
+        </Cell>
+        <Cell ss:StyleID="s35">
+          <Data ss:Type="String">采购件号 </Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">ERP代码 </Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">材料名称规格及型号 </Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">申请号 </Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">数量 </Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">单位 </Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">积压库存使用(可/否) </Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">用途 </Data>
+        </Cell>
+        <Cell ss:StyleID="s35">
+          <Data ss:Type="String">需求原因代码 </Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">需求原因 </Data>
+        </Cell>
+        <Cell ss:StyleID="s35">
+          <Data ss:Type="String">图纸代码/图纸名称 </Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">长度/m</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">数量2 </Data>
+        </Cell>
+      </Row>
+     {item5}
+      <Row ss:AutoFitHeight="0" ss:Span="1"/>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:Index="5" ss:StyleID="s36">
+          <Data ss:Type="String">ERP人员签名SIGNATURE:</Data>
+        </Cell>
+        <Cell ss:Index="7" ss:StyleID="s36">
+          <Data ss:Type="String">日期DATE:</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0"/>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:Index="5" ss:StyleID="s36">
+          <Data ss:Type="String">设计员取单签名SIGNATURE:</Data>
+        </Cell>
+        <Cell ss:Index="7" ss:StyleID="s36">
+          <Data ss:Type="String">日期DATE:</Data>
+        </Cell>
+      </Row>
+    </Table>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <Unsynced/>
+      <Selected/>
+      <Panes>
+        <Pane>
+          <Number>3</Number>
+          <ActiveRow>3</ActiveRow>
+          <RangeSelection>R4C1:R4C16</RangeSelection>
+        </Pane>
+      </Panes>
+      <ProtectObjects>False</ProtectObjects>
+      <ProtectScenarios>False</ProtectScenarios>
+    </WorksheetOptions>
+  </Worksheet>
+  <Worksheet ss:Name="MaterialExcel">
+    <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="{N3}" x:FullColumns="1"
+     x:FullRows="1" ss:StyleID="s21" ss:DefaultColumnWidth="54"
+     ss:DefaultRowHeight="14.25">
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="68.25"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="87.75"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="81.75"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Span="1"/>
+      <Column ss:Index="6" ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="108.75"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="55.5"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="60.75"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="59.25"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="96.75"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="82.5"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="96"/>
+      <Column ss:StyleID="s25" ss:AutoFitWidth="0" ss:Width="83.25"/>
+      <Row ss:AutoFitHeight="0" ss:Height="22.5">
+        <Cell ss:MergeAcross="14" ss:StyleID="s23">
+          <Data ss:Type="String">管  系  托  盘  表</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="s24">
+          <Data ss:Type="String">工程号:</Data>
+        </Cell>
+        <Cell ss:Index="5" ss:StyleID="s24">
+          <Data ss:Type="String">图号:</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">{drawingno}</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="s24">
+          <Data ss:Type="String">托盘名称:</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">{blockno}</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">序号</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">管名</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">规格</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">材料</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">表面处理</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">校管</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">长度(mm)</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">重量(kg)</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">所属舱室</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">管路等级</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">试验场所及压力</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">备注</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">表面积(m^2)</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">修改原因</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">原因描述</Data>
+        </Cell>
+      </Row>
+     {item3}
+    </Table>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <Unsynced/>
+      <Panes>
+        <Pane>
+          <Number>3</Number>
+          <ActiveRow>5</ActiveRow>
+          <ActiveCol>2</ActiveCol>
+          <RangeSelection>R6C3:R6C15</RangeSelection>
+        </Pane>
+      </Panes>
+      <ProtectObjects>False</ProtectObjects>
+      <ProtectScenarios>False</ProtectScenarios>
+    </WorksheetOptions>
+  </Worksheet>
+  <Worksheet ss:Name="TotalPipeMaterialExcel">
+    <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="{N2}" x:FullColumns="1"
+     x:FullRows="1" ss:StyleID="s21" ss:DefaultColumnWidth="54"
+     ss:DefaultRowHeight="14.25">
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="70.5"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="110.25"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="218.25"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="61.5"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="132"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="143.25"/>
+      <Row ss:AutoFitHeight="0" ss:Height="22.5">
+        <Cell ss:MergeAcross="5" ss:StyleID="s38">
+          <Data ss:Type="String">管  系  材  料  表</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="s36">
+          <Data ss:Type="String">工程号:</Data>
+        </Cell>
+        <Cell ss:Index="4" ss:StyleID="s36">
+          <Data ss:Type="String">图号:</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">{drawingno}</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="s36">
+          <Data ss:Type="String">托盘名称:</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">{blockno}</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">序    号</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">材料名称</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">规    格</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">长度(mm)</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">重量(kg)</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">备    注</Data>
+        </Cell>
+      </Row>
+      {item2}
+    </Table>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <Unsynced/>
+      <Panes>
+        <Pane>
+          <Number>3</Number>
+          <ActiveRow>4</ActiveRow>
+          <RangeSelection>R5C1:R5C6</RangeSelection>
+        </Pane>
+      </Panes>
+      <ProtectObjects>False</ProtectObjects>
+      <ProtectScenarios>False</ProtectScenarios>
+    </WorksheetOptions>
+  </Worksheet>
+  <Worksheet ss:Name="PipeRation">
+    <Table ss:ExpandedColumnCount="17" ss:ExpandedRowCount="{N1}" x:FullColumns="1"
+     x:FullRows="1" ss:StyleID="s21" ss:DefaultColumnWidth="54"
+     ss:DefaultRowHeight="14.25">
+      <Column ss:Index="5" ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="159"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="230.25"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="115.5"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="115.5"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="69"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="105.75"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="126.75"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="63"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="84"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="104.25"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="116.25"/>
+      <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="52.5"/>
+      <Row ss:AutoFitHeight="0" ss:Height="22.5">
+        <Cell ss:MergeAcross="16" ss:StyleID="s38">
+          <Data ss:Type="String">材料设备定额表</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:Index="8" ss:StyleID="s36">
+          <Data ss:Type="String">申请人CREATED BY:</Data>
+        </Cell>
+        <Cell ss:Index="10" ss:StyleID="s36">
+          <Data ss:Type="String">主管SUPERVISOR:</Data>
+        </Cell>
+        <Cell ss:Index="12" ss:StyleID="s36">
+          <Data ss:Type="String">日期DATE:</Data>
+        </Cell>
+        <Cell ss:Index="14" ss:StyleID="s36">
+          <Data ss:Type="String">图号DRAWINGNO.:</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">{drawingno}</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">NO.:</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">项目</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">系统</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">采购件号</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">MSS号</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">ERP代码</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">材料名称规格及型号</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">申请号</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">数量</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">单位</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">积压库存使用(可/否)</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">用途</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">需求原因代码</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">需求原因</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">图纸代码/图纸名称</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">长度/m</Data>
+        </Cell>
+        <Cell ss:StyleID="s27">
+          <Data ss:Type="String">数量2</Data>
+        </Cell>
+      </Row>
+      {item1}
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+        <Cell ss:StyleID="s36"/>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:Index="6" ss:StyleID="s36">
+          <Data ss:Type="String">ERP人员签名SIGNATURE:</Data>
+        </Cell>
+        <Cell ss:Index="8" ss:StyleID="s36">
+          <Data ss:Type="String">日期DATE:</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0"/>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:Index="6" ss:StyleID="s36">
+          <Data ss:Type="String">设计员取单签名SIGNATURE:</Data>
+        </Cell>
+        <Cell ss:Index="8" ss:StyleID="s36">
+          <Data ss:Type="String">日期DATE:</Data>
+        </Cell>
+      </Row>
+    </Table>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <Unsynced/>
+      <Print>
+        <ValidPrinterInfo/>
+        <PaperSizeIndex>9</PaperSizeIndex>
+        <HorizontalResolution>600</HorizontalResolution>
+        <VerticalResolution>0</VerticalResolution>
+      </Print>
+      <Panes>
+        <Pane>
+          <Number>3</Number>
+          <ActiveRow>3</ActiveRow>
+          <RangeSelection>R4C1:R4C16</RangeSelection>
+        </Pane>
+      </Panes>
+      <ProtectObjects>False</ProtectObjects>
+      <ProtectScenarios>False</ProtectScenarios>
+    </WorksheetOptions>
+  </Worksheet>
+</Workbook>

@@ -1,0 +1,9 @@
+..\..\..\debug.bin\digital\DigitalSign.dll.config
+..\..\..\debug.bin\digital\DigitalSign.dll
+..\..\..\debug.bin\digital\DigitalSign.pdb
+obj\x86\Debug\ResolveAssemblyReference.cache
+obj\x86\Debug\DigitalSign.DigitalSign.resources
+obj\x86\Debug\DigitalSign.Properties.Resources.resources
+obj\x86\Debug\DigitalSign.csproj.GenerateResource.Cache
+obj\x86\Debug\DigitalSign.dll
+obj\x86\Debug\DigitalSign.pdb

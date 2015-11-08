@@ -1,0 +1,12 @@
+D:\baoshan.song\Visual Studio 2010\Projects\OutSourcingx64\OutSourcingx64\bin\Debug\OutSourcingx64.exe
+D:\baoshan.song\Visual Studio 2010\Projects\OutSourcingx64\OutSourcingx64\bin\Debug\OutSourcingx64.pdb
+D:\baoshan.song\Visual Studio 2010\Projects\OutSourcingx64\OutSourcingx64\obj\Debug\ResolveAssemblyReference.cache
+D:\baoshan.song\Visual Studio 2010\Projects\OutSourcingx64\OutSourcingx64\obj\Debug\OutSourcingx64.Properties.Resources.resources
+D:\baoshan.song\Visual Studio 2010\Projects\OutSourcingx64\OutSourcingx64\obj\Debug\GenerateResource.read.1.tlog
+D:\baoshan.song\Visual Studio 2010\Projects\OutSourcingx64\OutSourcingx64\obj\Debug\GenerateResource.write.1.tlog
+D:\baoshan.song\Visual Studio 2010\Projects\OutSourcingx64\OutSourcingx64\obj\Debug\OutSourcingx64.exe
+D:\baoshan.song\Visual Studio 2010\Projects\OutSourcingx64\OutSourcingx64\obj\Debug\OutSourcingx64.pdb
+D:\baoshan.song\Visual Studio 2010\Projects\OutSourcingx64\OutSourcingx64\bin\Debug\System.Data.OracleClient.dll
+D:\baoshan.song\Visual Studio 2010\Projects\OutSourcingx64\OutSourcingx64\bin\Debug\zh-CHS\System.Data.OracleClient.resources.dll
+D:\baoshan.song\Visual Studio 2010\Projects\OutSourcingx64\OutSourcingx64\obj\Debug\OutSourcingx64.Form_PhotoManager.resources
+D:\baoshan.song\Visual Studio 2010\Projects\OutSourcingx64\OutSourcingx64\obj\Debug\OutSourcingx64.Form_CreateDir.resources

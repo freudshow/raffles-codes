@@ -1,0 +1,9 @@
+C:\CAD_Proj\DigitalSign\YCROCloseAcad\bin\Release\YCROCloseAcad.dll
+C:\CAD_Proj\DigitalSign\YCROCloseAcad\bin\Release\YCROCloseAcad.pdb
+C:\CAD_Proj\DigitalSign\YCROCloseAcad\bin\Release\acdbmgd.dll
+C:\CAD_Proj\DigitalSign\YCROCloseAcad\bin\Release\acmgd.dll
+C:\CAD_Proj\DigitalSign\YCROCloseAcad\bin\Release\AcDbMgdHost.dll
+C:\CAD_Proj\DigitalSign\YCROCloseAcad\obj\Release\ResolveAssemblyReference.cache
+C:\CAD_Proj\DigitalSign\YCROCloseAcad\obj\Release\YCROCloseAcad.dll
+C:\CAD_Proj\DigitalSign\YCROCloseAcad\obj\Release\YCROCloseAcad.pdb
+C:\CAD_Proj\DigitalSign\YCROCloseAcad\obj\Release\YCROCloseAcad.csproj.ResolveComReference.cache

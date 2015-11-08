@@ -1,0 +1,2007 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3CC0BC2E-F433-4460-A444-BD7D0B9D3254}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DetailInfo</RootNamespace>
+    <AssemblyName>DetailInfo</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>ECDMS LOGO.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <TargetFrameworkProfile />
+    <SignManifests>true</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>zh-CHS</TargetCulture>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleAssemblies>
+    </CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>Migrated rules for DetailInfo (2).ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleAssemblies>
+    </CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>Migrated rules for DetailInfo.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleAssemblies>
+    </CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>Migrated rules for DetailInfo.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.AcroPDFLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\AxInterop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.OWC11, Version=11.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ReferenceDll\AxInterop.OWC11.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.VIA3DXMLPluginLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DreamStu.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\DassaultSystemes\CATSettings\复件 MaterialControl\MaterialControl\bin\Debug\DreamStu.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Equipment.BatchImport.Core">
+      <HintPath>\\172.20.64.3\FEEDShare\Equipment.BatchImport.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>ReferenceDll\ICSharpCode.SharpZipLib.DLL</HintPath>
+    </Reference>
+    <Reference Include="Interop.AcroPDFLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\x86\Debug\Interop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VIA3DXMLPluginLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Interop.VIA3DXMLPluginLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\weijun.qu\桌面\NPOI 1.2.5 binary and examples\bin\.net 2.0\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Downloads\skin\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>ReferenceDll\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="JuniorTreeviewManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ReferenceDll\JuniorTreeviewManager.dll</HintPath>
+    </Reference>
+    <Reference Include="MarkControl">
+      <HintPath>\\172.20.64.3\FEEDShare\MarkControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Owc11, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>ReferenceDll\Microsoft.Office.Interop.Owc11.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\DassaultSystemes\CATSettings\复件 MaterialControl\MaterialControl\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\DassaultSystemes\CATSettings\复件 MaterialControl\MaterialControl\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="MSCOMCTL, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\WINDOWS\assembly\GAC\mscomctl\10.0.4504.0__31bf3856ad364e35\MSCOMCTL.DLL</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.5.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\weijun.qu\桌面\NPOI 1.2.5 binary and examples\bin\.net 2.0\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UpdateSoft, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ReferenceDll\UpdateSoft.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ECDMS\CableListFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ECDMS\CableListFrm.Designer.cs">
+      <DependentUpon>CableListFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ECDMS\CablesVolumeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ECDMS\CablesVolumeFrm.Designer.cs">
+      <DependentUpon>CablesVolumeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ECDMS\ImportDrawingPlanFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ECDMS\ImportDrawingPlanFrm.Designer.cs">
+      <DependentUpon>ImportDrawingPlanFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ECDMS\ImportEquipmentFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ECDMS\ImportEquipmentFrm.Designer.cs">
+      <DependentUpon>ImportEquipmentFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ECDMS\ProjectDrawingCableFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ECDMS\ProjectDrawingCableFrm.Designer.cs">
+      <DependentUpon>ProjectDrawingCableFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application_Code\FillTreeViewFunction.cs" />
+    <Compile Include="DesignPart\ECDrawingReportFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPart\ECDrawingReportFrm.Designer.cs">
+      <DependentUpon>ECDrawingReportFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\AddClassFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinePart\AddClassFrm.Designer.cs">
+      <DependentUpon>AddClassFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFunction\AddActualHour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFunction\AddActualHour.Designer.cs">
+      <DependentUpon>AddActualHour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFunction\AddCertificateNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFunction\AddCertificateNumber.Designer.cs">
+      <DependentUpon>AddCertificateNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFunction\AddHeatNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFunction\AddHeatNumber.Designer.cs">
+      <DependentUpon>AddHeatNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFunction\AddHourNorm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFunction\AddHourNorm.Designer.cs">
+      <DependentUpon>AddHourNorm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFunction\AddMSS_NO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFunction\AddMSS_NO.Designer.cs">
+      <DependentUpon>AddMSS_NO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFunction\AddNewNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFunction\AddNewNode.Designer.cs">
+      <DependentUpon>AddNewNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFunction\AddWeldBy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFunction\AddWeldBy.Designer.cs">
+      <DependentUpon>AddWeldBy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\AddTrayNoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinePart\AddTrayNoFrm.Designer.cs">
+      <DependentUpon>AddTrayNoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application_Code\WorkShopStatusFlow.cs" />
+    <Compile Include="MachinePart\AddWorkerIDFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinePart\AddWorkerIDFrm.Designer.cs">
+      <DependentUpon>AddWorkerIDFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application_Code\clsZip.cs" />
+    <Compile Include="Application_Code\DBConnection.cs" />
+    <Compile Include="Application_Code\DrawingFlowLog.cs" />
+    <Compile Include="Application_Code\FillComboBox.cs" />
+    <Compile Include="Application_Code\GetOracleTnsNames.cs" />
+    <Compile Include="Application_Code\InsertFrontPage.cs" />
+    <Compile Include="Application_Code\ManHourManage.cs" />
+    <Compile Include="Application_Code\ProjectDrawing.cs" />
+    <Compile Include="Application_Code\RightClick.cs" />
+    <Compile Include="Application_Code\SpoolCellFormat.cs" />
+    <Compile Include="Application_Code\Statistics.cs" />
+    <Compile Include="Application_Code\WorkShopClass.cs" />
+    <Compile Include="Application_Code\ZipHelper.cs" />
+    <Compile Include="MachinePart\DeliveryCtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MachinePart\DeliveryCtl.Designer.cs">
+      <DependentUpon>DeliveryCtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\InstallCtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MachinePart\InstallCtl.Designer.cs">
+      <DependentUpon>InstallCtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\AssembleCtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MachinePart\AssembleCtl.Designer.cs">
+      <DependentUpon>AssembleCtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\BlankingCtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MachinePart\BlankingCtl.Designer.cs">
+      <DependentUpon>BlankingCtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPart\ApproveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPart\ApproveForm.Designer.cs">
+      <DependentUpon>ApproveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignTask.Designer.cs">
+      <DependentUpon>AssignTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPart\AttachedFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPart\AttachedFile.Designer.cs">
+      <DependentUpon>AttachedFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchSheet.Designer.cs">
+      <DependentUpon>BatchSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application_Code\PlanDBConnection.cs" />
+    <Compile Include="Application_Code\GetIPAddress.cs" />
+    <Compile Include="Application_Code\DelSpoolRecord.cs" />
+    <Compile Include="ECDMS\ImportComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ECDMS\ImportComment.Designer.cs">
+      <DependentUpon>ImportComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\MachinningInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinePart\MachinningInfoFrm.Designer.cs">
+      <DependentUpon>MachinningInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\QCCtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MachinePart\QCCtl.Designer.cs">
+      <DependentUpon>QCCtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\WeldCtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MachinePart\WeldCtl.Designer.cs">
+      <DependentUpon>WeldCtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\RevieveCtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MachinePart\RevieveCtl.Designer.cs">
+      <DependentUpon>RevieveCtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\TreatmentCtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MachinePart\TreatmentCtl.Designer.cs">
+      <DependentUpon>TreatmentCtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\TrayClassCtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MachinePart\TrayClassCtl.Designer.cs">
+      <DependentUpon>TrayClassCtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\SpoolReportFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinePart\SpoolReportFrm.Designer.cs">
+      <DependentUpon>SpoolReportFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\MaterialReportsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinePart\MaterialReportsFrm.Designer.cs">
+      <DependentUpon>MaterialReportsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\ModifyDelInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinePart\ModifyDelInfoFrm.Designer.cs">
+      <DependentUpon>ModifyDelInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\ConvertStandard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\ConvertStandard.Designer.cs">
+      <DependentUpon>ConvertStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\ERP_PROJECTTREE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\ERP_PROJECTTREE.Designer.cs">
+      <DependentUpon>ERP_PROJECTTREE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\frmERPpartlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\frmERPpartlist.designer.cs">
+      <DependentUpon>frmERPpartlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\frmMergePart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\frmMergePart.designer.cs">
+      <DependentUpon>frmMergePart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\frmParaLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\frmParaLog.designer.cs">
+      <DependentUpon>frmParaLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\frmPartParaConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\frmPartParaConfirm.designer.cs">
+      <DependentUpon>frmPartParaConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\frmPartParaSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\frmPartParaSet.designer.cs">
+      <DependentUpon>frmPartParaSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\frmSelectStnPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\frmSelectStnPart.designer.cs">
+      <DependentUpon>frmSelectStnPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\MaterialDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\MaterialDetail.Designer.cs">
+      <DependentUpon>MaterialDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\frmPartAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\frmPartAdd.designer.cs">
+      <DependentUpon>frmPartAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\frmPartInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\frmPartInventory.designer.cs">
+      <DependentUpon>frmPartInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\MaterialRation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\MaterialRation.designer.cs">
+      <DependentUpon>MaterialRation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\MaterialRationAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\MaterialRationAdd.designer.cs">
+      <DependentUpon>MaterialRationAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\MaterialRequireAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\MaterialRequireAdd.Designer.cs">
+      <DependentUpon>MaterialRequireAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\MaterialRequireQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\MaterialRequireQuery.designer.cs">
+      <DependentUpon>MaterialRequireQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\MaterialRequireUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\MaterialRequireUpdate.designer.cs">
+      <DependentUpon>MaterialRequireUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\M_Estimate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\M_Estimate.designer.cs">
+      <DependentUpon>M_Estimate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\UsefulClass\Activity.cs" />
+    <Compile Include="MaterialManage\UsefulClass\BaseClass.cs" />
+    <Compile Include="MaterialManage\UsefulClass\BindingFieldAttribute.cs" />
+    <Compile Include="MaterialManage\UsefulClass\CalendarColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\UsefulClass\CalendarColumn.designer.cs">
+      <DependentUpon>CalendarColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManage\UsefulClass\DataAccess.cs" />
+    <Compile Include="MaterialManage\UsefulClass\DateColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MaterialManage\UsefulClass\EntityBase.cs" />
+    <Compile Include="MaterialManage\UsefulClass\InventoryPart.cs" />
+    <Compile Include="MaterialManage\UsefulClass\MEOmain.cs" />
+    <Compile Include="MaterialManage\UsefulClass\MEOMSS_discipline_new.cs" />
+    <Compile Include="MaterialManage\UsefulClass\MEOsub.cs" />
+    <Compile Include="MaterialManage\UsefulClass\Part.cs" />
+    <Compile Include="MaterialManage\UsefulClass\PartBasicInfo.cs" />
+    <Compile Include="MaterialManage\UsefulClass\PartParameter.cs" />
+    <Compile Include="MaterialManage\UsefulClass\PartRelative.cs" />
+    <Compile Include="MaterialManage\UsefulClass\PartType.cs" />
+    <Compile Include="MaterialManage\UsefulClass\Privilege.cs" />
+    <Compile Include="MaterialManage\UsefulClass\project.cs" />
+    <Compile Include="MaterialManage\UsefulClass\ProjectBlock.cs" />
+    <Compile Include="MaterialManage\UsefulClass\ProjectCmbItem.cs" />
+    <Compile Include="MaterialManage\UsefulClass\ProjectSystem.cs" />
+    <Compile Include="MaterialManage\UsefulClass\Ration.cs" />
+    <Compile Include="MaterialManage\UsefulClass\ReasonCode.cs" />
+    <Compile Include="MaterialManage\UsefulClass\Role.cs" />
+    <Compile Include="MaterialManage\UsefulClass\StandartPart.cs" />
+    <Compile Include="MaterialManage\UsefulClass\SubProject.cs" />
+    <Compile Include="MaterialManage\UsefulClass\Unit.cs" />
+    <Compile Include="MaterialManage\UsefulClass\User.cs" />
+    <Compile Include="MaterialManage\UsefulClass\UserSecurity.cs" />
+    <Compile Include="MaterialManage\UsefulClass\Util.cs" />
+    <Compile Include="MaterialManage\UsefulClass\XmlOper.cs" />
+    <Compile Include="MachinePart\MaterialTraceabilityFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinePart\MaterialTraceabilityFrm.Designer.cs">
+      <DependentUpon>MaterialTraceabilityFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\ModifyStatisticsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinePart\ModifyStatisticsFrm.Designer.cs">
+      <DependentUpon>ModifyStatisticsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPart\MaterialRationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPart\MaterialRationForm.Designer.cs">
+      <DependentUpon>MaterialRationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPart\ModifyReasonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPart\ModifyReasonForm.Designer.cs">
+      <DependentUpon>ModifyReasonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPart\ModifyDrawingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DesignPart\ModifyDrawingControl.Designer.cs">
+      <DependentUpon>ModifyDrawingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPart\ModifyInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPart\ModifyInfoForm.Designer.cs">
+      <DependentUpon>ModifyInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UploadWorkSheet.cs" />
+    <Compile Include="WaitingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitingForm.Designer.cs">
+      <DependentUpon>WaitingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShopManHour\NormalPipeWorkingTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkShopManHour\NormalPipeWorkingTime.Designer.cs">
+      <DependentUpon>NormalPipeWorkingTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShopManHour\SPControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkShopManHour\SPControl.Designer.cs">
+      <DependentUpon>SPControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShopManHour\DrawingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkShopManHour\DrawingControl.Designer.cs">
+      <DependentUpon>DrawingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPart\InsertBlob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPart\InsertBlob.Designer.cs">
+      <DependentUpon>InsertBlob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\NestingPipeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\NestingPipeDetail.Designer.cs">
+      <DependentUpon>NestingPipeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\NestingPipeRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NestingPipeRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\NestProjectMaterialRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NestProjectMaterialRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\WorkShopPlanDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\WorkShopPlanDetail.Designer.cs">
+      <DependentUpon>WorkShopPlanDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\LabelColor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\TRAY_PRE_DETAILControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\TRAY_PRE_DETAILControl.Designer.cs">
+      <DependentUpon>TRAY_PRE_DETAILControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\TRAY_MATERIAL_DETAILControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\TRAY_MATERIAL_DETAILControl.Designer.cs">
+      <DependentUpon>TRAY_MATERIAL_DETAILControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\TRAY_INSTALLATIONControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\TRAY_INSTALLATIONControl.Designer.cs">
+      <DependentUpon>TRAY_INSTALLATIONControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\TRAY_PREPLANControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\TRAY_PREPLANControl.Designer.cs">
+      <DependentUpon>TRAY_PREPLANControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\TRAY_MATERIAL_DELIVERYTIMEControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\TRAY_MATERIAL_DELIVERYTIMEControl.Designer.cs">
+      <DependentUpon>TRAY_MATERIAL_DELIVERYTIMEControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\BlockContructionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\BlockContructionControl.Designer.cs">
+      <DependentUpon>BlockContructionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categery\Acceemp.cs" />
+    <Compile Include="Categery\ComboBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Categery\CreatePDFDrawing.cs" />
+    <Compile Include="Categery\PrivilegeNode.cs" />
+    <Compile Include="Categery\Spool.cs" />
+    <Compile Include="Categery\SpoolMaterial.cs" />
+    <Compile Include="Categery\TreeNodes.cs" />
+    <Compile Include="DataMaintenanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataMaintenanceForm.Designer.cs">
+      <DependentUpon>DataMaintenanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPart\DetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPart\DetailsForm.Designer.cs">
+      <DependentUpon>DetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPart\DrawingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPart\DrawingForm.Designer.cs">
+      <DependentUpon>DrawingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProject.Designer.cs">
+      <DependentUpon>FrmProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPart\GenerateDrawing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPart\GenerateDrawing.Designer.cs">
+      <DependentUpon>GenerateDrawing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPart\GenerateMaterialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPart\GenerateMaterialForm.Designer.cs">
+      <DependentUpon>GenerateMaterialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntroForm.Designer.cs">
+      <DependentUpon>IntroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inventory.Designer.cs">
+      <DependentUpon>inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePart\AddQCRemark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinePart\AddQCRemark.Designer.cs">
+      <DependentUpon>AddQCRemark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFunction\Add_Remark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFunction\Add_Remark.Designer.cs">
+      <DependentUpon>Add_Remark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application_Code\BindingFileAttribute.cs" />
+    <Compile Include="Application_Code\EntityBase.cs" />
+    <Compile Include="Application_Code\Privilege.cs" />
+    <Compile Include="Application_Code\Role.cs" />
+    <Compile Include="Application_Code\User.cs" />
+    <Compile Include="Application_Code\UserSecurity.cs" />
+    <Compile Include="Application_Code\XmlOper.cs" />
+    <Compile Include="DesignPart\AssessorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPart\AssessorForm.Designer.cs">
+      <DependentUpon>AssessorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application_Code\DataAccess.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialReport\Accessories.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accessories.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MaterialReport\AccessoriesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccessoriesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialReport\AccessoriesRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialReport\AccessoriesRpt.Designer.cs">
+      <DependentUpon>AccessoriesRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialReport\SpPipeMaterial.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpPipeMaterial.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MaterialReport\SpPipeMaterialDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpPipeMaterialDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialReport\SpPipeMaterialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialReport\SpPipeMaterialForm.Designer.cs">
+      <DependentUpon>SpPipeMaterialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialReport\TotalPipeMaterialCR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TotalPipeMaterialCR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MaterialReport\TotalPipeMaterialDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TotalPipeMaterialDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialReport\TotalPipeMaterialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialReport\TotalPipeMaterialForm.Designer.cs">
+      <DependentUpon>TotalPipeMaterialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialReport\WeightBarycenterCR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WeightBarycenterCR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MaterialReport\WeightBarycenterds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WeightBarycenterds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialReport\WeightBarycenterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialReport\WeightBarycenterForm.Designer.cs">
+      <DependentUpon>WeightBarycenterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ProjectMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ProjectMaterial.Designer.cs">
+      <DependentUpon>ProjectMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ProjectMaterialDS.cs">
+      <DependentUpon>ProjectMaterialDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ProjectMaterialDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectMaterialDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ProjectMaterialRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectMaterialRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MDIForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIForm.Designer.cs">
+      <DependentUpon>MDIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallPart\ModulationFeedBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallPart\ModulationFeedBack.Designer.cs">
+      <DependentUpon>ModulationFeedBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyNode.Designer.cs">
+      <DependentUpon>ModifyNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPart\PackageDrawing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPart\PackageDrawing.Designer.cs">
+      <DependentUpon>PackageDrawing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopupWindow\TaskbarNotifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressStatistics.Designer.cs">
+      <DependentUpon>ProgressStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPart\PROJECTDRAWINGINFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPart\PROJECTDRAWINGINFO.Designer.cs">
+      <DependentUpon>PROJECTDRAWINGINFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToolsOptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolsOptionForm.Designer.cs">
+      <DependentUpon>ToolsOptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebUpload\WebUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebUpload\WebUpload.Designer.cs">
+      <DependentUpon>WebUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\WorkShopPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkShopPlanPart\WorkShopPlan.Designer.cs">
+      <DependentUpon>WorkShopPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShopWorkerData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkShopWorkerData.Designer.cs">
+      <DependentUpon>WorkShopWorkerData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShopManHour\WShopManHour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkShopManHour\WShopManHour.Designer.cs">
+      <DependentUpon>WShopManHour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPart\WShopSPlTrace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPart\WShopSPlTrace.Designer.cs">
+      <DependentUpon>WShopSPlTrace.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ECDMS\CableListFrm.resx">
+      <DependentUpon>CableListFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECDMS\CablesVolumeFrm.resx">
+      <DependentUpon>CablesVolumeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECDMS\ImportDrawingPlanFrm.resx">
+      <DependentUpon>ImportDrawingPlanFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECDMS\ImportEquipmentFrm.resx">
+      <DependentUpon>ImportEquipmentFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECDMS\ProjectDrawingCableFrm.resx">
+      <DependentUpon>ProjectDrawingCableFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\ECDrawingReportFrm.resx">
+      <DependentUpon>ECDrawingReportFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\AddClassFrm.resx">
+      <DependentUpon>AddClassFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFunction\AddActualHour.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddActualHour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFunction\AddCertificateNumber.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddCertificateNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFunction\AddHeatNumber.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddHeatNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFunction\AddHourNorm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddHourNorm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFunction\AddMSS_NO.resx">
+      <DependentUpon>AddMSS_NO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFunction\AddNewNode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddNewNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFunction\AddWeldBy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddWeldBy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\AddTrayNoFrm.resx">
+      <DependentUpon>AddTrayNoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\AddWorkerIDFrm.resx">
+      <DependentUpon>AddWorkerIDFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\DeliveryCtl.resx">
+      <DependentUpon>DeliveryCtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\InstallCtl.resx">
+      <DependentUpon>InstallCtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\AssembleCtl.resx">
+      <DependentUpon>AssembleCtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\BlankingCtl.resx">
+      <DependentUpon>BlankingCtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\ApproveForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ApproveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignTask.resx">
+      <DependentUpon>AssignTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\AttachedFile.resx">
+      <DependentUpon>AttachedFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatchSheet.resx">
+      <DependentUpon>BatchSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECDMS\ImportComment.resx">
+      <DependentUpon>ImportComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\InsertBlob.resx">
+      <DependentUpon>InsertBlob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\MachinningInfoFrm.resx">
+      <DependentUpon>MachinningInfoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\MaterialReportsFrm.resx">
+      <DependentUpon>MaterialReportsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\ModifyDelInfoFrm.resx">
+      <DependentUpon>ModifyDelInfoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\QCCtl.resx">
+      <DependentUpon>QCCtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\TrayClassCtl.resx">
+      <DependentUpon>TrayClassCtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\ConvertStandard.resx">
+      <DependentUpon>ConvertStandard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\ERP_PROJECTTREE.resx">
+      <DependentUpon>ERP_PROJECTTREE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\frmERPpartlist.resx">
+      <DependentUpon>frmERPpartlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\frmMergePart.resx">
+      <DependentUpon>frmMergePart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\frmParaLog.resx">
+      <DependentUpon>frmParaLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\frmPartParaConfirm.resx">
+      <DependentUpon>frmPartParaConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\frmPartParaSet.resx">
+      <DependentUpon>frmPartParaSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\frmSelectStnPart.resx">
+      <DependentUpon>frmSelectStnPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\MaterialDetail.resx">
+      <DependentUpon>MaterialDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\frmPartAdd.resx">
+      <DependentUpon>frmPartAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\frmPartInventory.resx">
+      <DependentUpon>frmPartInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\MaterialRation.resx">
+      <DependentUpon>MaterialRation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\MaterialRationAdd.resx">
+      <DependentUpon>MaterialRationAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\MaterialRequireAdd.resx">
+      <DependentUpon>MaterialRequireAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\MaterialTraceabilityFrm.resx">
+      <DependentUpon>MaterialTraceabilityFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\MaterialRequireQuery.resx">
+      <DependentUpon>MaterialRequireQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\ModifyStatisticsFrm.resx">
+      <DependentUpon>ModifyStatisticsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\MaterialRequireUpdate.resx">
+      <DependentUpon>MaterialRequireUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\MaterialRationForm.resx">
+      <DependentUpon>MaterialRationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManage\M_Estimate.resx">
+      <DependentUpon>M_Estimate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\ModifyReasonForm.resx">
+      <DependentUpon>ModifyReasonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\ModifyDrawingControl.resx">
+      <DependentUpon>ModifyDrawingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\ModifyInfoForm.resx">
+      <DependentUpon>ModifyInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\NestingPipeDetail.resx">
+      <DependentUpon>NestingPipeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\NestingPipeRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NestingPipeRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\NestProjectMaterialRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NestProjectMaterialRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\RevieveCtl.resx">
+      <DependentUpon>RevieveCtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\WeldCtl.resx">
+      <DependentUpon>WeldCtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\TreatmentCtl.resx">
+      <DependentUpon>TreatmentCtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\SpoolReportFrm.resx">
+      <DependentUpon>SpoolReportFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitingForm.resx">
+      <DependentUpon>WaitingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkShopManHour\DrawingControl.resx">
+      <DependentUpon>DrawingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkShopManHour\NormalPipeWorkingTime.resx">
+      <DependentUpon>NormalPipeWorkingTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkShopManHour\SPControl.resx">
+      <DependentUpon>SPControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkShopPlanPart\WorkShopPlanDetail.resx">
+      <DependentUpon>WorkShopPlanDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkShopPlanPart\TRAY_PRE_DETAILControl.resx">
+      <DependentUpon>TRAY_PRE_DETAILControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkShopPlanPart\TRAY_MATERIAL_DETAILControl.resx">
+      <DependentUpon>TRAY_MATERIAL_DETAILControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkShopPlanPart\TRAY_INSTALLATIONControl.resx">
+      <DependentUpon>TRAY_INSTALLATIONControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkShopPlanPart\TRAY_PREPLANControl.resx">
+      <DependentUpon>TRAY_PREPLANControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkShopPlanPart\TRAY_MATERIAL_DELIVERYTIMEControl.resx">
+      <DependentUpon>TRAY_MATERIAL_DELIVERYTIMEControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkShopPlanPart\BlockContructionControl.resx">
+      <DependentUpon>BlockContructionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataMaintenanceForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DataMaintenanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\DetailsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\DrawingForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DrawingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProject.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\GenerateDrawing.resx">
+      <DependentUpon>GenerateDrawing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\GenerateMaterialForm.resx">
+      <DependentUpon>GenerateMaterialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroForm.resx">
+      <DependentUpon>IntroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory.resx">
+      <DependentUpon>inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePart\AddQCRemark.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddQCRemark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFunction\Add_Remark.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Add_Remark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\AssessorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AssessorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialReport\Accessories.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Accessories.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialReport\AccessoriesRpt.resx">
+      <DependentUpon>AccessoriesRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialReport\SpPipeMaterial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SpPipeMaterial.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialReport\SpPipeMaterialForm.resx">
+      <DependentUpon>SpPipeMaterialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialReport\TotalPipeMaterialCR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TotalPipeMaterialCR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialReport\TotalPipeMaterialForm.resx">
+      <DependentUpon>TotalPipeMaterialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialReport\WeightBarycenterCR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>WeightBarycenterCR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialReport\WeightBarycenterForm.resx">
+      <DependentUpon>WeightBarycenterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ProjectMaterial.resx">
+      <DependentUpon>ProjectMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ProjectMaterialRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProjectMaterialRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MDIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallPart\ModulationFeedBack.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModulationFeedBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyNode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModifyNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\PackageDrawing.resx">
+      <DependentUpon>PackageDrawing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopupWindow\TaskbarNotifier.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TaskbarNotifier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressStatistics.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProgressStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\PROJECTDRAWINGINFO.resx">
+      <DependentUpon>PROJECTDRAWINGINFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCAttachment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QCAttachment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCAttachmentView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QCAttachmentView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\BlockConstructPlan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BlockConstructPlan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\BlockConstructPlanRpt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BlockConstructPlanRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MaterAtt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MaterAtt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MaterAttReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MaterAttReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ProjectFlowStatusProgress.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProjectFlowStatusProgress.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ProjectFlowStatusProgressRpt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProjectFlowStatusProgressRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ProjectPipeProgress.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProjectPipeProgress.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ProjectPipeProgressRpt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProjectPipeProgressRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SPLPipeCrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SPLPipeCrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SPLPIPEReprot.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SPLPIPEReprot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SpoolReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpoolReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Spool_CrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Spool_CrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SPLPipeCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SPLPipeCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\TrayInstallPlan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TrayInstallPlan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\TrayInstallPlanRpt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TrayInstallPlanRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\TrayMaterialDeliveryTime.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TrayMaterialDeliveryTime.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\TrayMaterialDeliveryTimeRpt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TrayMaterialDeliveryTimeRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\TrayPrePlan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TrayPrePlan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\TrayPrePlanRpt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TrayPrePlanRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpoolGeneralViewForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpoolGeneralViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ToolsOptionForm.resx">
+      <DependentUpon>ToolsOptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebUpload\WebUpload.resx">
+      <DependentUpon>WebUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkShopPlanPart\WorkShopPlan.resx">
+      <DependentUpon>WorkShopPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkShopWorkerData.resx">
+      <DependentUpon>WorkShopWorkerData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkShopManHour\WShopManHour.resx">
+      <DependentUpon>WShopManHour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPart\WShopSPlTrace.resx">
+      <DependentUpon>WShopSPlTrace.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MaterialReport\AccessoriesDS.xsc">
+      <DependentUpon>AccessoriesDS.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialReport\AccessoriesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccessoriesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MaterialReport\AccessoriesDS.xss">
+      <DependentUpon>AccessoriesDS.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialReport\SpPipeMaterialDS.xsc">
+      <DependentUpon>SpPipeMaterialDS.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialReport\SpPipeMaterialDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SpPipeMaterialDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MaterialReport\SpPipeMaterialDS.xss">
+      <DependentUpon>SpPipeMaterialDS.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialReport\TotalPipeMaterialDS.xsc">
+      <DependentUpon>TotalPipeMaterialDS.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialReport\TotalPipeMaterialDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TotalPipeMaterialDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MaterialReport\TotalPipeMaterialDS.xss">
+      <DependentUpon>TotalPipeMaterialDS.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialReport\WeightBarycenterds.xsc">
+      <DependentUpon>WeightBarycenterds.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialReport\WeightBarycenterds.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WeightBarycenterds.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MaterialReport\WeightBarycenterds.xss">
+      <DependentUpon>WeightBarycenterds.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\ProjectMaterialDS.xsc">
+      <DependentUpon>ProjectMaterialDS.xsd</DependentUpon>
+    </None>
+    <None Include="Report\ProjectMaterialDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectMaterialDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\ProjectMaterialDS.xss">
+      <DependentUpon>ProjectMaterialDS.xsd</DependentUpon>
+    </None>
+    <None Include="Report\SpoolDataSet.xsc">
+      <DependentUpon>SpoolDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Report\SpoolDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SpoolDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\SpoolDataSet.xss">
+      <DependentUpon>SpoolDataSet.xsd</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QCAttachment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCAttachment.Designer.cs">
+      <DependentUpon>QCAttachment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCAttachmentView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCAttachmentView.Designer.cs">
+      <DependentUpon>QCAttachmentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BlockConstructPlan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BlockConstructPlan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\BlockConstructPlanDs.cs">
+      <DependentUpon>BlockConstructPlanDs.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\BlockConstructPlanDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BlockConstructPlanDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BlockConstructPlanRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\BlockConstructPlanRpt.Designer.cs">
+      <DependentUpon>BlockConstructPlanRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MaterAtt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\MaterAtt.Designer.cs">
+      <DependentUpon>MaterAtt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MaterAttDS.cs">
+      <DependentUpon>MaterAttDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MaterAttDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterAttDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MaterAttReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterAttReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ProjectFlowStatusProgress.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectFlowStatusProgress.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ProjectFlowStatusProgressDs.cs">
+      <DependentUpon>ProjectFlowStatusProgressDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ProjectFlowStatusProgressDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectFlowStatusProgressDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ProjectFlowStatusProgressRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ProjectFlowStatusProgressRpt.Designer.cs">
+      <DependentUpon>ProjectFlowStatusProgressRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ProjectPipeProgress.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectPipeProgress.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ProjectPipeProgressDs.cs">
+      <DependentUpon>ProjectPipeProgressDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ProjectPipeProgressDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectPipeProgressDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ProjectPipeProgressRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ProjectPipeProgressRpt.Designer.cs">
+      <DependentUpon>ProjectPipeProgressRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\SPLPipeCrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPLPipeCrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\SPLPIPEDataSet.cs">
+      <DependentUpon>SPLPIPEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\SPLPIPEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPLPIPEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\SPLPIPEReprot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\SPLPIPEReprot.Designer.cs">
+      <DependentUpon>SPLPIPEReprot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\SpoolDataSet.cs">
+      <DependentUpon>SpoolDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\SpoolDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpoolDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\SpoolReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\SpoolReport.Designer.cs">
+      <DependentUpon>SpoolReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Spool_CrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Spool_CrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Application_Code\SearchCondition.cs" />
+    <Compile Include="Report\SPLPipeCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPLPipeCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\TrayInstallPlan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrayInstallPlan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\TrayInstallPlanDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrayInstallPlanDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\TrayInstallPlanRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\TrayInstallPlanRpt.Designer.cs">
+      <DependentUpon>TrayInstallPlanRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\TrayMaterialDeliveryTime.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrayMaterialDeliveryTime.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\TrayMaterialDeliveryTimeDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrayMaterialDeliveryTimeDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\TrayMaterialDeliveryTimeRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\TrayMaterialDeliveryTimeRpt.Designer.cs">
+      <DependentUpon>TrayMaterialDeliveryTimeRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\TrayPrePlan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrayPrePlan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\TrayPrePlanDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrayPrePlanDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\TrayPrePlanRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\TrayPrePlanRpt.Designer.cs">
+      <DependentUpon>TrayPrePlanRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm.Designer.cs">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application_Code\SearchInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SpoolGeneralViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpoolGeneralViewForm.Designer.cs">
+      <DependentUpon>SpoolGeneralViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application_Code\SqlOperator.cs" />
+    <None Include="Template\不足项目MSS明细表.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Template\项目MEO明细表.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Template\项目MSS明细表.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ECDMS LOGO.ico" />
+    <Content Include="Input.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PopupWindow\skin.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\AxInterop.AcroPDFLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\AxInterop.OWC11.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\AxInterop.VIA3DXMLPluginLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\DreamStu.Common.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\Equipment.BatchImport.Core.dll" />
+    <Content Include="ReferenceDll\ICSharpCode.SharpZipLib.DLL" />
+    <Content Include="ReferenceDll\Interop.AcroPDFLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\Interop.VIA3DXMLPluginLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\Ionic.Zip.dll" />
+    <Content Include="ReferenceDll\IrisSkin2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\itextsharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\JuniorTreeviewManager.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\MarkControl.dll" />
+    <Content Include="ReferenceDll\Microsoft.Office.Interop.Excel.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\Microsoft.Office.Interop.Excel.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\Microsoft.Office.Interop.Owc11.dll" />
+    <Content Include="ReferenceDll\Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\Microsoft.Practices.ObjectBuilder.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="appABC.configABC" />
+    <None Include="Report\BlockConstructPlanDs.xsc">
+      <DependentUpon>BlockConstructPlanDs.xsd</DependentUpon>
+    </None>
+    <None Include="Report\BlockConstructPlanDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BlockConstructPlanDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\BlockConstructPlanDs.xss">
+      <DependentUpon>BlockConstructPlanDs.xsd</DependentUpon>
+    </None>
+    <None Include="Report\ProjectFlowStatusProgressDs.xsc">
+      <DependentUpon>ProjectFlowStatusProgressDs.xsd</DependentUpon>
+    </None>
+    <None Include="Report\ProjectFlowStatusProgressDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectFlowStatusProgressDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\ProjectFlowStatusProgressDs.xss">
+      <DependentUpon>ProjectFlowStatusProgressDs.xsd</DependentUpon>
+    </None>
+    <None Include="Report\ProjectPipeProgressDs.xsc">
+      <DependentUpon>ProjectPipeProgressDs.xsd</DependentUpon>
+    </None>
+    <None Include="Report\ProjectPipeProgressDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectPipeProgressDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\ProjectPipeProgressDs.xss">
+      <DependentUpon>ProjectPipeProgressDs.xsd</DependentUpon>
+    </None>
+    <None Include="Report\TrayInstallPlanDs.xsc">
+      <DependentUpon>TrayInstallPlanDs.xsd</DependentUpon>
+    </None>
+    <None Include="Report\TrayInstallPlanDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrayInstallPlanDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\TrayInstallPlanDs.xss">
+      <DependentUpon>TrayInstallPlanDs.xsd</DependentUpon>
+    </None>
+    <None Include="Report\TrayMaterialDeliveryTimeDs.xsc">
+      <DependentUpon>TrayMaterialDeliveryTimeDs.xsd</DependentUpon>
+    </None>
+    <None Include="Report\TrayMaterialDeliveryTimeDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrayMaterialDeliveryTimeDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\TrayMaterialDeliveryTimeDs.xss">
+      <DependentUpon>TrayMaterialDeliveryTimeDs.xsd</DependentUpon>
+    </None>
+    <None Include="Report\TrayPrePlanDs.xsc">
+      <DependentUpon>TrayPrePlanDs.xsd</DependentUpon>
+    </None>
+    <None Include="Report\TrayPrePlanDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrayPrePlanDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\TrayPrePlanDs.xss">
+      <DependentUpon>TrayPrePlanDs.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Back.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Report\MaterAttDS.xsc">
+      <DependentUpon>MaterAttDS.xsd</DependentUpon>
+    </None>
+    <None Include="Report\MaterAttDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterAttDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\MaterAttDS.xss">
+      <DependentUpon>MaterAttDS.xsd</DependentUpon>
+    </None>
+    <None Include="Report\SPLPIPEDataSet.xsc">
+      <DependentUpon>SPLPIPEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Report\SPLPIPEDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SPLPIPEDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\SPLPIPEDataSet.xss">
+      <DependentUpon>SPLPIPEDataSet.xsd</DependentUpon>
+    </None>
+    <Content Include="PopupWindow\close.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\NPOI.dll" />
+    <Content Include="ReferenceDll\OWC11.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReferenceDll\UpdateSoft.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ClientUpdate.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\DiamondBlue.ssk">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\CSL4附图.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\CSL4附图1.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\login_back1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\simkai.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\舾件托盘安装明细表.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\舾件托盘预制明细表.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\舾装托盘材料配套明细表.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\附图1.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\附图2.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Template\DetailInfoTemplate.xls">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Resources\ECDMS LOGO.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\intro.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\intro1.bmp" />
+    <Content Include="Resources\office2007.ssk">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MP10.ssk">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\page_copy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\picture.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\RealOne.ssk">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Vista.ssk">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\江南style.gif" />
+    <Content Include="Template\数据导入模板.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{00000205-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSDATASRC">
+      <Guid>{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

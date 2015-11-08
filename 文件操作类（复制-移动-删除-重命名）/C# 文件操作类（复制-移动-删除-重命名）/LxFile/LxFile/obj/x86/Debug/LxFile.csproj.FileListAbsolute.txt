@@ -1,0 +1,29 @@
+C:\Users\liuxu\Desktop\LxFile\LxFile\bin\Debug\LxFile.exe
+C:\Users\liuxu\Desktop\LxFile\LxFile\bin\Debug\LxFile.pdb
+C:\Users\liuxu\Desktop\LxFile\LxFile\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\liuxu\Desktop\LxFile\LxFile\obj\x86\Debug\LxFile.Properties.Resources.resources
+C:\Users\liuxu\Desktop\LxFile\LxFile\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\liuxu\Desktop\LxFile\LxFile\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\liuxu\Desktop\LxFile\LxFile\obj\x86\Debug\LxFile.exe
+C:\Users\liuxu\Desktop\LxFile\LxFile\obj\x86\Debug\LxFile.pdb
+C:\Users\liuxu\Desktop\LxFile\LxFile\obj\x86\Debug\LxFile.FrmMain.resources
+G:\我的文件夹\代码库\C# 应用\封装的文件（复制-移动-删除-重命名）操作类\LxFile\LxFile\obj\x86\Debug\LxFile.exe
+G:\我的文件夹\代码库\C# 应用\封装的文件（复制-移动-删除-重命名）操作类\LxFile\LxFile\obj\x86\Debug\LxFile.pdb
+G:\我的文件夹\代码库\C# 应用\封装的文件（复制-移动-删除-重命名）操作类\LxFile\LxFile\bin\Debug\LxFile.exe
+G:\我的文件夹\代码库\C# 应用\封装的文件（复制-移动-删除-重命名）操作类\LxFile\LxFile\bin\Debug\LxFile.pdb
+G:\我的文件夹\代码库\C# 应用\封装的文件（复制-移动-删除-重命名）操作类\LxFile\LxFile\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\我的文件夹\代码库\C# 应用\封装的文件（复制-移动-删除-重命名）操作类\LxFile\LxFile\obj\x86\Debug\LxFile.FrmMain.resources
+G:\我的文件夹\代码库\C# 应用\封装的文件（复制-移动-删除-重命名）操作类\LxFile\LxFile\obj\x86\Debug\LxFile.Properties.Resources.resources
+G:\我的文件夹\代码库\C# 应用\封装的文件（复制-移动-删除-重命名）操作类\LxFile\LxFile\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\我的文件夹\代码库\C# 应用\封装的文件（复制-移动-删除-重命名）操作类\LxFile\LxFile\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\baoshan.song\code\文件操作类（复制-移动-删除-重命名）\C# 文件操作类（复制-移动-删除-重命名）\LxFile\LxFile\obj\x86\Debug\LxFile.exe
+F:\baoshan.song\code\文件操作类（复制-移动-删除-重命名）\C# 文件操作类（复制-移动-删除-重命名）\LxFile\LxFile\obj\x86\Debug\LxFile.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\文件操作类（复制-移动-删除-重命名）\C# 文件操作类（复制-移动-删除-重命名）\LxFile\LxFile\obj\x86\Debug\LxFile.exe
+F:\baoshan.song\Visual Studio 2005\Projects\文件操作类（复制-移动-删除-重命名）\C# 文件操作类（复制-移动-删除-重命名）\LxFile\LxFile\obj\x86\Debug\LxFile.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\文件操作类（复制-移动-删除-重命名）\C# 文件操作类（复制-移动-删除-重命名）\LxFile\LxFile\bin\Debug\LxFile.exe
+F:\baoshan.song\Visual Studio 2005\Projects\文件操作类（复制-移动-删除-重命名）\C# 文件操作类（复制-移动-删除-重命名）\LxFile\LxFile\bin\Debug\LxFile.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\文件操作类（复制-移动-删除-重命名）\C# 文件操作类（复制-移动-删除-重命名）\LxFile\LxFile\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\文件操作类（复制-移动-删除-重命名）\C# 文件操作类（复制-移动-删除-重命名）\LxFile\LxFile\obj\x86\Debug\LxFile.FrmMain.resources
+F:\baoshan.song\Visual Studio 2005\Projects\文件操作类（复制-移动-删除-重命名）\C# 文件操作类（复制-移动-删除-重命名）\LxFile\LxFile\obj\x86\Debug\LxFile.Properties.Resources.resources
+F:\baoshan.song\Visual Studio 2005\Projects\文件操作类（复制-移动-删除-重命名）\C# 文件操作类（复制-移动-删除-重命名）\LxFile\LxFile\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\baoshan.song\Visual Studio 2005\Projects\文件操作类（复制-移动-删除-重命名）\C# 文件操作类（复制-移动-删除-重命名）\LxFile\LxFile\obj\x86\Debug\GenerateResource.write.1.tlog

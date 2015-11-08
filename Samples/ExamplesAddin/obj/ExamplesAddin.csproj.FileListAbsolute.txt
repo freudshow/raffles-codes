@@ -1,0 +1,16 @@
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\bin\Debug\ExamplesAddin.dll
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\bin\Debug\ExamplesAddin.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\bin\Debug\Aveva.ApplicationFramework.dll
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\bin\Debug\Aveva.ApplicationFramework.Presentation.dll
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\bin\Debug\Aveva.Pdms.Clasher.dll
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\bin\Debug\Aveva.Pdms.Database.dll
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\bin\Debug\Aveva.Pdms.dll
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\bin\Debug\Aveva.Pdms.Geometry.dll
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\bin\Debug\Aveva.Pdms.Implementation.dll
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\bin\Debug\Aveva.Pdms.Shared.dll
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\bin\Debug\Aveva.Pdms.Utilities.dll
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\bin\Debug\PDMSFilters.dll
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\bin\Debug\StartUp.dll
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\obj\Debug\ResolveAssemblyReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\obj\Debug\ExamplesAddin.dll
+F:\baoshan.song\Visual Studio 2005\Projects\Samples\ExamplesAddin\obj\Debug\ExamplesAddin.pdb

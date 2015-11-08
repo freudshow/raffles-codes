@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GB2312"?>
+<Update>
+  <Soft Name="UpdateProgram.zip">
+    <Verson>6.8</Verson>
+    <DownLoad>http://172.16.7.55/Services/PipingLifeUpdate/UpdateProgram.zip</DownLoad>
+  </Soft>
+  <Soft Name="try.zip">
+    <Verson>1.0</Verson>
+    <DownLoad>http://172.16.7.55/Services/PipingLifeUpdate/try.zip</DownLoad>
+  </Soft>
+</Update>

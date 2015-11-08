@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="gb2312"?>
+<AutoUpdater>
+  <description>Application autoUpdate</description>
+  <Updater>
+	<Url>http://10.0.5.98/SoftUpdate/</Url>
+	<LastUpdateTime>2005-09-05</LastUpdateTime>
+  </Updater>
+  <Application applicationId="ItemSoft">
+    <EntryPoint>ItemSoft.exe</EntryPoint>
+    <Location>.</Location>
+	<Version>1.0.0.0</Version>
+  </Application>
+  <Files>
+	   <File Ver="1.0.0.0" Name="ItemSoft.exe" />
+	   <File Ver="1.0.0.0" Name="Reports\test.txt"/>
+	   <File Ver="1.0.0.0" Name="Interop.grproLib.dll"/>
+	   <File Ver="1.0.0.0" Name="Reports\test.grf"/>
+  </Files>
+</AutoUpdater>

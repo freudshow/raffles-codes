@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SpoolDataSet" targetNamespace="http://tempuri.org/SpoolDataSet.xsd" xmlns:mstns="http://tempuri.org/SpoolDataSet.xsd" xmlns="http://tempuri.org/SpoolDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SpoolDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SpoolDataSet" msprop:Generator_DataSetName="SpoolDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SPOOLSTATISTICS_TAB" msprop:Generator_UserTableName="SPOOLSTATISTICS_TAB" msprop:Generator_RowDeletedName="SPOOLSTATISTICS_TABRowDeleted" msprop:Generator_RowChangedName="SPOOLSTATISTICS_TABRowChanged" msprop:Generator_RowClassName="SPOOLSTATISTICS_TABRow" msprop:Generator_RowChangingName="SPOOLSTATISTICS_TABRowChanging" msprop:Generator_RowEvArgName="SPOOLSTATISTICS_TABRowChangeEvent" msprop:Generator_RowEvHandlerName="SPOOLSTATISTICS_TABRowChangeEventHandler" msprop:Generator_TableClassName="SPOOLSTATISTICS_TABDataTable" msprop:Generator_TableVarName="tableSPOOLSTATISTICS_TAB" msprop:Generator_RowDeletingName="SPOOLSTATISTICS_TABRowDeleting" msprop:Generator_TablePropName="SPOOLSTATISTICS_TAB">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROJECTID" msprop:Generator_UserColumnName="PROJECTID" msprop:Generator_ColumnVarNameInTable="columnPROJECTID" msprop:Generator_ColumnPropNameInRow="PROJECTID" msprop:Generator_ColumnPropNameInTable="PROJECTIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SYSTEMID" msprop:Generator_UserColumnName="SYSTEMID" msprop:Generator_ColumnVarNameInTable="columnSYSTEMID" msprop:Generator_ColumnPropNameInRow="SYSTEMID" msprop:Generator_ColumnPropNameInTable="SYSTEMIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DRAWINGNO" msprop:Generator_UserColumnName="DRAWINGNO" msprop:Generator_ColumnVarNameInTable="columnDRAWINGNO" msprop:Generator_ColumnPropNameInRow="DRAWINGNO" msprop:Generator_ColumnPropNameInTable="DRAWINGNOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BLOCKNO" msprop:Generator_UserColumnName="BLOCKNO" msprop:Generator_ColumnVarNameInTable="columnBLOCKNO" msprop:Generator_ColumnPropNameInRow="BLOCKNO" msprop:Generator_ColumnPropNameInTable="BLOCKNOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="INITIALSTATE" msprop:Generator_UserColumnName="INITIALSTATE" msprop:Generator_ColumnVarNameInTable="columnINITIALSTATE" msprop:Generator_ColumnPropNameInRow="INITIALSTATE" msprop:Generator_ColumnPropNameInTable="INITIALSTATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WAITCHECKED" msprop:Generator_UserColumnName="WAITCHECKED" msprop:Generator_ColumnVarNameInTable="columnWAITCHECKED" msprop:Generator_ColumnPropNameInRow="WAITCHECKED" msprop:Generator_ColumnPropNameInTable="WAITCHECKEDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="APPROVEPASS" msprop:Generator_UserColumnName="APPROVEPASS" msprop:Generator_ColumnVarNameInTable="columnAPPROVEPASS" msprop:Generator_ColumnPropNameInRow="APPROVEPASS" msprop:Generator_ColumnPropNameInTable="APPROVEPASSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PREPRODUCE" msprop:Generator_UserColumnName="PREPRODUCE" msprop:Generator_ColumnVarNameInTable="columnPREPRODUCE" msprop:Generator_ColumnPropNameInRow="PREPRODUCE" msprop:Generator_ColumnPropNameInTable="PREPRODUCEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WAITALLOCATE" msprop:Generator_UserColumnName="WAITALLOCATE" msprop:Generator_ColumnVarNameInTable="columnWAITALLOCATE" msprop:Generator_ColumnPropNameInRow="WAITALLOCATE" msprop:Generator_ColumnPropNameInTable="WAITALLOCATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ONPRODUCE" msprop:Generator_UserColumnName="ONPRODUCE" msprop:Generator_ColumnVarNameInTable="columnONPRODUCE" msprop:Generator_ColumnPropNameInRow="ONPRODUCE" msprop:Generator_ColumnPropNameInTable="ONPRODUCEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PREQC" msprop:Generator_UserColumnName="PREQC" msprop:Generator_ColumnVarNameInTable="columnPREQC" msprop:Generator_ColumnPropNameInRow="PREQC" msprop:Generator_ColumnPropNameInTable="PREQCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WAITQC" msprop:Generator_UserColumnName="WAITQC" msprop:Generator_ColumnVarNameInTable="columnWAITQC" msprop:Generator_ColumnPropNameInRow="WAITQC" msprop:Generator_ColumnPropNameInTable="WAITQCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PASSQC" msprop:Generator_UserColumnName="PASSQC" msprop:Generator_ColumnVarNameInTable="columnPASSQC" msprop:Generator_ColumnPropNameInRow="PASSQC" msprop:Generator_ColumnPropNameInTable="PASSQCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL" msprop:Generator_UserColumnName="TOTAL" msprop:Generator_ColumnVarNameInTable="columnTOTAL" msprop:Generator_ColumnPropNameInRow="TOTAL" msprop:Generator_ColumnPropNameInTable="TOTALColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPLETERATE" msprop:Generator_UserColumnName="COMPLETERATE" msprop:Generator_ColumnVarNameInTable="columnCOMPLETERATE" msprop:Generator_ColumnPropNameInRow="COMPLETERATE" msprop:Generator_ColumnPropNameInTable="COMPLETERATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPLETEINSTALL" msprop:Generator_UserColumnName="COMPLETEINSTALL" msprop:Generator_ColumnVarNameInTable="columnCOMPLETEINSTALL" msprop:Generator_ColumnPropNameInRow="COMPLETEINSTALL" msprop:Generator_ColumnPropNameInTable="COMPLETEINSTALLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="INSTALLING" msprop:Generator_UserColumnName="INSTALLING" msprop:Generator_ColumnPropNameInRow="INSTALLING" msprop:Generator_ColumnVarNameInTable="columnINSTALLING" msprop:Generator_ColumnPropNameInTable="INSTALLINGColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

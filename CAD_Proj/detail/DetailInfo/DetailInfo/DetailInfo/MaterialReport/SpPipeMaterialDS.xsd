@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SpPipeMaterialDS" targetNamespace="http://tempuri.org/SpPipeMaterialDS.xsd" xmlns:mstns="http://tempuri.org/SpPipeMaterialDS.xsd" xmlns="http://tempuri.org/SpPipeMaterialDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString1 (Settings)" PropertyReference="ApplicationSettings.DetailInfo.Properties.Settings.GlobalReference.Default.ConnectionString1" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="spl_viewTableAdapter" GeneratorDataComponentClassName="spl_viewTableAdapter" Name="spl_view" UserDataComponentName="spl_viewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (Settings)" DbObjectName="PLM.SPL_VIEW" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT PROJECTID, SPOOLNAME, SYSTEMID, SYSTEMNAME, DRAWINGNO, BLOCKNO, 
+      SURFACETREATMENT, PIPECHECKFIELD, PIPEGRADE, PRESSURETESTFIELD, 
+      SPOOLWEIGHT, CABINTYPE, MODIFYDRAWINGNO, MATERIAL, NORM, LENGTH, 
+      SURAREA, REMARK, PROTECTIONPART
+FROM SPL_VIEW</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PROJECTID" DataSetColumn="PROJECTID" />
+              <Mapping SourceColumn="SPOOLNAME" DataSetColumn="SPOOLNAME" />
+              <Mapping SourceColumn="SYSTEMID" DataSetColumn="SYSTEMID" />
+              <Mapping SourceColumn="SYSTEMNAME" DataSetColumn="SYSTEMNAME" />
+              <Mapping SourceColumn="DRAWINGNO" DataSetColumn="DRAWINGNO" />
+              <Mapping SourceColumn="BLOCKNO" DataSetColumn="BLOCKNO" />
+              <Mapping SourceColumn="SURFACETREATMENT" DataSetColumn="SURFACETREATMENT" />
+              <Mapping SourceColumn="PIPECHECKFIELD" DataSetColumn="PIPECHECKFIELD" />
+              <Mapping SourceColumn="PIPEGRADE" DataSetColumn="PIPEGRADE" />
+              <Mapping SourceColumn="PRESSURETESTFIELD" DataSetColumn="PRESSURETESTFIELD" />
+              <Mapping SourceColumn="SPOOLWEIGHT" DataSetColumn="SPOOLWEIGHT" />
+              <Mapping SourceColumn="CABINTYPE" DataSetColumn="CABINTYPE" />
+              <Mapping SourceColumn="MODIFYDRAWINGNO" DataSetColumn="MODIFYDRAWINGNO" />
+              <Mapping SourceColumn="MATERIAL" DataSetColumn="MATERIAL" />
+              <Mapping SourceColumn="NORM" DataSetColumn="NORM" />
+              <Mapping SourceColumn="LENGTH" DataSetColumn="LENGTH" />
+              <Mapping SourceColumn="SURAREA" DataSetColumn="SURAREA" />
+              <Mapping SourceColumn="REMARK" DataSetColumn="REMARK" />
+              <Mapping SourceColumn="PROTECTIONPART" DataSetColumn="PROTECTIONPART" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SpPipeMaterialDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SpPipeMaterialDS" msprop:Generator_UserDSName="SpPipeMaterialDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="spl_view" msprop:Generator_TableClassName="spl_viewDataTable" msprop:Generator_TableVarName="tablespl_view" msprop:Generator_TablePropName="spl_view" msprop:Generator_RowDeletingName="spl_viewRowDeleting" msprop:Generator_UserTableName="spl_view" msprop:Generator_RowChangingName="spl_viewRowChanging" msprop:Generator_RowEvHandlerName="spl_viewRowChangeEventHandler" msprop:Generator_RowDeletedName="spl_viewRowDeleted" msprop:Generator_RowEvArgName="spl_viewRowChangeEvent" msprop:Generator_RowChangedName="spl_viewRowChanged" msprop:Generator_RowClassName="spl_viewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROJECTID" msprop:Generator_ColumnVarNameInTable="columnPROJECTID" msprop:Generator_ColumnPropNameInRow="PROJECTID" msprop:Generator_ColumnPropNameInTable="PROJECTIDColumn" msprop:Generator_UserColumnName="PROJECTID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPOOLNAME" msprop:Generator_ColumnVarNameInTable="columnSPOOLNAME" msprop:Generator_ColumnPropNameInRow="SPOOLNAME" msprop:Generator_ColumnPropNameInTable="SPOOLNAMEColumn" msprop:Generator_UserColumnName="SPOOLNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SYSTEMID" msprop:Generator_ColumnVarNameInTable="columnSYSTEMID" msprop:Generator_ColumnPropNameInRow="SYSTEMID" msprop:Generator_ColumnPropNameInTable="SYSTEMIDColumn" msprop:Generator_UserColumnName="SYSTEMID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SYSTEMNAME" msprop:Generator_ColumnVarNameInTable="columnSYSTEMNAME" msprop:Generator_ColumnPropNameInRow="SYSTEMNAME" msprop:Generator_ColumnPropNameInTable="SYSTEMNAMEColumn" msprop:Generator_UserColumnName="SYSTEMNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRAWINGNO" msprop:Generator_ColumnVarNameInTable="columnDRAWINGNO" msprop:Generator_ColumnPropNameInRow="DRAWINGNO" msprop:Generator_ColumnPropNameInTable="DRAWINGNOColumn" msprop:Generator_UserColumnName="DRAWINGNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLOCKNO" msprop:Generator_ColumnVarNameInTable="columnBLOCKNO" msprop:Generator_ColumnPropNameInRow="BLOCKNO" msprop:Generator_ColumnPropNameInTable="BLOCKNOColumn" msprop:Generator_UserColumnName="BLOCKNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SURFACETREATMENT" msprop:Generator_ColumnVarNameInTable="columnSURFACETREATMENT" msprop:Generator_ColumnPropNameInRow="SURFACETREATMENT" msprop:Generator_ColumnPropNameInTable="SURFACETREATMENTColumn" msprop:Generator_UserColumnName="SURFACETREATMENT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PIPECHECKFIELD" msprop:Generator_ColumnVarNameInTable="columnPIPECHECKFIELD" msprop:Generator_ColumnPropNameInRow="PIPECHECKFIELD" msprop:Generator_ColumnPropNameInTable="PIPECHECKFIELDColumn" msprop:Generator_UserColumnName="PIPECHECKFIELD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PIPEGRADE" msprop:Generator_ColumnVarNameInTable="columnPIPEGRADE" msprop:Generator_ColumnPropNameInRow="PIPEGRADE" msprop:Generator_ColumnPropNameInTable="PIPEGRADEColumn" msprop:Generator_UserColumnName="PIPEGRADE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRESSURETESTFIELD" msprop:Generator_ColumnVarNameInTable="columnPRESSURETESTFIELD" msprop:Generator_ColumnPropNameInRow="PRESSURETESTFIELD" msprop:Generator_ColumnPropNameInTable="PRESSURETESTFIELDColumn" msprop:Generator_UserColumnName="PRESSURETESTFIELD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPOOLWEIGHT" msprop:Generator_ColumnVarNameInTable="columnSPOOLWEIGHT" msprop:Generator_ColumnPropNameInRow="SPOOLWEIGHT" msprop:Generator_ColumnPropNameInTable="SPOOLWEIGHTColumn" msprop:Generator_UserColumnName="SPOOLWEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CABINTYPE" msprop:Generator_ColumnVarNameInTable="columnCABINTYPE" msprop:Generator_ColumnPropNameInRow="CABINTYPE" msprop:Generator_ColumnPropNameInTable="CABINTYPEColumn" msprop:Generator_UserColumnName="CABINTYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODIFYDRAWINGNO" msprop:Generator_ColumnVarNameInTable="columnMODIFYDRAWINGNO" msprop:Generator_ColumnPropNameInRow="MODIFYDRAWINGNO" msprop:Generator_ColumnPropNameInTable="MODIFYDRAWINGNOColumn" msprop:Generator_UserColumnName="MODIFYDRAWINGNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MATERIAL" msprop:Generator_ColumnVarNameInTable="columnMATERIAL" msprop:Generator_ColumnPropNameInRow="MATERIAL" msprop:Generator_ColumnPropNameInTable="MATERIALColumn" msprop:Generator_UserColumnName="MATERIAL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NORM" msprop:Generator_ColumnVarNameInTable="columnNORM" msprop:Generator_ColumnPropNameInRow="NORM" msprop:Generator_ColumnPropNameInTable="NORMColumn" msprop:Generator_UserColumnName="NORM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LENGTH" msprop:Generator_ColumnVarNameInTable="columnLENGTH" msprop:Generator_ColumnPropNameInRow="LENGTH" msprop:Generator_ColumnPropNameInTable="LENGTHColumn" msprop:Generator_UserColumnName="LENGTH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SURAREA" msprop:Generator_ColumnVarNameInTable="columnSURAREA" msprop:Generator_ColumnPropNameInRow="SURAREA" msprop:Generator_ColumnPropNameInTable="SURAREAColumn" msprop:Generator_UserColumnName="SURAREA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="REMARK" msprop:Generator_ColumnVarNameInTable="columnREMARK" msprop:Generator_ColumnPropNameInRow="REMARK" msprop:Generator_ColumnPropNameInTable="REMARKColumn" msprop:Generator_UserColumnName="REMARK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROTECTIONPART" msprop:Generator_ColumnVarNameInTable="columnPROTECTIONPART" msprop:Generator_ColumnPropNameInRow="PROTECTIONPART" msprop:Generator_ColumnPropNameInTable="PROTECTIONPARTColumn" msprop:Generator_UserColumnName="PROTECTIONPART" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

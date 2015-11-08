@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright 1974 to current year. AVEVA Solutions Limited and its subsidiaries. All rights reserved in original code only.-->
+<ArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <string>ExplorerAddin</string>
+  <string>DrawListAddin</string>
+  <string>MyDataAddin</string>
+  <string>HistoryAddin</string>
+  <string>ReferenceListAddin</string>
+  <string>PipeCheckAddin</string>
+  <string>OutputAddin</string>
+  <string>FindAddin</string>
+  <string>AttributesUtility</string>
+  <string>ExamplesAddin</string>
+  </ArrayOfString>

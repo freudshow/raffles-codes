@@ -1,0 +1,139 @@
+--      Keyword:     Undefined
+--    Module:        Undefined
+--  Author:          Undefined
+--  Created:         Mon Jun 13 11:29:02 2011
+
+--
+--  Description:     -- Sample PML form showing the use of a Grid Control--
+--
+------------------------------------------------------------------------
+--
+-- Methods defined:
+--
+--  Method call                      Return              Description
+--  ===========                      ======              ===========
+--  PMLGridExample ()                -
+--  addToThreeDView()                -
+--  afterSelectChange(ARRAY)         -
+--  initialise()                     -
+--  loadFromExcel()                  -
+--  rightClickGrid(ARRAY)            -
+--  saveToExcel()                    -
+------------------------------------------------------------------------
+--
+-- Copyright 1974 to current year. AVEVA Solutions Limited and its subsidiaries. All rights reserved in original code only.
+--
+-- File:            PMLGridExample.pmlfrm
+--   Type:          Form Definition
+--   Group:         Samples
+--
+-- Description:
+-- Sample PML form showing the use of a Grid Control
+--
+------------------------------------------------------------------------
+--
+
+import 'GridControl'
+handle any
+endhandle
+
+setup form !!PMLGridExample resize
+   using namespace 'Aveva.Pdms.Presentation'
+
+   member .grid      is NetGridControl
+   member .elements is ARRAY
+
+   path down
+   container .gridFrame PmlNetControl 'grid' dock fill width 30 height 20
+
+  menu .gridPopup popup
+   !this.gridPopup.add( 'CALLBACK', 'Add to 3D View', '!this.addToThreeDView()' )
+   !this.gridPopup.add( 'CALLBACK', 'Save to Excel...', '!this.saveToExcel()' )
+   !this.gridPopup.add( 'CALLBACK', 'Import Data from Excel...', '!this.loadFromExcel()' )
+
+exit
+
+define method .PMLGridExample ()
+
+  using namespace 'Aveva.Pdms.Presentation'
+
+  !this.grid = object NetGridControl()
+  !this.gridFrame.control = !this.grid.handle()
+
+  !this.grid.addeventhandler('OnPopup', !this, 'rightClickGrid')
+  !this.grid.addeventhandler('AfterSelectChange', !this, 'afterSelectChange')
+
+  !this.formTitle = 'My Grid Control'
+  !this.initcall  = '!this.initialise()'
+  !this.cancelcall  = '!this.closecall()'
+
+endmethod
+
+define method .rightClickGrid(!data is ARRAY)
+  !this.gridFrame.popup = !this.gridPopup
+  !this.elements = !data[2]
+  !this.gridFrame.showPopup(!data[0], !data[1])
+endmethod
+
+define method .addToThreeDView()
+  do !i from 1 to (!this.elements.size())
+      !d = !this.elements[!i]
+      !myDbref = object DBREF('$!d')
+      add $!myDbref
+  enddo
+endmethod
+
+define method .saveToExcel()
+   import 'PMLFileBrowser'
+   Handle Any
+   Endhandle
+   using namespace 'Aveva.Pdms.Presentation'
+   !browser = object PMLFileBrowser('SAVE')
+   !browser.show('C:\','GridControlExample.xls','Save Grid to Excel',false, 'Excel Documents|*.xls',1)
+   !this.grid.SaveGridToExcel(!browser.file())
+endmethod
+
+define method .loadFromExcel()
+   import 'PMLFileBrowser'
+   Handle Any
+   Endhandle
+   using namespace 'Aveva.Pdms.Presentation'
+   !browser = object PMLFileBrowser('OPEN')
+   !browser.show('C:\','','Load Grid from Excel',true, 'Excel Documents|*.xls',1)
+   !this.grid.clearGrid()
+   !nds = object NetDataSource('Grid Control Example', !browser.file())
+   !this.grid.BindToDataSource(!nds)
+endmethod
+
+define method .afterSelectChange(!a is ARRAY)
+   --q var !a[0]
+endmethod
+
+----------------Initialise -------
+define method .initialise()
+
+   -- Create headings
+   !headings    = ARRAY()
+   !headings[1] = 'Name'
+   !headings[2] = 'Type'
+   !headings[3] = 'Owner'
+   !headings[4] = 'Area'
+
+   -- Create model items for population of grid
+   var !data collect all EQUIP
+   var !data append collect all PIPES
+
+   -- Bind data to grid
+   using namespace  'Aveva.Pdms.Presentation'
+   !nds = object NetDataSource('Grid Control Example', !headings, !data)
+   !this.grid.BindToDataSource(!nds)
+
+   -- Set grid parameters
+   !this.grid.ColumnExcelFilter(TRUE)
+   !this.grid.setNameColumnImage()
+   !this.grid.OutlookGroupStyle(TRUE)
+   !this.grid.FixedHeaders(FALSE)
+   !this.grid.FixedRows(FALSE)
+   !this.grid.ColumnSummaries(TRUE)
+
+endmethod

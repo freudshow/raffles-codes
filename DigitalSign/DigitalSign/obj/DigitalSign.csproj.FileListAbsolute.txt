@@ -1,0 +1,131 @@
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Debug\ResolveAssemblyReference.cache
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\Debug\DigitalSign.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\Debug\DigitalSign.pdb
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\Debug\acdbmgd.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\Debug\acmgd.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\Debug\AcDbMgdHost.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Debug\DigitalSign.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Debug\DigitalSign.pdb
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Debug\DigitalSign.csproj.GenerateResource.Cache
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\Debug\DigitalSign.dll.config
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Debug\DigitalSign.Properties.Resources.resources
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Debug\DigitalSign.DigitalSign.resources
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\x86\Debug\DigitalSign.dll.config
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\x86\Debug\DigitalSign.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\x86\Debug\DigitalSign.pdb
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\x86\Debug\acdbmgd.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\x86\Debug\acmgd.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\x86\Debug\AcDbMgdHost.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\debug.bin\DigitalSign.dll.config
+E:\baoshan.song\My Documents\Visual Studio 2005\debug.bin\DigitalSign.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\debug.bin\DigitalSign.pdb
+E:\baoshan.song\My Documents\Visual Studio 2005\debug.bin\digital\DigitalSign.dll.config
+E:\baoshan.song\My Documents\Visual Studio 2005\debug.bin\digital\DigitalSign.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\debug.bin\digital\DigitalSign.pdb
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Debug\DigitalSign.DigitalSign.resources
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Debug\DigitalSign.Properties.Resources.resources
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Debug\DigitalSign.csproj.GenerateResource.Cache
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Debug\DigitalSign.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Debug\DigitalSign.pdb
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\x86\Release\ResolveAssemblyReference.cache
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\x86\Release\DigitalSign.DigitalSign.resources
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\x86\Release\DigitalSign.Properties.Resources.resources
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\x86\Release\DigitalSign.csproj.GenerateResource.Cache
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\x86\Release\DigitalSign.dll
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\x86\Release\DigitalSign.pdb
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\x86\Release\DigitalSign.XmlSerializers.dll
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\Release\ResolveAssemblyReference.cache
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\Release\DigitalSign.DigitalSign.resources
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\Release\DigitalSign.Properties.Resources.resources
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\Release\DigitalSign.csproj.GenerateResource.Cache
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\Release\DigitalSign.dll
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\Release\DigitalSign.pdb
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\Release\DigitalSign.XmlSerializers.dll
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\Debug\ResolveAssemblyReference.cache
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\Debug\DigitalSign.DigitalSign.resources
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\Debug\DigitalSign.Properties.Resources.resources
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\Debug\DigitalSign.csproj.GenerateResource.Cache
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\Debug\DigitalSign.dll
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\Debug\DigitalSign.pdb
+C:\debug.bin\digital\DigitalSign.dll.config
+C:\debug.bin\digital\DigitalSign.dll
+C:\debug.bin\digital\DigitalSign.pdb
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\x86\Debug\DigitalSign.csproj.ResolveComReference.cache
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\x86\Debug\DigitalSign.DigitalSign.resources
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\x86\Debug\DigitalSign.Properties.Resources.resources
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\x86\Debug\DigitalSign.csproj.GenerateResource.Cache
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\x86\Debug\DigitalSign.dll
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\x86\Debug\DigitalSign.pdb
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\Debug\DigitalSign.csproj.ResolveComReference.cache
+C:\CAD_Proj\DigitalSign\DigitalSign\bin\DigitalSign.dll.config
+C:\CAD_Proj\DigitalSign\DigitalSign\bin\DigitalSign.dll
+C:\CAD_Proj\DigitalSign\DigitalSign\bin\DigitalSign.pdb
+C:\CAD_Proj\DigitalSign\DigitalSign\obj\Release\DigitalSign.csproj.ResolveComReference.cache
+C:\CAD_Proj\DigitalSign\DigitalSign\bin\DigitalSign.XmlSerializers.dll
+C:\CAD_Proj\DigitalSign\DigitalSign\bin\acdbmgd.dll
+C:\CAD_Proj\DigitalSign\DigitalSign\bin\acmgd.dll
+C:\CAD_Proj\DigitalSign\DigitalSign\bin\AcDbMgdHost.dll
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Debug\ResolveAssemblyReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Debug\DigitalSign.csproj.ResolveComReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Debug\DigitalSign.DigitalSign.resources
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Debug\DigitalSign.Properties.Resources.resources
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Debug\DigitalSign.csproj.GenerateResource.Cache
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Debug\DigitalSign.dll
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Debug\DigitalSign.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\DigitalSign.dll.config
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\DigitalSign.dll
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\DigitalSign.XmlSerializers.dll
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\DigitalSign.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\acdbmgd.dll
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\acmgd.dll
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\ICSharpCode.SharpZipLib.DLL
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\bin\AcDbMgdHost.dll
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Release\ResolveAssemblyReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Release\DigitalSign.csproj.ResolveComReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Release\DigitalSign.AboutFrm.resources
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Release\DigitalSign.DigitalSign.resources
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Release\DigitalSign.NewForm.resources
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Release\DigitalSign.Properties.Resources.resources
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Release\DigitalSign.csproj.GenerateResource.Cache
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Release\DigitalSign.dll
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Release\DigitalSign.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\Release\DigitalSign.XmlSerializers.dll
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\DigitalSign\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\DigitalSign\obj\Release\DigitalSign.csproj.ResolveComReference.cache
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\DigitalSign\obj\Release\DigitalSign.AboutFrm.resources
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\DigitalSign\obj\Release\DigitalSign.DigitalSign.resources
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\DigitalSign\obj\Release\DigitalSign.NewForm.resources
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\DigitalSign\obj\Release\DigitalSign.Properties.Resources.resources
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\DigitalSign\obj\Release\DigitalSign.csproj.GenerateResource.Cache
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\DigitalSign\obj\Release\DigitalSign.dll
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\DigitalSign\obj\Release\DigitalSign.pdb
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\bin\DigitalSign.dll.config
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\bin\DigitalSign.dll
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\bin\DigitalSign.XmlSerializers.dll
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\bin\DigitalSign.pdb
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\bin\acdbmgd.dll
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\bin\acmgd.dll
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\bin\ICSharpCode.SharpZipLib.DLL
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\bin\AcDbMgdHost.dll
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\obj\Release\ResolveAssemblyReference.cache
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\obj\Release\DigitalSign.csproj.ResolveComReference.cache
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\obj\Release\DigitalSign.AboutFrm.resources
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\obj\Release\DigitalSign.DigitalSign.resources
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\obj\Release\DigitalSign.NewForm.resources
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\obj\Release\DigitalSign.Properties.Resources.resources
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\obj\Release\DigitalSign.csproj.GenerateResource.Cache
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\obj\Release\DigitalSign.dll
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\obj\Release\DigitalSign.pdb
+F:\baoshan.song\Visual Studio 2005\DigitalSign\DigitalSign\obj\Release\DigitalSign.XmlSerializers.dll
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Release\ResolveAssemblyReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Release\DigitalSign.csproj.ResolveComReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Release\DigitalSign.AboutFrm.resources
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Release\DigitalSign.DigitalSign.resources
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Release\DigitalSign.NewForm.resources
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Release\DigitalSign.Properties.Resources.resources
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Release\DigitalSign.csproj.GenerateResource.Cache
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Release\DigitalSign.dll
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Release\DigitalSign.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\DigitalSign\obj\x86\Release\DigitalSign.XmlSerializers.dll

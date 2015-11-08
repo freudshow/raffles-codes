@@ -1,0 +1,9 @@
+C:\CAD_Proj\AutoUpdate\obj\Debug\AutoUpdate.exe
+C:\CAD_Proj\AutoUpdate\obj\Debug\AutoUpdate.pdb
+C:\CAD_Proj\AutoUpdate\bin\Debug\AutoUpdate.exe
+C:\CAD_Proj\AutoUpdate\bin\Debug\AutoUpdate.pdb
+C:\CAD_Proj\AutoUpdate\obj\Debug\ResolveAssemblyReference.cache
+C:\CAD_Proj\AutoUpdate\obj\Debug\AutoUpdate.FrmUpdate.resources
+C:\CAD_Proj\AutoUpdate\obj\Debug\AutoUpdate.csproj.GenerateResource.Cache
+C:\CAD_Proj\AutoUpdate\bin\Debug\AutoUpdate.exe.CodeAnalysisLog.xml
+C:\CAD_Proj\AutoUpdate\bin\Debug\AutoUpdate.exe.lastcodeanalysissucceeded

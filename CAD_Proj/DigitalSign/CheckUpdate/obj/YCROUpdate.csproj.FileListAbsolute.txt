@@ -1,0 +1,12 @@
+C:\CAD_Proj\DigitalSign\CheckUpdate\bin\Debug\CheckUpdate.dll
+C:\CAD_Proj\DigitalSign\CheckUpdate\bin\Debug\CheckUpdate.pdb
+C:\CAD_Proj\DigitalSign\CheckUpdate\bin\Debug\acdbmgd.dll
+C:\CAD_Proj\DigitalSign\CheckUpdate\bin\Debug\acmgd.dll
+C:\CAD_Proj\DigitalSign\CheckUpdate\bin\Debug\ICSharpCode.SharpZipLib.DLL
+C:\CAD_Proj\DigitalSign\CheckUpdate\bin\Debug\YCROAppUp.exe
+C:\CAD_Proj\DigitalSign\CheckUpdate\bin\Debug\AcDbMgdHost.dll
+C:\CAD_Proj\DigitalSign\CheckUpdate\bin\Debug\YCROAppUp.pdb
+C:\CAD_Proj\DigitalSign\CheckUpdate\obj\Debug\ResolveAssemblyReference.cache
+C:\CAD_Proj\DigitalSign\CheckUpdate\obj\Debug\YCROUpdate.csproj.ResolveComReference.cache
+C:\CAD_Proj\DigitalSign\CheckUpdate\obj\Debug\CheckUpdate.dll
+C:\CAD_Proj\DigitalSign\CheckUpdate\obj\Debug\CheckUpdate.pdb

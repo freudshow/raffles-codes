@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">项目的相关信息查询</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetSystem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="projectId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSystemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSystemResult" type="tns:ArrayOfProjectSystem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProjectSystem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProjectSystem" nillable="true" type="tns:ProjectSystem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProjectSystem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Project_Id" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="System_Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NewFlag" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Parent_Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllSystem">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllSystemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllSystemResult" type="tns:ArrayOfProjectSystem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllSystemByNewFlag">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="projectId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="newFlag" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllSystemByNewFlagResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllSystemByNewFlagResult" type="tns:ArrayOfProjectSystem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProject">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetProjectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProjectResult" type="tns:ArrayOfProject" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Project" nillable="true" type="tns:Project" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Project">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProjectID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Class" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BUDGET_WEIGHT" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PFLAG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Full_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NewFlag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MFlag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProjectType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShipType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProjectCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FlagState" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProjectSummary" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Progress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StartTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StartWorkingtime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShipOwner" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BriefClass" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Num" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="IsRestricted" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Oflag" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="STATUS_TIME" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UPDATER" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UPDATEDATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="CREATER" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CREATEDATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CONTRANTSTARTDATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CONTRANTDELIVERYDATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="OWNER_REFNO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CLASS_REFNO" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProjectListStr">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetProjectListStrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProjectListStrResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProjectListStrNew">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetProjectListStrNewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProjectListStrNewResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProjectInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="projectName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProjectInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProjectInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrawingTypeStr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="projectid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="disciplineid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrawingTypeStrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDrawingTypeStrResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrawingPrintAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sdes" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrawingPrintAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDrawingPrintAddResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDisciplineTypeStr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="projectid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDisciplineTypeStrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDisciplineTypeStrResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProjectQuotas">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetProjectQuotasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProjectQuotasResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProjectInfosQuota">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="project" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProjectInfosQuotaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProjectInfosQuotaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDisciplineQuota">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="project" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDisciplineQuotaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDisciplineQuotaResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrawingTitleQuota">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="projectName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="drawingNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rev" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrawingTitleQuotaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDrawingTitleQuotaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrawingQuota">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="projectid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="disciplineid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrawingQuotaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDrawingQuotaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrawingPrintAddQuota">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sdes" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrawingPrintAddQuotaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDrawingPrintAddQuotaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetSystemSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSystem" />
+  </wsdl:message>
+  <wsdl:message name="GetSystemSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSystemResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSystemSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllSystem" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSystemSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllSystemResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSystemByNewFlagSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllSystemByNewFlag" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSystemByNewFlagSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllSystemByNewFlagResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProject" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectListStrSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProjectListStr" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectListStrSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProjectListStrResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectListStrNewSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProjectListStrNew" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectListStrNewSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProjectListStrNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProjectInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProjectInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDrawingTypeStrSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDrawingTypeStr" />
+  </wsdl:message>
+  <wsdl:message name="GetDrawingTypeStrSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDrawingTypeStrResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDrawingPrintAddSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDrawingPrintAdd" />
+  </wsdl:message>
+  <wsdl:message name="GetDrawingPrintAddSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDrawingPrintAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDisciplineTypeStrSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDisciplineTypeStr" />
+  </wsdl:message>
+  <wsdl:message name="GetDisciplineTypeStrSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDisciplineTypeStrResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectQuotasSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProjectQuotas" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectQuotasSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProjectQuotasResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectInfosQuotaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProjectInfosQuota" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectInfosQuotaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProjectInfosQuotaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDisciplineQuotaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDisciplineQuota" />
+  </wsdl:message>
+  <wsdl:message name="GetDisciplineQuotaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDisciplineQuotaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDrawingTitleQuotaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDrawingTitleQuota" />
+  </wsdl:message>
+  <wsdl:message name="GetDrawingTitleQuotaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDrawingTitleQuotaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDrawingQuotaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDrawingQuota" />
+  </wsdl:message>
+  <wsdl:message name="GetDrawingQuotaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDrawingQuotaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDrawingPrintAddQuotaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDrawingPrintAddQuota" />
+  </wsdl:message>
+  <wsdl:message name="GetDrawingPrintAddQuotaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDrawingPrintAddQuotaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ProjectInfoSoap">
+    <wsdl:operation name="GetSystem">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据项目号获得所有系统</wsdl:documentation>
+      <wsdl:input message="tns:GetSystemSoapIn" />
+      <wsdl:output message="tns:GetSystemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSystem">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获得所有系统</wsdl:documentation>
+      <wsdl:input message="tns:GetAllSystemSoapIn" />
+      <wsdl:output message="tns:GetAllSystemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSystemByNewFlag">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据项目号及标识获得所有系统</wsdl:documentation>
+      <wsdl:input message="tns:GetAllSystemByNewFlagSoapIn" />
+      <wsdl:output message="tns:GetAllSystemByNewFlagSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProject">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获得当前所有项目</wsdl:documentation>
+      <wsdl:input message="tns:GetProjectSoapIn" />
+      <wsdl:output message="tns:GetProjectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectListStr">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获得当前所有项目，返回格式：项目1;项目2</wsdl:documentation>
+      <wsdl:input message="tns:GetProjectListStrSoapIn" />
+      <wsdl:output message="tns:GetProjectListStrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectListStrNew">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获得当前有定额的项目，返回格式：项目1;项目2</wsdl:documentation>
+      <wsdl:input message="tns:GetProjectListStrNewSoapIn" />
+      <wsdl:output message="tns:GetProjectListStrNewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获得指定项目的信息，返回格式：项目名称;项目船东;项目船级社</wsdl:documentation>
+      <wsdl:input message="tns:GetProjectInfoSoapIn" />
+      <wsdl:output message="tns:GetProjectInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingTypeStr">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获得所有图纸类型</wsdl:documentation>
+      <wsdl:input message="tns:GetDrawingTypeStrSoapIn" />
+      <wsdl:output message="tns:GetDrawingTypeStrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingPrintAdd">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">添加一条打印记录</wsdl:documentation>
+      <wsdl:input message="tns:GetDrawingPrintAddSoapIn" />
+      <wsdl:output message="tns:GetDrawingPrintAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDisciplineTypeStr">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获得指定项目的专业，返回格式：专业</wsdl:documentation>
+      <wsdl:input message="tns:GetDisciplineTypeStrSoapIn" />
+      <wsdl:output message="tns:GetDisciplineTypeStrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectQuotas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获得定额表所有项目,返回格式：项目</wsdl:documentation>
+      <wsdl:input message="tns:GetProjectQuotasSoapIn" />
+      <wsdl:output message="tns:GetProjectQuotasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectInfosQuota">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获得指定项目的信息，返回格式：项目船东;项目船级社;项目名称</wsdl:documentation>
+      <wsdl:input message="tns:GetProjectInfosQuotaSoapIn" />
+      <wsdl:output message="tns:GetProjectInfosQuotaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDisciplineQuota">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获得指定项目的专业，返回格式：专业</wsdl:documentation>
+      <wsdl:input message="tns:GetDisciplineQuotaSoapIn" />
+      <wsdl:output message="tns:GetDisciplineQuotaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingTitleQuota">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获得指定项目,图号下的标题和责任人, 返回格式：标题,标题,责任人</wsdl:documentation>
+      <wsdl:input message="tns:GetDrawingTitleQuotaSoapIn" />
+      <wsdl:output message="tns:GetDrawingTitleQuotaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingQuota">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获得指定项目,专业下的定额,返回格式：文档类型,定额数,备注</wsdl:documentation>
+      <wsdl:input message="tns:GetDrawingQuotaSoapIn" />
+      <wsdl:output message="tns:GetDrawingQuotaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingPrintAddQuota">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">添加一条打印记录</wsdl:documentation>
+      <wsdl:input message="tns:GetDrawingPrintAddQuotaSoapIn" />
+      <wsdl:output message="tns:GetDrawingPrintAddQuotaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ProjectInfoSoap" type="tns:ProjectInfoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSystem">
+      <soap:operation soapAction="http://tempuri.org/GetSystem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSystem">
+      <soap:operation soapAction="http://tempuri.org/GetAllSystem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSystemByNewFlag">
+      <soap:operation soapAction="http://tempuri.org/GetAllSystemByNewFlag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProject">
+      <soap:operation soapAction="http://tempuri.org/GetProject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectListStr">
+      <soap:operation soapAction="http://tempuri.org/GetProjectListStr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectListStrNew">
+      <soap:operation soapAction="http://tempuri.org/GetProjectListStrNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectInfo">
+      <soap:operation soapAction="http://tempuri.org/GetProjectInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingTypeStr">
+      <soap:operation soapAction="http://tempuri.org/GetDrawingTypeStr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingPrintAdd">
+      <soap:operation soapAction="http://tempuri.org/GetDrawingPrintAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDisciplineTypeStr">
+      <soap:operation soapAction="http://tempuri.org/GetDisciplineTypeStr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectQuotas">
+      <soap:operation soapAction="http://tempuri.org/GetProjectQuotas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectInfosQuota">
+      <soap:operation soapAction="http://tempuri.org/GetProjectInfosQuota" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDisciplineQuota">
+      <soap:operation soapAction="http://tempuri.org/GetDisciplineQuota" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingTitleQuota">
+      <soap:operation soapAction="http://tempuri.org/GetDrawingTitleQuota" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingQuota">
+      <soap:operation soapAction="http://tempuri.org/GetDrawingQuota" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingPrintAddQuota">
+      <soap:operation soapAction="http://tempuri.org/GetDrawingPrintAddQuota" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ProjectInfoSoap12" type="tns:ProjectInfoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSystem">
+      <soap12:operation soapAction="http://tempuri.org/GetSystem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSystem">
+      <soap12:operation soapAction="http://tempuri.org/GetAllSystem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSystemByNewFlag">
+      <soap12:operation soapAction="http://tempuri.org/GetAllSystemByNewFlag" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProject">
+      <soap12:operation soapAction="http://tempuri.org/GetProject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectListStr">
+      <soap12:operation soapAction="http://tempuri.org/GetProjectListStr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectListStrNew">
+      <soap12:operation soapAction="http://tempuri.org/GetProjectListStrNew" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetProjectInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingTypeStr">
+      <soap12:operation soapAction="http://tempuri.org/GetDrawingTypeStr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingPrintAdd">
+      <soap12:operation soapAction="http://tempuri.org/GetDrawingPrintAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDisciplineTypeStr">
+      <soap12:operation soapAction="http://tempuri.org/GetDisciplineTypeStr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectQuotas">
+      <soap12:operation soapAction="http://tempuri.org/GetProjectQuotas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectInfosQuota">
+      <soap12:operation soapAction="http://tempuri.org/GetProjectInfosQuota" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDisciplineQuota">
+      <soap12:operation soapAction="http://tempuri.org/GetDisciplineQuota" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingTitleQuota">
+      <soap12:operation soapAction="http://tempuri.org/GetDrawingTitleQuota" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingQuota">
+      <soap12:operation soapAction="http://tempuri.org/GetDrawingQuota" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingPrintAddQuota">
+      <soap12:operation soapAction="http://tempuri.org/GetDrawingPrintAddQuota" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProjectInfo">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">项目的相关信息查询</wsdl:documentation>
+    <wsdl:port name="ProjectInfoSoap" binding="tns:ProjectInfoSoap">
+      <soap:address location="http://172.16.7.55/Services/ProjectInfo.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ProjectInfoSoap12" binding="tns:ProjectInfoSoap12">
+      <soap12:address location="http://172.16.7.55/Services/ProjectInfo.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

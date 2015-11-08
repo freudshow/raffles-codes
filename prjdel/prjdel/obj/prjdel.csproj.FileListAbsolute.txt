@@ -1,0 +1,12 @@
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel\obj\Debug\ResolveAssemblyReference.cache
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel\bin\Debug\prjdel.exe
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel\bin\Debug\prjdel.pdb
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel\obj\Debug\prjdel.exe
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel\obj\Debug\prjdel.pdb
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel\bin\Debug\prjdel.exe.CodeAnalysisLog.xml
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel\bin\Debug\prjdel.exe.lastcodeanalysissucceeded
+F:\baoshan.song\Visual Studio 2005\Projects\prjdel\prjdel\obj\Debug\prjdel.exe
+F:\baoshan.song\Visual Studio 2005\Projects\prjdel\prjdel\obj\Debug\prjdel.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\prjdel\prjdel\bin\Debug\prjdel.exe
+F:\baoshan.song\Visual Studio 2005\Projects\prjdel\prjdel\bin\Debug\prjdel.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\prjdel\prjdel\obj\Debug\ResolveAssemblyReference.cache

@@ -1,0 +1,26 @@
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\PracticeOracle.exe
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\PracticeOracle.pdb
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\obj\Debug\ResolveAssemblyReference.cache
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\obj\Debug\PracticeOracle.exe
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\obj\Debug\PracticeOracle.pdb
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\PracticeOracle.exe.config
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\obj\Debug\PracticeOracle.Form1.resources
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\obj\Debug\PracticeOracle.csproj.GenerateResource.Cache
+F:\baoshan.song\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\PracticeOracle.exe.config
+F:\baoshan.song\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\obj\Debug\PracticeOracle.exe
+F:\baoshan.song\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\obj\Debug\PracticeOracle.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\PracticeOracle.exe
+F:\baoshan.song\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\PracticeOracle.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\baoshan.song\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\baoshan.song\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\Microsoft.Practices.Unity.dll
+F:\baoshan.song\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\baoshan.song\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+F:\baoshan.song\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+F:\baoshan.song\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+F:\baoshan.song\Visual Studio 2005\Projects\PracticeOracle\PracticeOracle\obj\Debug\ResolveAssemblyReference.cache

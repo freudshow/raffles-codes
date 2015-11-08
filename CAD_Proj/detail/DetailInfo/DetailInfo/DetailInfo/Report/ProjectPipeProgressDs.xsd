@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProjectPipeProgressDs" targetNamespace="http://tempuri.org/ProjectPipeProgressDs.xsd" xmlns:mstns="http://tempuri.org/ProjectPipeProgressDs.xsd" xmlns="http://tempuri.org/ProjectPipeProgressDs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProjectPipeProgressDs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ProjectPipeProgressDs" msprop:Generator_DataSetName="ProjectPipeProgressDs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ProjectPipeProgress" msprop:Generator_UserTableName="ProjectPipeProgress" msprop:Generator_RowDeletedName="ProjectPipeProgressRowDeleted" msprop:Generator_TableClassName="ProjectPipeProgressDataTable" msprop:Generator_RowChangedName="ProjectPipeProgressRowChanged" msprop:Generator_RowClassName="ProjectPipeProgressRow" msprop:Generator_RowChangingName="ProjectPipeProgressRowChanging" msprop:Generator_RowEvArgName="ProjectPipeProgressRowChangeEvent" msprop:Generator_RowEvHandlerName="ProjectPipeProgressRowChangeEventHandler" msprop:Generator_TablePropName="ProjectPipeProgress" msprop:Generator_TableVarName="tableProjectPipeProgress" msprop:Generator_RowDeletingName="ProjectPipeProgressRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sysid" msprop:Generator_UserColumnName="sysid" msprop:Generator_ColumnPropNameInRow="sysid" msprop:Generator_ColumnVarNameInTable="columnsysid" msprop:Generator_ColumnPropNameInTable="sysidColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="sysname" msprop:Generator_UserColumnName="sysname" msprop:Generator_ColumnPropNameInRow="sysname" msprop:Generator_ColumnVarNameInTable="columnsysname" msprop:Generator_ColumnPropNameInTable="sysnameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="init_count" msprop:Generator_UserColumnName="init_count" msprop:Generator_ColumnPropNameInRow="init_count" msprop:Generator_ColumnVarNameInTable="columninit_count" msprop:Generator_ColumnPropNameInTable="init_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="approving_count" msprop:Generator_UserColumnName="approving_count" msprop:Generator_ColumnPropNameInRow="approving_count" msprop:Generator_ColumnVarNameInTable="columnapproving_count" msprop:Generator_ColumnPropNameInTable="approving_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="approved_count" msprop:Generator_UserColumnName="approved_count" msprop:Generator_ColumnPropNameInRow="approved_count" msprop:Generator_ColumnVarNameInTable="columnapproved_count" msprop:Generator_ColumnPropNameInTable="approved_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="assigning_count" msprop:Generator_UserColumnName="assigning_count" msprop:Generator_ColumnPropNameInRow="assigning_count" msprop:Generator_ColumnVarNameInTable="columnassigning_count" msprop:Generator_ColumnPropNameInTable="assigning_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="processing_count" msprop:Generator_UserColumnName="processing_count" msprop:Generator_ColumnPropNameInRow="processing_count" msprop:Generator_ColumnVarNameInTable="columnprocessing_count" msprop:Generator_ColumnPropNameInTable="processing_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="feedback_count" msprop:Generator_UserColumnName="feedback_count" msprop:Generator_ColumnPropNameInRow="feedback_count" msprop:Generator_ColumnVarNameInTable="columnfeedback_count" msprop:Generator_ColumnPropNameInTable="feedback_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="feedbackd_count" msprop:Generator_UserColumnName="feedbackd_count" msprop:Generator_ColumnPropNameInRow="feedbackd_count" msprop:Generator_ColumnVarNameInTable="columnfeedbackd_count" msprop:Generator_ColumnPropNameInTable="feedbackd_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="testing_count" msprop:Generator_UserColumnName="testing_count" msprop:Generator_ColumnPropNameInRow="testing_count" msprop:Generator_ColumnVarNameInTable="columntesting_count" msprop:Generator_ColumnPropNameInTable="testing_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="dealdesign_count" msprop:Generator_UserColumnName="dealdesign_count" msprop:Generator_ColumnPropNameInRow="dealdesign_count" msprop:Generator_ColumnVarNameInTable="columndealdesign_count" msprop:Generator_ColumnPropNameInTable="dealdesign_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="apfeedback_count" msprop:Generator_UserColumnName="apfeedback_count" msprop:Generator_ColumnPropNameInRow="apfeedback_count" msprop:Generator_ColumnVarNameInTable="columnapfeedback_count" msprop:Generator_ColumnPropNameInTable="apfeedback_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="failure_count" msprop:Generator_UserColumnName="failure_count" msprop:Generator_ColumnPropNameInRow="failure_count" msprop:Generator_ColumnVarNameInTable="columnfailure_count" msprop:Generator_ColumnPropNameInTable="failure_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="wset_count" msprop:Generator_UserColumnName="wset_count" msprop:Generator_ColumnPropNameInRow="wset_count" msprop:Generator_ColumnVarNameInTable="columnwset_count" msprop:Generator_ColumnPropNameInTable="wset_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="seting_count" msprop:Generator_UserColumnName="seting_count" msprop:Generator_ColumnPropNameInRow="seting_count" msprop:Generator_ColumnVarNameInTable="columnseting_count" msprop:Generator_ColumnPropNameInTable="seting_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="wdebug_count" msprop:Generator_UserColumnName="wdebug_count" msprop:Generator_ColumnPropNameInRow="wdebug_count" msprop:Generator_ColumnVarNameInTable="columnwdebug_count" msprop:Generator_ColumnPropNameInTable="wdebug_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="debuged_count" msprop:Generator_UserColumnName="debuged_count" msprop:Generator_ColumnPropNameInRow="debuged_count" msprop:Generator_ColumnVarNameInTable="columndebuged_count" msprop:Generator_ColumnPropNameInTable="debuged_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="debugfail_count" msprop:Generator_UserColumnName="debugfail_count" msprop:Generator_ColumnPropNameInRow="debugfail_count" msprop:Generator_ColumnVarNameInTable="columndebugfail_count" msprop:Generator_ColumnPropNameInTable="debugfail_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="sum_count" msprop:Generator_UserColumnName="sum_count" msprop:Generator_ColumnPropNameInRow="sum_count" msprop:Generator_ColumnVarNameInTable="columnsum_count" msprop:Generator_ColumnPropNameInTable="sum_countColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<AutoUpdater>
+  <description>YCRO Plugins AutoUpdater</description>
+  <Apps>
+
+    <App name="Digital">
+      <Updater>
+        <Url>http://172.16.7.55/Services/PipingLifeUpdate/UpdateProgram.zip</Url>
+        <LastUpdateTime>2013-01-05</LastUpdateTime>
+      </Updater>
+      <EntryPoint>ItemSoft.exe</EntryPoint>
+      <Location>.</Location>
+      <Ver>1.0.0.0</Ver>
+      <Files>
+        <File Ver="1.0.0.0" Name="ItemSoft.exe" />
+        <File Ver="1.0.0.0" Name="Reports\test.txt"/>
+        <File Ver="1.0.0.0" Name="Interop.grproLib.dll"/>
+        <File Ver="1.0.0.0" Name="Reports\test.grf"/>
+      </Files>
+    </App>
+
+  </Apps>
+</AutoUpdater>

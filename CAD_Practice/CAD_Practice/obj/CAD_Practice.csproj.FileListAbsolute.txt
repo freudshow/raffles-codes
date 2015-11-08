@@ -1,0 +1,16 @@
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\CAD_Practice\CAD_Practice\bin\Debug\CAD_Practice.dll
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\CAD_Practice\CAD_Practice\bin\Debug\CAD_Practice.pdb
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\CAD_Practice\CAD_Practice\bin\Debug\acdbmgd.dll
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\CAD_Practice\CAD_Practice\bin\Debug\acmgd.dll
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\CAD_Practice\CAD_Practice\bin\Debug\AcDbMgdHost.dll
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\CAD_Practice\CAD_Practice\obj\Debug\ResolveAssemblyReference.cache
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\CAD_Practice\CAD_Practice\obj\Debug\CAD_Practice.dll
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\CAD_Practice\CAD_Practice\obj\Debug\CAD_Practice.pdb
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\CAD_Practice\CAD_Practice\obj\Debug\CAD_Practice.NewForm.resources
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\CAD_Practice\CAD_Practice\obj\Debug\CAD_Practice.csproj.GenerateResource.Cache
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\CAD_Practice\CAD_Practice\bin\Debug\CAD_Practice.dll.config
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\CAD_Practice\CAD_Practice\obj\Debug\CAD_Practice.csproj.ResolveComReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\CAD_Practice\CAD_Practice\obj\Release\ResolveAssemblyReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\CAD_Practice\CAD_Practice\obj\Release\CAD_Practice.csproj.ResolveComReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\CAD_Practice\CAD_Practice\obj\Release\CAD_Practice.NewForm.resources
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\CAD_Practice\CAD_Practice\obj\Release\CAD_Practice.csproj.GenerateResource.Cache

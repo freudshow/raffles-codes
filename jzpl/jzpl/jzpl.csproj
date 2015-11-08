@@ -1,0 +1,998 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDCF9DDA-4BB9-4A46-8D95-4D414DDCD754}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>jzpl</RootNamespace>
+    <AssemblyName>jzpl</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=1.0.10301.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Extensions\1.0.61025.0__31bf3856ad364e35\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="errPage.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\background.jpg" />
+    <Content Include="images\bg1.gif" />
+    <Content Include="images\Cancel.gif" />
+    <Content Include="images\CIMCLogo.gif" />
+    <Content Include="images\delete.jpg" />
+    <Content Include="images\delete_.gif" />
+    <Content Include="images\eidt.gif" />
+    <Content Include="images\GoPreviousState.png" />
+    <Content Include="images\HiddenInfo.gif" />
+    <Content Include="images\icon1.gif" />
+    <Content Include="images\issue.png" />
+    <Content Include="images\lgn_bottom.jpg" />
+    <Content Include="images\lgn_bottom1.jpg" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logon1.jpg" />
+    <Content Include="images\logon2.jpg" />
+    <Content Include="images\logon3.jpg" />
+    <Content Include="images\logon_.jpg" />
+    <Content Include="images\logon_top.jpg" />
+    <Content Include="images\menu_div.jpg" />
+    <Content Include="images\mid_left.jpg" />
+    <Content Include="images\mid_right.jpg" />
+    <Content Include="images\notaccess1.gif" />
+    <Content Include="images\not_issue.png" />
+    <Content Include="images\ok.gif" />
+    <Content Include="images\print.gif" />
+    <Content Include="images\redx.gif" />
+    <Content Include="images\rule.gif" />
+    <Content Include="images\Search.gif" />
+    <Content Include="images\Search.ico" />
+    <Content Include="images\Search1.ico" />
+    <Content Include="images\ShowInfo.gif" />
+    <Content Include="images\tips.jpg" />
+    <Content Include="images\title_2_bg.jpg" />
+    <Content Include="images\title_2_bg_1.JPG" />
+    <Content Include="images\title_bg.jpg" />
+    <Content Include="images\title_logo.gif" />
+    <Content Include="images\user.gif" />
+    <Content Include="images\user1.gif" />
+    <Content Include="images\userset.gif" />
+    <Content Include="log\log.txt" />
+    <Content Include="UI\ADMIN\check_person.aspx" />
+    <Content Include="UI\ADMIN\company.aspx" />
+    <Content Include="UI\ADMIN\currency.aspx" />
+    <Content Include="UI\ADMIN\lack_reason.aspx" />
+    <Content Include="UI\ADMIN\part_unit.aspx" />
+    <Content Include="UI\ADMIN\permission.aspx" />
+    <Content Include="UI\ADMIN\project.aspx" />
+    <Content Include="UI\ADMIN\project_acc_per.aspx" />
+    <Content Include="UI\ADMIN\receipt_dept.aspx" />
+    <Content Include="UI\ADMIN\receipt_person.aspx" />
+    <Content Include="UI\ADMIN\receipt_place.aspx" />
+    <Content Include="UI\ADMIN\req_group.aspx" />
+    <Content Include="UI\ADMIN\user_manage.aspx" />
+    <Content Include="UI\ADMIN\user_manage_base.aspx" />
+    <Content Include="UI\ADMIN\wh_area.aspx" />
+    <Content Include="UI\ADMIN\wh_location.aspx" />
+    <Content Include="UI\CSS\common.css" />
+    <Content Include="UI\CSS\layout.css" />
+    <Content Include="UI\CSS\logon.css" />
+    <Content Include="UI\CSS\navi.css" />
+    <Content Include="UI\FrameUI\index.aspx" />
+    <Content Include="UI\FrameUI\login.htm" />
+    <Content Include="UI\FrameUI\ProjectLoader.ascx" />
+    <Content Include="UI\FrameUI\topControl.ascx" />
+    <Content Include="UI\FrameUI\transparent.gif" />
+    <Content Include="UI\JP\ajaxHandler.aspx" />
+    <Content Include="UI\JP\BasePage.aspx" />
+    <Content Include="UI\JP\part_search.aspx" />
+    <Content Include="UI\JP\test.aspx" />
+    <Content Include="UI\JP\wzxqjh_add.aspx" />
+    <Content Include="UI\JP\wzxqjh_confirm.aspx" />
+    <Content Include="UI\JP\wzxqjh_confirm1.aspx" />
+    <Content Include="UI\JP\wzxqjh_iss_compare.aspx" />
+    <Content Include="UI\JP\wzxqjh_jjd.aspx" />
+    <Content Include="UI\JP\wzxqjh_jjd_finish.aspx" />
+    <Content Include="UI\JP\wzxqjh_jjd_new_.aspx" />
+    <Content Include="UI\JP\wzxqjh_jjd_report.aspx" />
+    <Content Include="UI\JP\wzxqjh_mod.aspx" />
+    <Content Include="UI\JP\wzxqjh_query.aspx" />
+    <Content Include="UI\JP\wzxqjh_query_ext.aspx" />
+    <Content Include="UI\JP\wzxqjh_ration_lov.aspx" />
+    <Content Include="UI\JP\wzxqjh_lack.aspx" />
+    <Content Include="UI\Package\jp_ajaxHandler.aspx" />
+    <Content Include="UI\Package\jp_pkg_issue.aspx" />
+    <Content Include="UI\Package\jp_pkg_issue_a.aspx" />
+    <Content Include="UI\Package\jp_pkg_jjd_finish.aspx" />
+    <Content Include="UI\Package\package.aspx" />
+    <Content Include="UI\Package\jp_pkg_add.aspx" />
+    <Content Include="UI\Package\jp_pkg_confirm1.aspx" />
+    <Content Include="UI\Package\jp_pkg_confirm.aspx" />
+    <Content Include="UI\Package\jp_pkg_jjd.aspx" />
+    <Content Include="UI\Package\jp_pkg_jjd_new.aspx" />
+    <Content Include="UI\Package\jp_pkg_jjd_report.aspx" />
+    <Content Include="UI\Package\jp_pkg_mod.aspx" />
+    <Content Include="UI\Package\pkg_arrival.aspx" />
+    <Content Include="UI\Package\pkg_arrival_mod.aspx" />
+    <Content Include="UI\Package\pkg_change_project.aspx" />
+    <Content Include="UI\Package\pkg_erp_lov.aspx" />
+    <Content Include="UI\Package\Pkg_issue_voucher.aspx" />
+    <Content Include="UI\Package\pkg_iss_vchr_report.aspx" />
+    <Content Include="UI\Package\pkg_loc_history.aspx" />
+    <Content Include="UI\Package\pkg_loc_lov.aspx" />
+    <Content Include="UI\Package\pkg_loc_move_query.aspx" />
+    <Content Include="UI\Package\pkg_lov.aspx" />
+    <Content Include="UI\Package\pkg_arrival_query.aspx" />
+    <Content Include="UI\Package\pkg_mod.aspx" />
+    <Content Include="UI\Package\pkg_part_issue.aspx" />
+    <Content Include="UI\Package\pkg_part_lov.aspx" />
+    <Content Include="UI\Package\pkg_check.aspx" />
+    <Content Include="UI\Package\pkg_check_query.aspx" />
+    <Content Include="UI\Package\pkg_loc_hist.aspx" />
+    <Content Include="UI\Package\pkg_loc_move.aspx" />
+    <Content Include="UI\Package\pkg_loc_query.aspx" />
+    <Content Include="UI\Package\pkg_part.aspx" />
+    <Content Include="UI\Package\jp_pkg_query.aspx" />
+    <Content Include="UI\Package\jp_pkg_query_ext.aspx" />
+    <Content Include="UI\Package\pkg_part_lov1.aspx" />
+    <Content Include="UI\Package\pkg_part_lov2.aspx" />
+    <Content Include="UI\Package\pkg_part_mod.aspx" />
+    <Content Include="UI\Package\pkg_part_query.aspx" />
+    <Content Include="UI\Package\pkg_part_receive.aspx" />
+    <Content Include="UI\Package\Pkg_po_lov.aspx" />
+    <Content Include="UI\Package\pkg_query.aspx" />
+    <Content Include="UI\Package\pkg_value_query.aspx" />
+    <Content Include="UI\script\admin.js" />
+    <Content Include="UI\script\common.js" />
+    <Content Include="UI\script\common_ext.js" />
+    <Content Include="UI\script\DatePicker\calendar.js" />
+    <Content Include="UI\script\DatePicker\config.js" />
+    <Content Include="UI\script\DatePicker\lang\en.js" />
+    <Content Include="UI\script\DatePicker\lang\zh-cn.js" />
+    <Content Include="UI\script\DatePicker\lang\zh-tw.js" />
+    <Content Include="UI\script\DatePicker\My97DatePicker.htm" />
+    <Content Include="UI\script\DatePicker\skin\datePicker.gif" />
+    <Content Include="UI\script\DatePicker\skin\default\datepicker.css" />
+    <Content Include="UI\script\DatePicker\skin\default\img.gif" />
+    <Content Include="UI\script\DatePicker\skin\WdatePicker.css" />
+    <Content Include="UI\script\DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="UI\script\DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="UI\script\DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="UI\script\DatePicker\WdatePicker.js" />
+    <Content Include="UI\script\jquery-1.4.2.min.js" />
+    <Content Include="UI\script\login.js" />
+    <Content Include="UI\script\navi.js" />
+    <Content Include="UI\script\opendiv.js" />
+    <Content Include="UI\script\tipswindown.js" />
+    <Content Include="UI\script\wzxqjh.js" />
+    <Content Include="UI\script\wzxqjh_jjd.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="errPage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>errPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="errPage.aspx.designer.cs">
+      <DependentUpon>errPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Lib\Authentication.cs" />
+    <Compile Include="Lib\BaseInfoLoader.cs" />
+    <Compile Include="Lib\DBHelp.cs" />
+    <Compile Include="Lib\DeliveryVoucher.cs" />
+    <Compile Include="Lib\GenPkgPart.cs" />
+    <Compile Include="Lib\GenPkgPartBase.cs" />
+    <Compile Include="Lib\IBasePage.cs" />
+    <Compile Include="Lib\Jjd.cs" />
+    <Compile Include="Lib\Mail.cs" />
+    <Compile Include="Lib\Misc.cs" />
+    <Compile Include="Lib\PkgJjd.cs" />
+    <Compile Include="Lib\PkgRequisition.cs" />
+    <Compile Include="Lib\ReportControl.cs" />
+    <Compile Include="Lib\Requisition.cs" />
+    <Compile Include="Lib\test.cs" />
+    <Compile Include="Lib\TimeRun.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\check_person.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>check_person.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\check_person.aspx.designer.cs">
+      <DependentUpon>check_person.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\company.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\company.aspx.designer.cs">
+      <DependentUpon>company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\currency.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>currency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\currency.aspx.designer.cs">
+      <DependentUpon>currency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\lack_reason.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>lack_reason.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\lack_reason.aspx.designer.cs">
+      <DependentUpon>lack_reason.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\part_unit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>part_unit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\part_unit.aspx.designer.cs">
+      <DependentUpon>part_unit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\permission.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>permission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\permission.aspx.designer.cs">
+      <DependentUpon>permission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\project.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>project.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\project.aspx.designer.cs">
+      <DependentUpon>project.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\project_acc_per.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>project_acc_per.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\project_acc_per.aspx.designer.cs">
+      <DependentUpon>project_acc_per.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\receipt_dept.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>receipt_dept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\receipt_dept.aspx.designer.cs">
+      <DependentUpon>receipt_dept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\receipt_person.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>receipt_person.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\receipt_person.aspx.designer.cs">
+      <DependentUpon>receipt_person.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\receipt_place.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>receipt_place.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\receipt_place.aspx.designer.cs">
+      <DependentUpon>receipt_place.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\req_group.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>req_group.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\req_group.aspx.designer.cs">
+      <DependentUpon>req_group.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\user_manage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>user_manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\user_manage.aspx.designer.cs">
+      <DependentUpon>user_manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\user_manage_base.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>user_manage_base.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\user_manage_base.aspx.designer.cs">
+      <DependentUpon>user_manage_base.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\wh_area.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>wh_area.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\wh_area.aspx.designer.cs">
+      <DependentUpon>wh_area.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\wh_location.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>wh_location.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMIN\wh_location.aspx.designer.cs">
+      <DependentUpon>wh_location.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrameUI\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\FrameUI\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrameUI\ProjectLoader.ascx.cs">
+      <DependentUpon>ProjectLoader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\FrameUI\ProjectLoader.ascx.designer.cs">
+      <DependentUpon>ProjectLoader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrameUI\topControl.ascx.cs">
+      <DependentUpon>topControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\FrameUI\topControl.ascx.designer.cs">
+      <DependentUpon>topControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\ajaxHandler.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ajaxHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\ajaxHandler.aspx.designer.cs">
+      <DependentUpon>ajaxHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\BasePage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>BasePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\BasePage.aspx.designer.cs">
+      <DependentUpon>BasePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\part_search.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>part_search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\part_search.aspx.designer.cs">
+      <DependentUpon>part_search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\test.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_add.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>wzxqjh_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_add.aspx.designer.cs">
+      <DependentUpon>wzxqjh_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_confirm.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>wzxqjh_confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_confirm.aspx.designer.cs">
+      <DependentUpon>wzxqjh_confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_confirm1.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>wzxqjh_confirm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_confirm1.aspx.designer.cs">
+      <DependentUpon>wzxqjh_confirm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_iss_compare.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>wzxqjh_iss_compare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_iss_compare.aspx.designer.cs">
+      <DependentUpon>wzxqjh_iss_compare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_jjd.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>wzxqjh_jjd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_jjd.aspx.designer.cs">
+      <DependentUpon>wzxqjh_jjd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_jjd_finish.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>wzxqjh_jjd_finish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_jjd_finish.aspx.designer.cs">
+      <DependentUpon>wzxqjh_jjd_finish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_jjd_new_.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>wzxqjh_jjd_new_.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_jjd_new_.aspx.designer.cs">
+      <DependentUpon>wzxqjh_jjd_new_.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_jjd_report.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>wzxqjh_jjd_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_jjd_report.aspx.designer.cs">
+      <DependentUpon>wzxqjh_jjd_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_mod.aspx.cs">
+      <DependentUpon>wzxqjh_mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_mod.aspx.designer.cs">
+      <DependentUpon>wzxqjh_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_query.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>wzxqjh_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_query.aspx.designer.cs">
+      <DependentUpon>wzxqjh_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_query_ext.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>wzxqjh_query_ext.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_query_ext.aspx.designer.cs">
+      <DependentUpon>wzxqjh_query_ext.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_ration_lov.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>wzxqjh_ration_lov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_ration_lov.aspx.designer.cs">
+      <DependentUpon>wzxqjh_ration_lov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_lack.aspx.cs">
+      <DependentUpon>wzxqjh_lack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\JP\wzxqjh_lack.aspx.designer.cs">
+      <DependentUpon>wzxqjh_lack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_ajaxHandler.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>jp_ajaxHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_ajaxHandler.aspx.designer.cs">
+      <DependentUpon>jp_ajaxHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_issue.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>jp_pkg_issue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_issue.aspx.designer.cs">
+      <DependentUpon>jp_pkg_issue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_issue_a.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>jp_pkg_issue_a.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_issue_a.aspx.designer.cs">
+      <DependentUpon>jp_pkg_issue_a.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_jjd_finish.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>jp_pkg_jjd_finish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_jjd_finish.aspx.designer.cs">
+      <DependentUpon>jp_pkg_jjd_finish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\package.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>package.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\package.aspx.designer.cs">
+      <DependentUpon>package.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_add.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>jp_pkg_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_add.aspx.designer.cs">
+      <DependentUpon>jp_pkg_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_confirm1.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>jp_pkg_confirm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_confirm1.aspx.designer.cs">
+      <DependentUpon>jp_pkg_confirm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_confirm.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>jp_pkg_confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_confirm.aspx.designer.cs">
+      <DependentUpon>jp_pkg_confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_jjd.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>jp_pkg_jjd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_jjd.aspx.designer.cs">
+      <DependentUpon>jp_pkg_jjd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_jjd_new.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>jp_pkg_jjd_new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_jjd_new.aspx.designer.cs">
+      <DependentUpon>jp_pkg_jjd_new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_jjd_report.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>jp_pkg_jjd_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_jjd_report.aspx.designer.cs">
+      <DependentUpon>jp_pkg_jjd_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_mod.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>jp_pkg_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_mod.aspx.designer.cs">
+      <DependentUpon>jp_pkg_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_arrival.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_arrival.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_arrival.aspx.designer.cs">
+      <DependentUpon>pkg_arrival.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_arrival_mod.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_arrival_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_arrival_mod.aspx.designer.cs">
+      <DependentUpon>pkg_arrival_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_change_project.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_change_project.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_change_project.aspx.designer.cs">
+      <DependentUpon>pkg_change_project.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_erp_lov.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_erp_lov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_erp_lov.aspx.designer.cs">
+      <DependentUpon>pkg_erp_lov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\Pkg_issue_voucher.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Pkg_issue_voucher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\Pkg_issue_voucher.aspx.designer.cs">
+      <DependentUpon>Pkg_issue_voucher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_iss_vchr_report.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_iss_vchr_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_iss_vchr_report.aspx.designer.cs">
+      <DependentUpon>pkg_iss_vchr_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_loc_history.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_loc_history.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_loc_history.aspx.designer.cs">
+      <DependentUpon>pkg_loc_history.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_loc_lov.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_loc_lov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_loc_lov.aspx.designer.cs">
+      <DependentUpon>pkg_loc_lov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_loc_move_query.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_loc_move_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_loc_move_query.aspx.designer.cs">
+      <DependentUpon>pkg_loc_move_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_lov.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_lov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_lov.aspx.designer.cs">
+      <DependentUpon>pkg_lov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_arrival_query.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_arrival_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_arrival_query.aspx.designer.cs">
+      <DependentUpon>pkg_arrival_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_mod.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_mod.aspx.designer.cs">
+      <DependentUpon>pkg_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part_issue.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_part_issue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part_issue.aspx.designer.cs">
+      <DependentUpon>pkg_part_issue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part_lov.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_part_lov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part_lov.aspx.designer.cs">
+      <DependentUpon>pkg_part_lov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_check.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_check.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_check.aspx.designer.cs">
+      <DependentUpon>pkg_check.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_check_query.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_check_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_check_query.aspx.designer.cs">
+      <DependentUpon>pkg_check_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_loc_hist.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_loc_hist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_loc_hist.aspx.designer.cs">
+      <DependentUpon>pkg_loc_hist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_loc_move.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_loc_move.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_loc_move.aspx.designer.cs">
+      <DependentUpon>pkg_loc_move.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_loc_query.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_loc_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_loc_query.aspx.designer.cs">
+      <DependentUpon>pkg_loc_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_part.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part.aspx.designer.cs">
+      <DependentUpon>pkg_part.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_query.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>jp_pkg_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_query.aspx.designer.cs">
+      <DependentUpon>jp_pkg_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_query_ext.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>jp_pkg_query_ext.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\jp_pkg_query_ext.aspx.designer.cs">
+      <DependentUpon>jp_pkg_query_ext.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part_lov1.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_part_lov1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part_lov1.aspx.designer.cs">
+      <DependentUpon>pkg_part_lov1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part_lov2.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_part_lov2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part_lov2.aspx.designer.cs">
+      <DependentUpon>pkg_part_lov2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part_mod.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_part_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part_mod.aspx.designer.cs">
+      <DependentUpon>pkg_part_mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part_query.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_part_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part_query.aspx.designer.cs">
+      <DependentUpon>pkg_part_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part_receive.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_part_receive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_part_receive.aspx.designer.cs">
+      <DependentUpon>pkg_part_receive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\Pkg_po_lov.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Pkg_po_lov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\Pkg_po_lov.aspx.designer.cs">
+      <DependentUpon>Pkg_po_lov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_query.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_query.aspx.designer.cs">
+      <DependentUpon>pkg_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_value_query.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>pkg_value_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Package\pkg_value_query.aspx.designer.cs">
+      <DependentUpon>pkg_value_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\CryPkgXd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryPkgXd.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Report\CrysJj.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysJj.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Report\CrysPkgJj.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysPkgJj.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Report\CrysPkgJjd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysPkgJjd.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Report\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Report\DsPkgXd.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPkgXd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\JjdDs.cs">
+      <DependentUpon>JjdDs.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Report\JjdDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JjdDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\PkgJjDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PkgJjDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WebReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\Report\DsPkgXd.xsc">
+      <DependentUpon>DsPkgXd.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\DsPkgXd.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPkgXd.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\Report\DsPkgXd.xss">
+      <DependentUpon>DsPkgXd.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\JjdDs.xsc">
+      <DependentUpon>JjdDs.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\JjdDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JjdDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\Report\JjdDs.xss">
+      <DependentUpon>JjdDs.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\PkgJjDs.xsc">
+      <DependentUpon>PkgJjDs.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\PkgJjDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PkgJjDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\Report\PkgJjDs.xss">
+      <DependentUpon>PkgJjDs.xsd</DependentUpon>
+    </None>
+    <None Include="Web References\WebReference1\authenticate.wsdl" />
+    <None Include="Web References\WebReference1\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://172.16.2.191:8300/authenticate.cfc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebReference1\</RelPath>
+      <UpdateFromURL>http://172.16.2.191:8300/authenticate.cfc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>jzpl_WebReference1_authenticateService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Report\CryPkgXd.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryPkgXd.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\CrysJj.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysJj.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\CrysPkgJj.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysPkgJj.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\CrysPkgJjd.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysPkgJjd.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UI\script\DatePicker\skin\whyGreen\other\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2936</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,10 @@
+F:\baoshan.song\code\jzp\jzpl\jzpl\obj\Debug\ResolveAssemblyReference.cache
+F:\baoshan.song\code\jzp\jzpl\jzpl\obj\Debug\Interop.Microsoft.Office.Core.dll
+D:\baoshan.song\Visual Studio 2010\Projects\jzpl\jzpl\obj\Debug\ResolveAssemblyReference.cache
+D:\baoshan.song\Visual Studio 2010\Projects\jzpl\jzpl\obj\Debug\Interop.Microsoft.Office.Core.dll
+D:\baoshan.song\Visual Studio 2010\Projects\jzpl\jzpl\obj\Debug\jzpl.csproj.ResolveComReference.cache
+D:\baoshan.song\Visual Studio 2010\Projects\jzpl\jzpl\bin\jzpl.dll
+D:\baoshan.song\Visual Studio 2010\Projects\jzpl\jzpl\bin\jzpl.pdb
+D:\baoshan.song\Visual Studio 2010\Projects\jzpl\jzpl\bin\Interop.Microsoft.Office.Core.dll
+D:\baoshan.song\Visual Studio 2010\Projects\jzpl\jzpl\obj\Debug\jzpl.dll
+D:\baoshan.song\Visual Studio 2010\Projects\jzpl\jzpl\obj\Debug\jzpl.pdb

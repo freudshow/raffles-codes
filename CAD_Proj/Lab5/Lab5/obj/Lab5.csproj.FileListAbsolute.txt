@@ -1,0 +1,7 @@
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\Lab5\Lab5\obj\Debug\ResolveAssemblyReference.cache
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\Lab5\Lab5\bin\Debug\Lab5.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\Lab5\Lab5\bin\Debug\Lab5.pdb
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\Lab5\Lab5\bin\Debug\acdbmgd.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\Lab5\Lab5\bin\Debug\acmgd.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\Lab5\Lab5\obj\Debug\Lab5.dll
+E:\baoshan.song\My Documents\Visual Studio 2005\Projects\Lab5\Lab5\obj\Debug\Lab5.pdb

@@ -1,0 +1,39 @@
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\UpdateSoftProgram\UpdateSoftProgram\bin\Debug\UpdateSoftProgram.exe
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\UpdateSoftProgram\UpdateSoftProgram\bin\Debug\UpdateSoftProgram.pdb
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\UpdateSoftProgram\UpdateSoftProgram\bin\Debug\ICSharpCode.SharpZipLib.DLL
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\UpdateSoftProgram\UpdateSoftProgram\obj\Debug\ResolveAssemblyReference.cache
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\UpdateSoftProgram\UpdateSoftProgram\obj\Debug\UpdatePlugin.Form1.resources
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\UpdateSoftProgram\UpdateSoftProgram\obj\Debug\UpdatePlugin.Properties.Resources.resources
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\UpdateSoftProgram\UpdateSoftProgram\obj\Debug\UpdateSoftProgram.csproj.GenerateResource.Cache
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\UpdateSoftProgram\UpdateSoftProgram\obj\Debug\UpdateSoftProgram.exe
+E:\DassaultSystemes\CATSettings\CommentSystem\CProgram\CAD\UpdateSoftProgram\UpdateSoftProgram\obj\Debug\UpdateSoftProgram.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\ResolveAssemblyReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdatePlugin.Properties.Resources.resources
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdateSoftProgram.csproj.GenerateResource.Cache
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\bin\Release\UpdateSoftProgram.exe
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\bin\Release\UpdateSoftProgram.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\bin\Release\ICSharpCode.SharpZipLib.DLL
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdateSoftProgram.exe
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdateSoftProgram.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdateSoftProgram.csproj.ResolveComReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdatePlugin.UpdateFrm.resources
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdateSoftProgram.exe
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdateSoftProgram.pdb
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\bin\Release\UpdateSoftProgram.exe
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\bin\Release\UpdateSoftProgram.pdb
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\bin\Release\ICSharpCode.SharpZipLib.DLL
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdateSoftProgram.csproj.ResolveComReference.cache
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdatePlugin.UpdateFrm.resources
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdatePlugin.Properties.Resources.resources
+C:\Documents and Settings\shihai.liu\桌面\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdateSoftProgram.csproj.GenerateResource.Cache
+F:\baoshan.song\Visual Studio 2005\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdateSoftProgram.exe
+F:\baoshan.song\Visual Studio 2005\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdateSoftProgram.pdb
+F:\baoshan.song\Visual Studio 2005\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\bin\Release\UpdateSoftProgram.exe
+F:\baoshan.song\Visual Studio 2005\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\bin\Release\UpdateSoftProgram.pdb
+F:\baoshan.song\Visual Studio 2005\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\bin\Release\ICSharpCode.SharpZipLib.DLL
+F:\baoshan.song\Visual Studio 2005\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\ResolveAssemblyReference.cache
+F:\baoshan.song\Visual Studio 2005\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdateSoftProgram.csproj.ResolveComReference.cache
+F:\baoshan.song\Visual Studio 2005\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdatePlugin.UpdateFrm.resources
+F:\baoshan.song\Visual Studio 2005\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdatePlugin.Properties.Resources.resources
+F:\baoshan.song\Visual Studio 2005\DigitalSign\UpdateSoftProgram\UpdateSoftProgram\obj\Release\UpdateSoftProgram.csproj.GenerateResource.Cache

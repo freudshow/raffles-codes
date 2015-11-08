@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TrayMaterialDeliveryTimeDs" targetNamespace="http://tempuri.org/TrayMaterialDeliveryTimeDs.xsd" xmlns:mstns="http://tempuri.org/TrayMaterialDeliveryTimeDs.xsd" xmlns="http://tempuri.org/TrayMaterialDeliveryTimeDs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.DetailInfo.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TrayMaterialDeliveryTimeDs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TrayMaterialDeliveryTimeDs" msprop:Generator_DataSetName="TrayMaterialDeliveryTimeDs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TRAY_MATERIAL_DELIVERYTIME_TAB" msprop:Generator_UserTableName="TRAY_MATERIAL_DELIVERYTIME_TAB" msprop:Generator_RowDeletedName="TRAY_MATERIAL_DELIVERYTIME_TABRowDeleted" msprop:Generator_RowChangedName="TRAY_MATERIAL_DELIVERYTIME_TABRowChanged" msprop:Generator_RowClassName="TRAY_MATERIAL_DELIVERYTIME_TABRow" msprop:Generator_RowChangingName="TRAY_MATERIAL_DELIVERYTIME_TABRowChanging" msprop:Generator_RowEvArgName="TRAY_MATERIAL_DELIVERYTIME_TABRowChangeEvent" msprop:Generator_RowEvHandlerName="TRAY_MATERIAL_DELIVERYTIME_TABRowChangeEventHandler" msprop:Generator_TableClassName="TRAY_MATERIAL_DELIVERYTIME_TABDataTable" msprop:Generator_TableVarName="tableTRAY_MATERIAL_DELIVERYTIME_TAB" msprop:Generator_RowDeletingName="TRAY_MATERIAL_DELIVERYTIME_TABRowDeleting" msprop:Generator_TablePropName="TRAY_MATERIAL_DELIVERYTIME_TAB">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TRAYNO" msprop:Generator_UserColumnName="TRAYNO" msprop:Generator_ColumnVarNameInTable="columnTRAYNO" msprop:Generator_ColumnPropNameInRow="TRAYNO" msprop:Generator_ColumnPropNameInTable="TRAYNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLOCKNO" msprop:Generator_UserColumnName="BLOCKNO" msprop:Generator_ColumnVarNameInTable="columnBLOCKNO" msprop:Generator_ColumnPropNameInRow="BLOCKNO" msprop:Generator_ColumnPropNameInTable="BLOCKNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REFER_DRAWING" msprop:Generator_UserColumnName="REFER_DRAWING" msprop:Generator_ColumnVarNameInTable="columnREFER_DRAWING" msprop:Generator_ColumnPropNameInRow="REFER_DRAWING" msprop:Generator_ColumnPropNameInTable="REFER_DRAWINGColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRAY_WEIGHT" msprop:Generator_UserColumnName="TRAY_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnTRAY_WEIGHT" msprop:Generator_ColumnPropNameInRow="TRAY_WEIGHT" msprop:Generator_ColumnPropNameInTable="TRAY_WEIGHTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRAY_DELIVERYTIME_START" msprop:Generator_UserColumnName="TRAY_DELIVERYTIME_START" msprop:Generator_ColumnVarNameInTable="columnTRAY_DELIVERYTIME_START" msprop:Generator_ColumnPropNameInRow="TRAY_DELIVERYTIME_START" msprop:Generator_ColumnPropNameInTable="TRAY_DELIVERYTIME_STARTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRAY_DELIVERYTIME_END" msprop:Generator_UserColumnName="TRAY_DELIVERYTIME_END" msprop:Generator_ColumnVarNameInTable="columnTRAY_DELIVERYTIME_END" msprop:Generator_ColumnPropNameInRow="TRAY_DELIVERYTIME_END" msprop:Generator_ColumnPropNameInTable="TRAY_DELIVERYTIME_ENDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WEEK" msprop:Generator_UserColumnName="WEEK" msprop:Generator_ColumnVarNameInTable="columnWEEK" msprop:Generator_ColumnPropNameInRow="WEEK" msprop:Generator_ColumnPropNameInTable="WEEKColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WEEKDAY" msprop:Generator_UserColumnName="WEEKDAY" msprop:Generator_ColumnVarNameInTable="columnWEEKDAY" msprop:Generator_ColumnPropNameInRow="WEEKDAY" msprop:Generator_ColumnPropNameInTable="WEEKDAYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="REAL_TRAYNO" msprop:Generator_UserColumnName="REAL_TRAYNO" msprop:Generator_ColumnVarNameInTable="columnREAL_TRAYNO" msprop:Generator_ColumnPropNameInRow="REAL_TRAYNO" msprop:Generator_ColumnPropNameInTable="REAL_TRAYNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RESPONSIBLE_USER" msprop:Generator_UserColumnName="RESPONSIBLE_USER" msprop:Generator_ColumnVarNameInTable="columnRESPONSIBLE_USER" msprop:Generator_ColumnPropNameInRow="RESPONSIBLE_USER" msprop:Generator_ColumnPropNameInTable="RESPONSIBLE_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROGRESS_STATE" msprop:Generator_UserColumnName="PROGRESS_STATE" msprop:Generator_ColumnVarNameInTable="columnPROGRESS_STATE" msprop:Generator_ColumnPropNameInRow="PROGRESS_STATE" msprop:Generator_ColumnPropNameInTable="PROGRESS_STATEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROJECTID" msprop:Generator_UserColumnName="PROJECTID" msprop:Generator_ColumnVarNameInTable="columnPROJECTID" msprop:Generator_ColumnPropNameInRow="PROJECTID" msprop:Generator_ColumnPropNameInTable="PROJECTIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PREPAREDBY" msprop:Generator_UserColumnName="PREPAREDBY" msprop:Generator_ColumnVarNameInTable="columnPREPAREDBY" msprop:Generator_ColumnPropNameInRow="PREPAREDBY" msprop:Generator_ColumnPropNameInTable="PREPAREDBYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PREPAREDATE" msprop:Generator_UserColumnName="PREPAREDATE" msprop:Generator_ColumnVarNameInTable="columnPREPAREDATE" msprop:Generator_ColumnPropNameInRow="PREPAREDATE" msprop:Generator_ColumnPropNameInTable="PREPAREDATEColumn" type="xs:dateTime" />
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TRAY_MATERIAL_DELIVERYTIME_TAB" />
+      <xs:field xpath="mstns:TRAYNO" />
+      <xs:field xpath="mstns:BLOCKNO" />
+      <xs:field xpath="mstns:REFER_DRAWING" />
+      <xs:field xpath="mstns:PROJECTID" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

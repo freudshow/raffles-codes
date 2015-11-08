@@ -1,0 +1,7 @@
+C:\CAD_Proj\detail\DetailInfo\Myprogram\UpdateSoft\UpdateSoft\obj\Debug\ResolveAssemblyReference.cache
+C:\CAD_Proj\detail\DetailInfo\Myprogram\UpdateSoft\UpdateSoft\bin\Debug\UpdateSoft.dll
+C:\CAD_Proj\detail\DetailInfo\Myprogram\UpdateSoft\UpdateSoft\bin\Debug\UpdateSoft.pdb
+C:\CAD_Proj\detail\DetailInfo\Myprogram\UpdateSoft\UpdateSoft\bin\Debug\ICSharpCode.SharpZipLib.DLL
+C:\CAD_Proj\detail\DetailInfo\Myprogram\UpdateSoft\UpdateSoft\bin\Debug\itextsharp.dll
+C:\CAD_Proj\detail\DetailInfo\Myprogram\UpdateSoft\UpdateSoft\obj\Debug\UpdateSoft.dll
+C:\CAD_Proj\detail\DetailInfo\Myprogram\UpdateSoft\UpdateSoft\obj\Debug\UpdateSoft.pdb

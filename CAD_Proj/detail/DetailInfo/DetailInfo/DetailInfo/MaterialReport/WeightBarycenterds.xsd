@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WeightBarycenterds" targetNamespace="http://tempuri.org/WeightBarycenterds.xsd" xmlns:mstns="http://tempuri.org/WeightBarycenterds.xsd" xmlns="http://tempuri.org/WeightBarycenterds.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString1 (Settings)" PropertyReference="ApplicationSettings.DetailInfo.Properties.Settings.GlobalReference.Default.ConnectionString1" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SP_SPOOL_TABTableAdapter" GeneratorDataComponentClassName="SP_SPOOL_TABTableAdapter" Name="SP_SPOOL_TAB" UserDataComponentName="SP_SPOOL_TABTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (Settings)" DbObjectName="PLM.SP_SPOOL_TAB" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM "PLM"."SP_SPOOL_TAB" WHERE (((:IsNull_PROJECTID = 1 AND "PROJECTID" IS NULL) OR ("PROJECTID" = :Original_PROJECTID)) AND ((:IsNull_SPOOLNAME = 1 AND "SPOOLNAME" IS NULL) OR ("SPOOLNAME" = :Original_SPOOLNAME)) AND ((:IsNull_SYSTEMID = 1 AND "SYSTEMID" IS NULL) OR ("SYSTEMID" = :Original_SYSTEMID)) AND ((:IsNull_SYSTEMNAME = 1 AND "SYSTEMNAME" IS NULL) OR ("SYSTEMNAME" = :Original_SYSTEMNAME)) AND ((:IsNull_PIPEGRADE = 1 AND "PIPEGRADE" IS NULL) OR ("PIPEGRADE" = :Original_PIPEGRADE)) AND ((:IsNull_SURFACETREATMENT = 1 AND "SURFACETREATMENT" IS NULL) OR ("SURFACETREATMENT" = :Original_SURFACETREATMENT)) AND ((:IsNull_WORKINGPRESSURE = 1 AND "WORKINGPRESSURE" IS NULL) OR ("WORKINGPRESSURE" = :Original_WORKINGPRESSURE)) AND ((:IsNull_PRESSURETESTFIELD = 1 AND "PRESSURETESTFIELD" IS NULL) OR ("PRESSURETESTFIELD" = :Original_PRESSURETESTFIELD)) AND ((:IsNull_PIPECHECKFIELD = 1 AND "PIPECHECKFIELD" IS NULL) OR ("PIPECHECKFIELD" = :Original_PIPECHECKFIELD)) AND ((:IsNull_SPOOLWEIGHT = 1 AND "SPOOLWEIGHT" IS NULL) OR ("SPOOLWEIGHT" = :Original_SPOOLWEIGHT)) AND ((:IsNull_PAINTCOLOR = 1 AND "PAINTCOLOR" IS NULL) OR ("PAINTCOLOR" = :Original_PAINTCOLOR)) AND ((:IsNull_CABINTYPE = 1 AND "CABINTYPE" IS NULL) OR ("CABINTYPE" = :Original_CABINTYPE)) AND ((:IsNull_REVISION = 1 AND "REVISION" IS NULL) OR ("REVISION" = :Original_REVISION)) AND ((:IsNull_SPOOLMODIFYTYPE = 1 AND "SPOOLMODIFYTYPE" IS NULL) OR ("SPOOLMODIFYTYPE" = :Original_SPOOLMODIFYTYPE)) AND ((:IsNull_ELBOWTYPE = 1 AND "ELBOWTYPE" IS NULL) OR ("ELBOWTYPE" = :Original_ELBOWTYPE)) AND ((:IsNull_WELDTYPE = 1 AND "WELDTYPE" IS NULL) OR ("WELDTYPE" = :Original_WELDTYPE)) AND ((:IsNull_DRAWINGNO = 1 AND "DRAWINGNO" IS NULL) OR ("DRAWINGNO" = :Original_DRAWINGNO)) AND ((:IsNull_BLOCKNO = 1 AND "BLOCKNO" IS NULL) OR ("BLOCKNO" = :Original_BLOCKNO)) AND ((:IsNull_MODIFYDRAWINGNO = 1 AND "MODIFYDRAWINGNO" IS NULL) OR ("MODIFYDRAWINGNO" = :Original_MODIFYDRAWINGNO)) AND ((:IsNull_REMARK = 1 AND "REMARK" IS NULL) OR ("REMARK" = :Original_REMARK)) AND ("FLAG" = :Original_FLAG) AND ("LOGNAME" = :Original_LOGNAME) AND ((:IsNull_SYSTEMTIME = 1 AND "SYSTEMTIME" IS NULL) OR ("SYSTEMTIME" = :Original_SYSTEMTIME)) AND ((:IsNull_LINENAME = 1 AND "LINENAME" IS NULL) OR ("LINENAME" = :Original_LINENAME)) AND ((:IsNull_FLOWSTATUS = 1 AND "FLOWSTATUS" IS NULL) OR ("FLOWSTATUS" = :Original_FLOWSTATUS)) AND ((:IsNull_ALLOCATION = 1 AND "ALLOCATION" IS NULL) OR ("ALLOCATION" = :Original_ALLOCATION)) AND ((:IsNull_ALLOCATIONTIME = 1 AND "ALLOCATIONTIME" IS NULL) OR ("ALLOCATIONTIME" = :Original_ALLOCATIONTIME)) AND ((:IsNull_FLOWSTATUSREMARK = 1 AND "FLOWSTATUSREMARK" IS NULL) OR ("FLOWSTATUSREMARK" = :Original_FLOWSTATUSREMARK)) AND ((:IsNull_LOCKED = 1 AND "LOCKED" IS NULL) OR ("LOCKED" = :Original_LOCKED)) AND ("LOGDATE" = :Original_LOGDATE) AND ((:IsNull_PAGE = 1 AND "PAGE" IS NULL) OR ("PAGE" = :Original_PAGE)) AND ((:IsNull_MODIFYPAGE = 1 AND "MODIFYPAGE" IS NULL) OR ("MODIFYPAGE" = :Original_MODIFYPAGE)) AND ((:IsNull_XPOS = 1 AND "XPOS" IS NULL) OR ("XPOS" = :Original_XPOS)) AND ((:IsNull_YPOS = 1 AND "YPOS" IS NULL) OR ("YPOS" = :Original_YPOS)) AND ((:IsNull_ZPOS = 1 AND "ZPOS" IS NULL) OR ("ZPOS" = :Original_ZPOS)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PROJECTID" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="PROJECTID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PROJECTID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PROJECTID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SPOOLNAME" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SPOOLNAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_SPOOLNAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SPOOLNAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SYSTEMID" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SYSTEMID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_SYSTEMID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SYSTEMID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SYSTEMNAME" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SYSTEMNAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_SYSTEMNAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SYSTEMNAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PIPEGRADE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="PIPEGRADE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PIPEGRADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PIPEGRADE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SURFACETREATMENT" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SURFACETREATMENT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_SURFACETREATMENT" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SURFACETREATMENT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_WORKINGPRESSURE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="WORKINGPRESSURE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_WORKINGPRESSURE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WORKINGPRESSURE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PRESSURETESTFIELD" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="PRESSURETESTFIELD" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PRESSURETESTFIELD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PRESSURETESTFIELD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PIPECHECKFIELD" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="PIPECHECKFIELD" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PIPECHECKFIELD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PIPECHECKFIELD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SPOOLWEIGHT" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SPOOLWEIGHT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_SPOOLWEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SPOOLWEIGHT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PAINTCOLOR" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="PAINTCOLOR" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PAINTCOLOR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PAINTCOLOR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CABINTYPE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="CABINTYPE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_CABINTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CABINTYPE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_REVISION" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="REVISION" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_REVISION" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="REVISION" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SPOOLMODIFYTYPE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SPOOLMODIFYTYPE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_SPOOLMODIFYTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SPOOLMODIFYTYPE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ELBOWTYPE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="ELBOWTYPE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_ELBOWTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ELBOWTYPE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_WELDTYPE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="WELDTYPE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_WELDTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WELDTYPE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DRAWINGNO" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="DRAWINGNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_DRAWINGNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DRAWINGNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BLOCKNO" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="BLOCKNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_BLOCKNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BLOCKNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_MODIFYDRAWINGNO" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="MODIFYDRAWINGNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_MODIFYDRAWINGNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MODIFYDRAWINGNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_REMARK" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="REMARK" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_REMARK" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="REMARK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_FLAG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FLAG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_LOGNAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LOGNAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SYSTEMTIME" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SYSTEMTIME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_SYSTEMTIME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SYSTEMTIME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LINENAME" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="LINENAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_LINENAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LINENAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_FLOWSTATUS" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="FLOWSTATUS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_FLOWSTATUS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOWSTATUS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ALLOCATION" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="ALLOCATION" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_ALLOCATION" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ALLOCATION" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ALLOCATIONTIME" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="ALLOCATIONTIME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_ALLOCATIONTIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ALLOCATIONTIME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_FLOWSTATUSREMARK" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="FLOWSTATUSREMARK" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_FLOWSTATUSREMARK" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FLOWSTATUSREMARK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LOCKED" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="LOCKED" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_LOCKED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LOCKED" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_LOGDATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="LOGDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PAGE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="PAGE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_PAGE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="PAGE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_MODIFYPAGE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="MODIFYPAGE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_MODIFYPAGE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MODIFYPAGE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_XPOS" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="XPOS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_XPOS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="XPOS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_YPOS" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="YPOS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_YPOS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="YPOS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ZPOS" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="ZPOS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_ZPOS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ZPOS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO "PLM"."SP_SPOOL_TAB" ("PROJECTID", "SPOOLNAME", "SYSTEMID", "SYSTEMNAME", "PIPEGRADE", "SURFACETREATMENT", "WORKINGPRESSURE", "PRESSURETESTFIELD", "PIPECHECKFIELD", "SPOOLWEIGHT", "PAINTCOLOR", "CABINTYPE", "REVISION", "SPOOLMODIFYTYPE", "ELBOWTYPE", "WELDTYPE", "DRAWINGNO", "BLOCKNO", "MODIFYDRAWINGNO", "REMARK", "FLAG", "LOGNAME", "SYSTEMTIME", "LINENAME", "FLOWSTATUS", "ALLOCATION", "ALLOCATIONTIME", "FLOWSTATUSREMARK", "LOCKED", "LOGDATE", "PAGE", "MODIFYPAGE", "XPOS", "YPOS", "ZPOS") VALUES (:PROJECTID, :SPOOLNAME, :SYSTEMID, :SYSTEMNAME, :PIPEGRADE, :SURFACETREATMENT, :WORKINGPRESSURE, :PRESSURETESTFIELD, :PIPECHECKFIELD, :SPOOLWEIGHT, :PAINTCOLOR, :CABINTYPE, :REVISION, :SPOOLMODIFYTYPE, :ELBOWTYPE, :WELDTYPE, :DRAWINGNO, :BLOCKNO, :MODIFYDRAWINGNO, :REMARK, :FLAG, :LOGNAME, :SYSTEMTIME, :LINENAME, :FLOWSTATUS, :ALLOCATION, :ALLOCATIONTIME, :FLOWSTATUSREMARK, :LOCKED, :LOGDATE, :PAGE, :MODIFYPAGE, :XPOS, :YPOS, :ZPOS)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PROJECTID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PROJECTID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SPOOLNAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SPOOLNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SYSTEMID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SYSTEMID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SYSTEMNAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SYSTEMNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PIPEGRADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PIPEGRADE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SURFACETREATMENT" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SURFACETREATMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="WORKINGPRESSURE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WORKINGPRESSURE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PRESSURETESTFIELD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PRESSURETESTFIELD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PIPECHECKFIELD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PIPECHECKFIELD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SPOOLWEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SPOOLWEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PAINTCOLOR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PAINTCOLOR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="CABINTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CABINTYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="REVISION" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="REVISION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SPOOLMODIFYTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SPOOLMODIFYTYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ELBOWTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ELBOWTYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="WELDTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WELDTYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="DRAWINGNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DRAWINGNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="BLOCKNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BLOCKNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="MODIFYDRAWINGNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MODIFYDRAWINGNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="REMARK" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="REMARK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="FLAG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FLAG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LOGNAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LOGNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SYSTEMTIME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SYSTEMTIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LINENAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LINENAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FLOWSTATUS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOWSTATUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ALLOCATION" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ALLOCATION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="ALLOCATIONTIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ALLOCATIONTIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="FLOWSTATUSREMARK" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FLOWSTATUSREMARK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LOCKED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LOCKED" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="LOGDATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="LOGDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="PAGE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="PAGE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MODIFYPAGE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MODIFYPAGE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="XPOS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="XPOS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="YPOS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="YPOS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="ZPOS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ZPOS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PROJECTID, SPOOLNAME, SYSTEMID, SYSTEMNAME, PIPEGRADE, SURFACETREATMENT, WORKINGPRESSURE, PRESSURETESTFIELD, PIPECHECKFIELD, SPOOLWEIGHT, PAINTCOLOR, CABINTYPE, REVISION, SPOOLMODIFYTYPE, ELBOWTYPE, WELDTYPE, DRAWINGNO, BLOCKNO, MODIFYDRAWINGNO, REMARK, FLAG, LOGNAME, SYSTEMTIME, LINENAME, FLOWSTATUS, ALLOCATION, ALLOCATIONTIME, FLOWSTATUSREMARK, LOCKED, LOGDATE, PAGE, MODIFYPAGE, XPOS, YPOS, ZPOS FROM PLM.SP_SPOOL_TAB</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE "PLM"."SP_SPOOL_TAB" SET "PROJECTID" = :PROJECTID, "SPOOLNAME" = :SPOOLNAME, "SYSTEMID" = :SYSTEMID, "SYSTEMNAME" = :SYSTEMNAME, "PIPEGRADE" = :PIPEGRADE, "SURFACETREATMENT" = :SURFACETREATMENT, "WORKINGPRESSURE" = :WORKINGPRESSURE, "PRESSURETESTFIELD" = :PRESSURETESTFIELD, "PIPECHECKFIELD" = :PIPECHECKFIELD, "SPOOLWEIGHT" = :SPOOLWEIGHT, "PAINTCOLOR" = :PAINTCOLOR, "CABINTYPE" = :CABINTYPE, "REVISION" = :REVISION, "SPOOLMODIFYTYPE" = :SPOOLMODIFYTYPE, "ELBOWTYPE" = :ELBOWTYPE, "WELDTYPE" = :WELDTYPE, "DRAWINGNO" = :DRAWINGNO, "BLOCKNO" = :BLOCKNO, "MODIFYDRAWINGNO" = :MODIFYDRAWINGNO, "REMARK" = :REMARK, "FLAG" = :FLAG, "LOGNAME" = :LOGNAME, "SYSTEMTIME" = :SYSTEMTIME, "LINENAME" = :LINENAME, "FLOWSTATUS" = :FLOWSTATUS, "ALLOCATION" = :ALLOCATION, "ALLOCATIONTIME" = :ALLOCATIONTIME, "FLOWSTATUSREMARK" = :FLOWSTATUSREMARK, "LOCKED" = :LOCKED, "LOGDATE" = :LOGDATE, "PAGE" = :PAGE, "MODIFYPAGE" = :MODIFYPAGE, "XPOS" = :XPOS, "YPOS" = :YPOS, "ZPOS" = :ZPOS WHERE (((:IsNull_PROJECTID = 1 AND "PROJECTID" IS NULL) OR ("PROJECTID" = :Original_PROJECTID)) AND ((:IsNull_SPOOLNAME = 1 AND "SPOOLNAME" IS NULL) OR ("SPOOLNAME" = :Original_SPOOLNAME)) AND ((:IsNull_SYSTEMID = 1 AND "SYSTEMID" IS NULL) OR ("SYSTEMID" = :Original_SYSTEMID)) AND ((:IsNull_SYSTEMNAME = 1 AND "SYSTEMNAME" IS NULL) OR ("SYSTEMNAME" = :Original_SYSTEMNAME)) AND ((:IsNull_PIPEGRADE = 1 AND "PIPEGRADE" IS NULL) OR ("PIPEGRADE" = :Original_PIPEGRADE)) AND ((:IsNull_SURFACETREATMENT = 1 AND "SURFACETREATMENT" IS NULL) OR ("SURFACETREATMENT" = :Original_SURFACETREATMENT)) AND ((:IsNull_WORKINGPRESSURE = 1 AND "WORKINGPRESSURE" IS NULL) OR ("WORKINGPRESSURE" = :Original_WORKINGPRESSURE)) AND ((:IsNull_PRESSURETESTFIELD = 1 AND "PRESSURETESTFIELD" IS NULL) OR ("PRESSURETESTFIELD" = :Original_PRESSURETESTFIELD)) AND ((:IsNull_PIPECHECKFIELD = 1 AND "PIPECHECKFIELD" IS NULL) OR ("PIPECHECKFIELD" = :Original_PIPECHECKFIELD)) AND ((:IsNull_SPOOLWEIGHT = 1 AND "SPOOLWEIGHT" IS NULL) OR ("SPOOLWEIGHT" = :Original_SPOOLWEIGHT)) AND ((:IsNull_PAINTCOLOR = 1 AND "PAINTCOLOR" IS NULL) OR ("PAINTCOLOR" = :Original_PAINTCOLOR)) AND ((:IsNull_CABINTYPE = 1 AND "CABINTYPE" IS NULL) OR ("CABINTYPE" = :Original_CABINTYPE)) AND ((:IsNull_REVISION = 1 AND "REVISION" IS NULL) OR ("REVISION" = :Original_REVISION)) AND ((:IsNull_SPOOLMODIFYTYPE = 1 AND "SPOOLMODIFYTYPE" IS NULL) OR ("SPOOLMODIFYTYPE" = :Original_SPOOLMODIFYTYPE)) AND ((:IsNull_ELBOWTYPE = 1 AND "ELBOWTYPE" IS NULL) OR ("ELBOWTYPE" = :Original_ELBOWTYPE)) AND ((:IsNull_WELDTYPE = 1 AND "WELDTYPE" IS NULL) OR ("WELDTYPE" = :Original_WELDTYPE)) AND ((:IsNull_DRAWINGNO = 1 AND "DRAWINGNO" IS NULL) OR ("DRAWINGNO" = :Original_DRAWINGNO)) AND ((:IsNull_BLOCKNO = 1 AND "BLOCKNO" IS NULL) OR ("BLOCKNO" = :Original_BLOCKNO)) AND ((:IsNull_MODIFYDRAWINGNO = 1 AND "MODIFYDRAWINGNO" IS NULL) OR ("MODIFYDRAWINGNO" = :Original_MODIFYDRAWINGNO)) AND ((:IsNull_REMARK = 1 AND "REMARK" IS NULL) OR ("REMARK" = :Original_REMARK)) AND ("FLAG" = :Original_FLAG) AND ("LOGNAME" = :Original_LOGNAME) AND ((:IsNull_SYSTEMTIME = 1 AND "SYSTEMTIME" IS NULL) OR ("SYSTEMTIME" = :Original_SYSTEMTIME)) AND ((:IsNull_LINENAME = 1 AND "LINENAME" IS NULL) OR ("LINENAME" = :Original_LINENAME)) AND ((:IsNull_FLOWSTATUS = 1 AND "FLOWSTATUS" IS NULL) OR ("FLOWSTATUS" = :Original_FLOWSTATUS)) AND ((:IsNull_ALLOCATION = 1 AND "ALLOCATION" IS NULL) OR ("ALLOCATION" = :Original_ALLOCATION)) AND ((:IsNull_ALLOCATIONTIME = 1 AND "ALLOCATIONTIME" IS NULL) OR ("ALLOCATIONTIME" = :Original_ALLOCATIONTIME)) AND ((:IsNull_FLOWSTATUSREMARK = 1 AND "FLOWSTATUSREMARK" IS NULL) OR ("FLOWSTATUSREMARK" = :Original_FLOWSTATUSREMARK)) AND ((:IsNull_LOCKED = 1 AND "LOCKED" IS NULL) OR ("LOCKED" = :Original_LOCKED)) AND ("LOGDATE" = :Original_LOGDATE) AND ((:IsNull_PAGE = 1 AND "PAGE" IS NULL) OR ("PAGE" = :Original_PAGE)) AND ((:IsNull_MODIFYPAGE = 1 AND "MODIFYPAGE" IS NULL) OR ("MODIFYPAGE" = :Original_MODIFYPAGE)) AND ((:IsNull_XPOS = 1 AND "XPOS" IS NULL) OR ("XPOS" = :Original_XPOS)) AND ((:IsNull_YPOS = 1 AND "YPOS" IS NULL) OR ("YPOS" = :Original_YPOS)) AND ((:IsNull_ZPOS = 1 AND "ZPOS" IS NULL) OR ("ZPOS" = :Original_ZPOS)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PROJECTID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PROJECTID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SPOOLNAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SPOOLNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SYSTEMID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SYSTEMID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SYSTEMNAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SYSTEMNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PIPEGRADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PIPEGRADE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SURFACETREATMENT" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SURFACETREATMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="WORKINGPRESSURE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WORKINGPRESSURE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PRESSURETESTFIELD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PRESSURETESTFIELD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PIPECHECKFIELD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PIPECHECKFIELD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SPOOLWEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SPOOLWEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PAINTCOLOR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PAINTCOLOR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="CABINTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CABINTYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="REVISION" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="REVISION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SPOOLMODIFYTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SPOOLMODIFYTYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ELBOWTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ELBOWTYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="WELDTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WELDTYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="DRAWINGNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DRAWINGNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="BLOCKNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BLOCKNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="MODIFYDRAWINGNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MODIFYDRAWINGNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="REMARK" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="REMARK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="FLAG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FLAG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LOGNAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LOGNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SYSTEMTIME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SYSTEMTIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LINENAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LINENAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FLOWSTATUS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOWSTATUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ALLOCATION" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ALLOCATION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="ALLOCATIONTIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ALLOCATIONTIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="FLOWSTATUSREMARK" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FLOWSTATUSREMARK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LOCKED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LOCKED" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="LOGDATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="LOGDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="PAGE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="PAGE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MODIFYPAGE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MODIFYPAGE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="XPOS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="XPOS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="YPOS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="YPOS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="ZPOS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ZPOS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PROJECTID" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="PROJECTID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PROJECTID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PROJECTID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SPOOLNAME" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SPOOLNAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_SPOOLNAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SPOOLNAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SYSTEMID" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SYSTEMID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_SYSTEMID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SYSTEMID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SYSTEMNAME" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SYSTEMNAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_SYSTEMNAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SYSTEMNAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PIPEGRADE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="PIPEGRADE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PIPEGRADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PIPEGRADE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SURFACETREATMENT" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SURFACETREATMENT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_SURFACETREATMENT" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SURFACETREATMENT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_WORKINGPRESSURE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="WORKINGPRESSURE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_WORKINGPRESSURE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WORKINGPRESSURE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PRESSURETESTFIELD" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="PRESSURETESTFIELD" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PRESSURETESTFIELD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PRESSURETESTFIELD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PIPECHECKFIELD" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="PIPECHECKFIELD" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PIPECHECKFIELD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PIPECHECKFIELD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SPOOLWEIGHT" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SPOOLWEIGHT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_SPOOLWEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SPOOLWEIGHT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PAINTCOLOR" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="PAINTCOLOR" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PAINTCOLOR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PAINTCOLOR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CABINTYPE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="CABINTYPE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_CABINTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CABINTYPE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_REVISION" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="REVISION" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_REVISION" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="REVISION" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SPOOLMODIFYTYPE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SPOOLMODIFYTYPE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_SPOOLMODIFYTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SPOOLMODIFYTYPE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ELBOWTYPE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="ELBOWTYPE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_ELBOWTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ELBOWTYPE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_WELDTYPE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="WELDTYPE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_WELDTYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WELDTYPE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DRAWINGNO" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="DRAWINGNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_DRAWINGNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DRAWINGNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BLOCKNO" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="BLOCKNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_BLOCKNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BLOCKNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_MODIFYDRAWINGNO" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="MODIFYDRAWINGNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_MODIFYDRAWINGNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MODIFYDRAWINGNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_REMARK" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="REMARK" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_REMARK" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="REMARK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_FLAG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FLAG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_LOGNAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LOGNAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SYSTEMTIME" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SYSTEMTIME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_SYSTEMTIME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SYSTEMTIME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LINENAME" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="LINENAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_LINENAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LINENAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_FLOWSTATUS" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="FLOWSTATUS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_FLOWSTATUS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOWSTATUS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ALLOCATION" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="ALLOCATION" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_ALLOCATION" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ALLOCATION" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ALLOCATIONTIME" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="ALLOCATIONTIME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_ALLOCATIONTIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ALLOCATIONTIME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_FLOWSTATUSREMARK" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="FLOWSTATUSREMARK" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_FLOWSTATUSREMARK" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FLOWSTATUSREMARK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LOCKED" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="LOCKED" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_LOCKED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LOCKED" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_LOGDATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="LOGDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PAGE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="PAGE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_PAGE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="PAGE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_MODIFYPAGE" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="MODIFYPAGE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_MODIFYPAGE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MODIFYPAGE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_XPOS" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="XPOS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_XPOS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="XPOS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_YPOS" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="YPOS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_YPOS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="YPOS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ZPOS" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="ZPOS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_ZPOS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ZPOS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PROJECTID" DataSetColumn="PROJECTID" />
+              <Mapping SourceColumn="SPOOLNAME" DataSetColumn="SPOOLNAME" />
+              <Mapping SourceColumn="SYSTEMID" DataSetColumn="SYSTEMID" />
+              <Mapping SourceColumn="SYSTEMNAME" DataSetColumn="SYSTEMNAME" />
+              <Mapping SourceColumn="PIPEGRADE" DataSetColumn="PIPEGRADE" />
+              <Mapping SourceColumn="SURFACETREATMENT" DataSetColumn="SURFACETREATMENT" />
+              <Mapping SourceColumn="WORKINGPRESSURE" DataSetColumn="WORKINGPRESSURE" />
+              <Mapping SourceColumn="PRESSURETESTFIELD" DataSetColumn="PRESSURETESTFIELD" />
+              <Mapping SourceColumn="PIPECHECKFIELD" DataSetColumn="PIPECHECKFIELD" />
+              <Mapping SourceColumn="SPOOLWEIGHT" DataSetColumn="SPOOLWEIGHT" />
+              <Mapping SourceColumn="PAINTCOLOR" DataSetColumn="PAINTCOLOR" />
+              <Mapping SourceColumn="CABINTYPE" DataSetColumn="CABINTYPE" />
+              <Mapping SourceColumn="REVISION" DataSetColumn="REVISION" />
+              <Mapping SourceColumn="SPOOLMODIFYTYPE" DataSetColumn="SPOOLMODIFYTYPE" />
+              <Mapping SourceColumn="ELBOWTYPE" DataSetColumn="ELBOWTYPE" />
+              <Mapping SourceColumn="WELDTYPE" DataSetColumn="WELDTYPE" />
+              <Mapping SourceColumn="DRAWINGNO" DataSetColumn="DRAWINGNO" />
+              <Mapping SourceColumn="BLOCKNO" DataSetColumn="BLOCKNO" />
+              <Mapping SourceColumn="MODIFYDRAWINGNO" DataSetColumn="MODIFYDRAWINGNO" />
+              <Mapping SourceColumn="REMARK" DataSetColumn="REMARK" />
+              <Mapping SourceColumn="FLAG" DataSetColumn="FLAG" />
+              <Mapping SourceColumn="LOGNAME" DataSetColumn="LOGNAME" />
+              <Mapping SourceColumn="SYSTEMTIME" DataSetColumn="SYSTEMTIME" />
+              <Mapping SourceColumn="LINENAME" DataSetColumn="LINENAME" />
+              <Mapping SourceColumn="FLOWSTATUS" DataSetColumn="FLOWSTATUS" />
+              <Mapping SourceColumn="ALLOCATION" DataSetColumn="ALLOCATION" />
+              <Mapping SourceColumn="ALLOCATIONTIME" DataSetColumn="ALLOCATIONTIME" />
+              <Mapping SourceColumn="FLOWSTATUSREMARK" DataSetColumn="FLOWSTATUSREMARK" />
+              <Mapping SourceColumn="LOCKED" DataSetColumn="LOCKED" />
+              <Mapping SourceColumn="LOGDATE" DataSetColumn="LOGDATE" />
+              <Mapping SourceColumn="PAGE" DataSetColumn="PAGE" />
+              <Mapping SourceColumn="MODIFYPAGE" DataSetColumn="MODIFYPAGE" />
+              <Mapping SourceColumn="XPOS" DataSetColumn="XPOS" />
+              <Mapping SourceColumn="YPOS" DataSetColumn="YPOS" />
+              <Mapping SourceColumn="ZPOS" DataSetColumn="ZPOS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WeightBarycenterds" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="WeightBarycenterds" msprop:Generator_UserDSName="WeightBarycenterds">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SP_SPOOL_TAB" msprop:Generator_TableClassName="SP_SPOOL_TABDataTable" msprop:Generator_TableVarName="tableSP_SPOOL_TAB" msprop:Generator_TablePropName="SP_SPOOL_TAB" msprop:Generator_RowDeletingName="SP_SPOOL_TABRowDeleting" msprop:Generator_UserTableName="SP_SPOOL_TAB" msprop:Generator_RowChangingName="SP_SPOOL_TABRowChanging" msprop:Generator_RowEvHandlerName="SP_SPOOL_TABRowChangeEventHandler" msprop:Generator_RowDeletedName="SP_SPOOL_TABRowDeleted" msprop:Generator_RowEvArgName="SP_SPOOL_TABRowChangeEvent" msprop:Generator_RowChangedName="SP_SPOOL_TABRowChanged" msprop:Generator_RowClassName="SP_SPOOL_TABRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROJECTID" msprop:Generator_ColumnVarNameInTable="columnPROJECTID" msprop:Generator_ColumnPropNameInRow="PROJECTID" msprop:Generator_ColumnPropNameInTable="PROJECTIDColumn" msprop:Generator_UserColumnName="PROJECTID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPOOLNAME" msprop:Generator_ColumnVarNameInTable="columnSPOOLNAME" msprop:Generator_ColumnPropNameInRow="SPOOLNAME" msprop:Generator_ColumnPropNameInTable="SPOOLNAMEColumn" msprop:Generator_UserColumnName="SPOOLNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SYSTEMID" msprop:Generator_ColumnVarNameInTable="columnSYSTEMID" msprop:Generator_ColumnPropNameInRow="SYSTEMID" msprop:Generator_ColumnPropNameInTable="SYSTEMIDColumn" msprop:Generator_UserColumnName="SYSTEMID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SYSTEMNAME" msprop:Generator_ColumnVarNameInTable="columnSYSTEMNAME" msprop:Generator_ColumnPropNameInRow="SYSTEMNAME" msprop:Generator_ColumnPropNameInTable="SYSTEMNAMEColumn" msprop:Generator_UserColumnName="SYSTEMNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PIPEGRADE" msprop:Generator_ColumnVarNameInTable="columnPIPEGRADE" msprop:Generator_ColumnPropNameInRow="PIPEGRADE" msprop:Generator_ColumnPropNameInTable="PIPEGRADEColumn" msprop:Generator_UserColumnName="PIPEGRADE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SURFACETREATMENT" msprop:Generator_ColumnVarNameInTable="columnSURFACETREATMENT" msprop:Generator_ColumnPropNameInRow="SURFACETREATMENT" msprop:Generator_ColumnPropNameInTable="SURFACETREATMENTColumn" msprop:Generator_UserColumnName="SURFACETREATMENT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WORKINGPRESSURE" msprop:Generator_ColumnVarNameInTable="columnWORKINGPRESSURE" msprop:Generator_ColumnPropNameInRow="WORKINGPRESSURE" msprop:Generator_ColumnPropNameInTable="WORKINGPRESSUREColumn" msprop:Generator_UserColumnName="WORKINGPRESSURE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRESSURETESTFIELD" msprop:Generator_ColumnVarNameInTable="columnPRESSURETESTFIELD" msprop:Generator_ColumnPropNameInRow="PRESSURETESTFIELD" msprop:Generator_ColumnPropNameInTable="PRESSURETESTFIELDColumn" msprop:Generator_UserColumnName="PRESSURETESTFIELD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PIPECHECKFIELD" msprop:Generator_ColumnVarNameInTable="columnPIPECHECKFIELD" msprop:Generator_ColumnPropNameInRow="PIPECHECKFIELD" msprop:Generator_ColumnPropNameInTable="PIPECHECKFIELDColumn" msprop:Generator_UserColumnName="PIPECHECKFIELD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPOOLWEIGHT" msprop:Generator_ColumnVarNameInTable="columnSPOOLWEIGHT" msprop:Generator_ColumnPropNameInRow="SPOOLWEIGHT" msprop:Generator_ColumnPropNameInTable="SPOOLWEIGHTColumn" msprop:Generator_UserColumnName="SPOOLWEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PAINTCOLOR" msprop:Generator_ColumnVarNameInTable="columnPAINTCOLOR" msprop:Generator_ColumnPropNameInRow="PAINTCOLOR" msprop:Generator_ColumnPropNameInTable="PAINTCOLORColumn" msprop:Generator_UserColumnName="PAINTCOLOR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CABINTYPE" msprop:Generator_ColumnVarNameInTable="columnCABINTYPE" msprop:Generator_ColumnPropNameInRow="CABINTYPE" msprop:Generator_ColumnPropNameInTable="CABINTYPEColumn" msprop:Generator_UserColumnName="CABINTYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REVISION" msprop:Generator_ColumnVarNameInTable="columnREVISION" msprop:Generator_ColumnPropNameInRow="REVISION" msprop:Generator_ColumnPropNameInTable="REVISIONColumn" msprop:Generator_UserColumnName="REVISION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPOOLMODIFYTYPE" msprop:Generator_ColumnVarNameInTable="columnSPOOLMODIFYTYPE" msprop:Generator_ColumnPropNameInRow="SPOOLMODIFYTYPE" msprop:Generator_ColumnPropNameInTable="SPOOLMODIFYTYPEColumn" msprop:Generator_UserColumnName="SPOOLMODIFYTYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ELBOWTYPE" msprop:Generator_ColumnVarNameInTable="columnELBOWTYPE" msprop:Generator_ColumnPropNameInRow="ELBOWTYPE" msprop:Generator_ColumnPropNameInTable="ELBOWTYPEColumn" msprop:Generator_UserColumnName="ELBOWTYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WELDTYPE" msprop:Generator_ColumnVarNameInTable="columnWELDTYPE" msprop:Generator_ColumnPropNameInRow="WELDTYPE" msprop:Generator_ColumnPropNameInTable="WELDTYPEColumn" msprop:Generator_UserColumnName="WELDTYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRAWINGNO" msprop:Generator_ColumnVarNameInTable="columnDRAWINGNO" msprop:Generator_ColumnPropNameInRow="DRAWINGNO" msprop:Generator_ColumnPropNameInTable="DRAWINGNOColumn" msprop:Generator_UserColumnName="DRAWINGNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLOCKNO" msprop:Generator_ColumnVarNameInTable="columnBLOCKNO" msprop:Generator_ColumnPropNameInRow="BLOCKNO" msprop:Generator_ColumnPropNameInTable="BLOCKNOColumn" msprop:Generator_UserColumnName="BLOCKNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODIFYDRAWINGNO" msprop:Generator_ColumnVarNameInTable="columnMODIFYDRAWINGNO" msprop:Generator_ColumnPropNameInRow="MODIFYDRAWINGNO" msprop:Generator_ColumnPropNameInTable="MODIFYDRAWINGNOColumn" msprop:Generator_UserColumnName="MODIFYDRAWINGNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REMARK" msprop:Generator_ColumnVarNameInTable="columnREMARK" msprop:Generator_ColumnPropNameInRow="REMARK" msprop:Generator_ColumnPropNameInTable="REMARKColumn" msprop:Generator_UserColumnName="REMARK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FLAG" msprop:Generator_ColumnVarNameInTable="columnFLAG" msprop:Generator_ColumnPropNameInRow="FLAG" msprop:Generator_ColumnPropNameInTable="FLAGColumn" msprop:Generator_UserColumnName="FLAG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOGNAME" msprop:Generator_ColumnVarNameInTable="columnLOGNAME" msprop:Generator_ColumnPropNameInRow="LOGNAME" msprop:Generator_ColumnPropNameInTable="LOGNAMEColumn" msprop:Generator_UserColumnName="LOGNAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SYSTEMTIME" msprop:Generator_ColumnVarNameInTable="columnSYSTEMTIME" msprop:Generator_ColumnPropNameInRow="SYSTEMTIME" msprop:Generator_ColumnPropNameInTable="SYSTEMTIMEColumn" msprop:Generator_UserColumnName="SYSTEMTIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LINENAME" msprop:Generator_ColumnVarNameInTable="columnLINENAME" msprop:Generator_ColumnPropNameInRow="LINENAME" msprop:Generator_ColumnPropNameInTable="LINENAMEColumn" msprop:Generator_UserColumnName="LINENAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FLOWSTATUS" msprop:Generator_ColumnVarNameInTable="columnFLOWSTATUS" msprop:Generator_ColumnPropNameInRow="FLOWSTATUS" msprop:Generator_ColumnPropNameInTable="FLOWSTATUSColumn" msprop:Generator_UserColumnName="FLOWSTATUS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ALLOCATION" msprop:Generator_ColumnVarNameInTable="columnALLOCATION" msprop:Generator_ColumnPropNameInRow="ALLOCATION" msprop:Generator_ColumnPropNameInTable="ALLOCATIONColumn" msprop:Generator_UserColumnName="ALLOCATION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ALLOCATIONTIME" msprop:Generator_ColumnVarNameInTable="columnALLOCATIONTIME" msprop:Generator_ColumnPropNameInRow="ALLOCATIONTIME" msprop:Generator_ColumnPropNameInTable="ALLOCATIONTIMEColumn" msprop:Generator_UserColumnName="ALLOCATIONTIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FLOWSTATUSREMARK" msprop:Generator_ColumnVarNameInTable="columnFLOWSTATUSREMARK" msprop:Generator_ColumnPropNameInRow="FLOWSTATUSREMARK" msprop:Generator_ColumnPropNameInTable="FLOWSTATUSREMARKColumn" msprop:Generator_UserColumnName="FLOWSTATUSREMARK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOCKED" msprop:Generator_ColumnVarNameInTable="columnLOCKED" msprop:Generator_ColumnPropNameInRow="LOCKED" msprop:Generator_ColumnPropNameInTable="LOCKEDColumn" msprop:Generator_UserColumnName="LOCKED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LOGDATE" msprop:Generator_ColumnVarNameInTable="columnLOGDATE" msprop:Generator_ColumnPropNameInRow="LOGDATE" msprop:Generator_ColumnPropNameInTable="LOGDATEColumn" msprop:Generator_UserColumnName="LOGDATE" type="xs:dateTime" />
+              <xs:element name="PAGE" msprop:Generator_ColumnVarNameInTable="columnPAGE" msprop:Generator_ColumnPropNameInRow="PAGE" msprop:Generator_ColumnPropNameInTable="PAGEColumn" msprop:Generator_UserColumnName="PAGE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MODIFYPAGE" msprop:Generator_ColumnVarNameInTable="columnMODIFYPAGE" msprop:Generator_ColumnPropNameInRow="MODIFYPAGE" msprop:Generator_ColumnPropNameInTable="MODIFYPAGEColumn" msprop:Generator_UserColumnName="MODIFYPAGE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="XPOS" msprop:Generator_ColumnVarNameInTable="columnXPOS" msprop:Generator_ColumnPropNameInRow="XPOS" msprop:Generator_ColumnPropNameInTable="XPOSColumn" msprop:Generator_UserColumnName="XPOS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="YPOS" msprop:Generator_ColumnVarNameInTable="columnYPOS" msprop:Generator_ColumnPropNameInRow="YPOS" msprop:Generator_ColumnPropNameInTable="YPOSColumn" msprop:Generator_UserColumnName="YPOS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ZPOS" msprop:Generator_ColumnVarNameInTable="columnZPOS" msprop:Generator_ColumnPropNameInRow="ZPOS" msprop:Generator_ColumnPropNameInTable="ZPOSColumn" msprop:Generator_UserColumnName="ZPOS" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:SP_SPOOL_TAB" />
+      <xs:field xpath="mstns:PROJECTID" />
+      <xs:field xpath="mstns:SPOOLNAME" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,14 @@
+F:\baoshan.song\Visual Studio 2005\Projects\GenDwg\GenDwg\bin\Debug\GenDwg.exe
+F:\baoshan.song\Visual Studio 2005\Projects\GenDwg\GenDwg\bin\Debug\GenDwg.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\GenDwg\GenDwg\bin\Debug\acdbmgd.dll
+F:\baoshan.song\Visual Studio 2005\Projects\GenDwg\GenDwg\bin\Debug\acmgd.dll
+F:\baoshan.song\Visual Studio 2005\Projects\GenDwg\GenDwg\bin\Debug\AcDbMgdHost.dll
+F:\baoshan.song\Visual Studio 2005\Projects\GenDwg\GenDwg\bin\Debug\Interop.stdole.dll
+F:\baoshan.song\Visual Studio 2005\Projects\GenDwg\GenDwg\obj\Debug\ResolveAssemblyReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\GenDwg\GenDwg\obj\Debug\Interop.stdole.dll
+F:\baoshan.song\Visual Studio 2005\Projects\GenDwg\GenDwg\obj\Debug\GenDwg.csproj.ResolveComReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\GenDwg\GenDwg\obj\Debug\GenDwg.Form_GenDwg.resources
+F:\baoshan.song\Visual Studio 2005\Projects\GenDwg\GenDwg\obj\Debug\GenDwg.Properties.Resources.resources
+F:\baoshan.song\Visual Studio 2005\Projects\GenDwg\GenDwg\obj\Debug\GenDwg.csproj.GenerateResource.Cache
+F:\baoshan.song\Visual Studio 2005\Projects\GenDwg\GenDwg\obj\Debug\GenDwg.exe
+F:\baoshan.song\Visual Studio 2005\Projects\GenDwg\GenDwg\obj\Debug\GenDwg.pdb

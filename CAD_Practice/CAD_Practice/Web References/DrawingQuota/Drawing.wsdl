@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetApproveTemplate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="drawnICNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="drawingNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rev" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApproveTemplateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApproveTemplateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApproveTemplateNew">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="drawnICNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="drawingNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rev" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApproveTemplateNewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApproveTemplateNewResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrawingTemplateInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="drawingNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rev" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrawingTemplateInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDrawingTemplateInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrawingInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="projectName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="drawingNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rev" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDrawingInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDrawingInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIFCDrawingCounts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="projectName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="drawingType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIFCDrawingCountsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIFCDrawingCountsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetApproveTemplateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApproveTemplate" />
+  </wsdl:message>
+  <wsdl:message name="GetApproveTemplateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApproveTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApproveTemplateNewSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApproveTemplateNew" />
+  </wsdl:message>
+  <wsdl:message name="GetApproveTemplateNewSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApproveTemplateNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDrawingTemplateInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDrawingTemplateInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetDrawingTemplateInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDrawingTemplateInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDrawingInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDrawingInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetDrawingInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDrawingInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIFCDrawingCountsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIFCDrawingCounts" />
+  </wsdl:message>
+  <wsdl:message name="GetIFCDrawingCountsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIFCDrawingCountsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DrawingSoap">
+    <wsdl:operation name="GetApproveTemplate">
+      <wsdl:input message="tns:GetApproveTemplateSoapIn" />
+      <wsdl:output message="tns:GetApproveTemplateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApproveTemplateNew">
+      <wsdl:input message="tns:GetApproveTemplateNewSoapIn" />
+      <wsdl:output message="tns:GetApproveTemplateNewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingTemplateInfo">
+      <wsdl:input message="tns:GetDrawingTemplateInfoSoapIn" />
+      <wsdl:output message="tns:GetDrawingTemplateInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据项目名、图纸号、图纸版本获得图纸标题及责任人，返回字符串格式：图纸标题(英文);图纸标题(中文);责任人</wsdl:documentation>
+      <wsdl:input message="tns:GetDrawingInfoSoapIn" />
+      <wsdl:output message="tns:GetDrawingInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIFCDrawingCounts">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据项目名、图纸类型获得各部门定额下发数</wsdl:documentation>
+      <wsdl:input message="tns:GetIFCDrawingCountsSoapIn" />
+      <wsdl:output message="tns:GetIFCDrawingCountsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DrawingSoap" type="tns:DrawingSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetApproveTemplate">
+      <soap:operation soapAction="http://tempuri.org/GetApproveTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApproveTemplateNew">
+      <soap:operation soapAction="http://tempuri.org/GetApproveTemplateNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingTemplateInfo">
+      <soap:operation soapAction="http://tempuri.org/GetDrawingTemplateInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingInfo">
+      <soap:operation soapAction="http://tempuri.org/GetDrawingInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIFCDrawingCounts">
+      <soap:operation soapAction="http://tempuri.org/GetIFCDrawingCounts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DrawingSoap12" type="tns:DrawingSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetApproveTemplate">
+      <soap12:operation soapAction="http://tempuri.org/GetApproveTemplate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApproveTemplateNew">
+      <soap12:operation soapAction="http://tempuri.org/GetApproveTemplateNew" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingTemplateInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetDrawingTemplateInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawingInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetDrawingInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIFCDrawingCounts">
+      <soap12:operation soapAction="http://tempuri.org/GetIFCDrawingCounts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Drawing">
+    <wsdl:port name="DrawingSoap" binding="tns:DrawingSoap">
+      <soap:address location="http://172.16.7.55/Services/Drawing.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DrawingSoap12" binding="tns:DrawingSoap12">
+      <soap12:address location="http://172.16.7.55/Services/Drawing.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

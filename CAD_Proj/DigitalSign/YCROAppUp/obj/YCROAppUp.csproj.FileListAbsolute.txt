@@ -1,0 +1,8 @@
+C:\CAD_Proj\DigitalSign\YCROAppUp\bin\Release\YCROAppUp.exe
+C:\CAD_Proj\DigitalSign\YCROAppUp\bin\Release\YCROAppUp.pdb
+C:\CAD_Proj\DigitalSign\YCROAppUp\obj\Release\ResolveAssemblyReference.cache
+C:\CAD_Proj\DigitalSign\YCROAppUp\obj\Release\YCROAppUp.FormUpp.resources
+C:\CAD_Proj\DigitalSign\YCROAppUp\obj\Release\YCROAppUp.Properties.Resources.resources
+C:\CAD_Proj\DigitalSign\YCROAppUp\obj\Release\YCROAppUp.csproj.GenerateResource.Cache
+C:\CAD_Proj\DigitalSign\YCROAppUp\obj\Release\YCROAppUp.exe
+C:\CAD_Proj\DigitalSign\YCROAppUp\obj\Release\YCROAppUp.pdb

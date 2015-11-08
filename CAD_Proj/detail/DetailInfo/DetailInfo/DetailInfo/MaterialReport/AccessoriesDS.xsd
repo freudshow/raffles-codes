@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AccessoriesDS" targetNamespace="http://tempuri.org/AccessoriesDS.xsd" xmlns:mstns="http://tempuri.org/AccessoriesDS.xsd" xmlns="http://tempuri.org/AccessoriesDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AccessoriesDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AccessoriesDS" msprop:Generator_UserDSName="AccessoriesDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ACCESSORIES_TAB" msprop:Generator_TableClassName="ACCESSORIES_TABDataTable" msprop:Generator_TableVarName="tableACCESSORIES_TAB" msprop:Generator_TablePropName="ACCESSORIES_TAB" msprop:Generator_RowDeletingName="ACCESSORIES_TABRowDeleting" msprop:Generator_UserTableName="ACCESSORIES_TAB" msprop:Generator_RowChangingName="ACCESSORIES_TABRowChanging" msprop:Generator_RowEvHandlerName="ACCESSORIES_TABRowChangeEventHandler" msprop:Generator_RowDeletedName="ACCESSORIES_TABRowDeleted" msprop:Generator_RowEvArgName="ACCESSORIES_TABRowChangeEvent" msprop:Generator_RowChangedName="ACCESSORIES_TABRowChanged" msprop:Generator_RowClassName="ACCESSORIES_TABRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCENAME" msprop:Generator_ColumnVarNameInTable="columnACCENAME" msprop:Generator_ColumnPropNameInRow="ACCENAME" msprop:Generator_ColumnPropNameInTable="ACCENAMEColumn" msprop:Generator_UserColumnName="ACCENAME" type="xs:string" minOccurs="0" />
+              <xs:element name="STANDERD" msprop:Generator_ColumnVarNameInTable="columnSTANDERD" msprop:Generator_ColumnPropNameInRow="STANDERD" msprop:Generator_ColumnPropNameInTable="STANDERDColumn" msprop:Generator_UserColumnName="STANDERD" type="xs:string" minOccurs="0" />
+              <xs:element name="QTY" msprop:Generator_ColumnVarNameInTable="columnQTY" msprop:Generator_ColumnPropNameInRow="QTY" msprop:Generator_ColumnPropNameInTable="QTYColumn" msprop:Generator_UserColumnName="QTY" type="xs:string" minOccurs="0" />
+              <xs:element name="WEIGHT" msprop:Generator_ColumnVarNameInTable="columnWEIGHT" msprop:Generator_ColumnPropNameInRow="WEIGHT" msprop:Generator_ColumnPropNameInTable="WEIGHTColumn" msprop:Generator_UserColumnName="WEIGHT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

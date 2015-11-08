@@ -1,0 +1,8 @@
+F:\baoshan.song\Visual Studio 2005\Projects\CopyPhoto\CopyPhoto\obj\Debug\ResolveAssemblyReference.cache
+F:\baoshan.song\Visual Studio 2005\Projects\CopyPhoto\CopyPhoto\obj\Debug\CopyPhoto.Form_copy.resources
+F:\baoshan.song\Visual Studio 2005\Projects\CopyPhoto\CopyPhoto\obj\Debug\CopyPhoto.Properties.Resources.resources
+F:\baoshan.song\Visual Studio 2005\Projects\CopyPhoto\CopyPhoto\obj\Debug\CopyPhoto.csproj.GenerateResource.Cache
+F:\baoshan.song\Visual Studio 2005\Projects\CopyPhoto\CopyPhoto\bin\Debug\CopyPhoto.exe
+F:\baoshan.song\Visual Studio 2005\Projects\CopyPhoto\CopyPhoto\bin\Debug\CopyPhoto.pdb
+F:\baoshan.song\Visual Studio 2005\Projects\CopyPhoto\CopyPhoto\obj\Debug\CopyPhoto.exe
+F:\baoshan.song\Visual Studio 2005\Projects\CopyPhoto\CopyPhoto\obj\Debug\CopyPhoto.pdb

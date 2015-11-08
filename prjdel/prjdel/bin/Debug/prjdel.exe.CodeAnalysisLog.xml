@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\program files (x86)\microsoft visual studio 8\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.Xsl"?>
+<FxCopReport Version="8">
+ <Targets>
+  <Target Name="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel\bin\Debug\prjdel.exe">
+   <Modules>
+    <Module Name="prjdel.exe">
+     <Messages>
+      <Message TypeName="AssembliesShouldDeclareMinimumSecurity" Category="Microsoft.Usage" CheckId="CA2209" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="Breaking">
+       <Issue Certainty="95" Level="CriticalError">No valid permission requests were found for assembly 'prjdel'. You should always specify the minimum security permissions using SecurityAction.RequestMinimum.</Issue>
+      </Message>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'prjdel' with a strong name key.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+       <Issue Name="NoAttr" Certainty="95" Level="Error">'prjdel' should be marked with CLSCompliantAttribute and its value should be true.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="prjdel">
+       <Types>
+        <Type Name="Program" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="BlkIsRefD(System.Int32):System.Boolean" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="73">'Program.BlkIsRefD(Int32):Boolean' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="98">Modify 'Program.BlkIsRefD(Int32):Boolean' to catch a more specific exception than 'System.Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="ReviewSqlQueriesForSecurityVulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Error" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="90">Review if the query string "SELECT T.____ FROM ____ T WHERE TO_CHAR(T.____)=TO_CHAR(____)", passed to DbCommand.set_CommandText(String):Void in Program.BlkIsRefD(Int32):Boolean, accepts any user input. If so, consider using a parameterized Sql query instead of building up the query via string concatenations.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="85">Be sure to set the DataSet Locale property wherever 'Program.BlkIsRefD(Int32):Boolean' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="DeckIsRefD(System.Int32):System.Boolean" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="164">Modify 'Program.DeckIsRefD(Int32):Boolean' to catch a more specific exception than 'System.Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="ReviewSqlQueriesForSecurityVulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Error" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="156">Review if the query string "SELECT T.____ FROM ____ T WHERE TO_CHAR(T.____)=TO_CHAR(____)", passed to DbCommand.set_CommandText(String):Void in Program.DeckIsRefD(Int32):Boolean, accepts any user input. If so, consider using a parameterized Sql query instead of building up the query via string concatenations.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="151">Be sure to set the DataSet Locale property wherever 'Program.DeckIsRefD(Int32):Boolean' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Main(System.String[]):System.Void" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="args" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="13">Parameter 'args' of Program.Main(String[]):Void is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="PrjIsRefD(System.Int32):System.Boolean" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="28">'Program.PrjIsRefD(Int32):Boolean' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="65">Modify 'Program.PrjIsRefD(Int32):Boolean' to catch a more specific exception than 'System.Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="ReviewSqlQueriesForSecurityVulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Error" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="57">Review if the query string "SELECT T.____ FROM ____ T WHERE TO_CHAR(T.____)=TO_CHAR(____)", passed to DbCommand.set_CommandText(String):Void in Program.PrjIsRefD(Int32):Boolean, accepts any user input. If so, consider using a parameterized Sql query instead of building up the query via string concatenations.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="52">Be sure to set the DataSet Locale property wherever 'Program.PrjIsRefD(Int32):Boolean' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="RoomIsRefD(System.Int32):System.Boolean" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="172">'Program.RoomIsRefD(Int32):Boolean' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="197">Modify 'Program.RoomIsRefD(Int32):Boolean' to catch a more specific exception than 'System.Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="ReviewSqlQueriesForSecurityVulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Error" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="189">Review if the query string "SELECT T.____ FROM ____ T WHERE TO_CHAR(T.____)=TO_CHAR(____)", passed to DbCommand.set_CommandText(String):Void in Program.RoomIsRefD(Int32):Boolean, accepts any user input. If so, consider using a parameterized Sql query instead of building up the query via string concatenations.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="184">Be sure to set the DataSet Locale property wherever 'Program.RoomIsRefD(Int32):Boolean' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="SysIsRefD(System.Int32):System.Boolean" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="106">'Program.SysIsRefD(Int32):Boolean' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="131">Modify 'Program.SysIsRefD(Int32):Boolean' to catch a more specific exception than 'System.Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="ReviewSqlQueriesForSecurityVulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Error" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="123">Review if the query string "SELECT T.____ FROM ____ T WHERE TO_CHAR(T.____)=TO_CHAR(____)", passed to DbCommand.set_CommandText(String):Void in Program.SysIsRefD(Int32):Boolean, accepts any user input. If so, consider using a parameterized Sql query instead of building up the query via string concatenations.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="Program.cs" Line="118">Be sure to set the DataSet Locale property wherever 'Program.SysIsRefD(Int32):Boolean' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="query" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+           <Issue Certainty="75" Level="Warning">'prjdel.query' is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="Method():System.Void" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-11-02 02:35:55Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\baoshan.song\My Documents\Visual Studio 2005\Projects\prjdel\prjdel" File="query.cs" Line="15">The 'this' parameter (or 'Me' in VB) of query.Method():Void is never used. Mark the member as static (or Shared in VB) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldDeclareMinimumSecurity" Category="Microsoft.Usage" CheckId="CA2209">
+   <Name>Assemblies should declare minimum security</Name>
+   <Description>Permission requests prevent security exceptions from being thrown after code in an assembly has already begun executing. If permission requests are specified on an assembly, the assembly will not load at runtime if it has insufficient permissions. To resolve violations of this rule, add attributes that specify what permissions the assembly will demand or might demand, and what permissions it does not want granted.  To specify required permissions, use SecurityAction.Minimum. To specify permissions that the assembly might demand, use SecurityAction.RequestOptional. To specify permissions that the assembly must not be granted, use SecurityAction.RequestRefuse.</Description>
+   <Resolution Name="Default">No valid permission requests were found for assembly '{0}'. You should always specify the minimum security permissions using SecurityAction.RequestMinimum.</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="UsageRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign '{0}' with a strong name key.</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the FxCop team.</Description>
+   <Resolution Name="Default">'{0}' appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812">
+   <Name>Avoid uninstantiated internal classes</Name>
+   <Description>An internal class was detected that is apparently never instantiated. This rule does not attempt to detect late-bound creation and will generate false positives if instances of a type are only created in this way (for example, by means of Activator.CreateInstance or by passing the type as an argument to a TypeConverter constructor).</Description>
+   <Resolution Name="Default">'{0}' is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>Do not catch general exception types</Name>
+   <Description>You should not catch Exception or SystemException. Catching generic exception types can hide run-time problems from the library user, and can complicate debugging. You should catch only those exceptions that you can handle gracefully.</Description>
+   <Resolution Name="Default">Modify '{0}' to catch a more specific exception than '{1}' or rethrow the exception.</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliant</Name>
+   <Description>Assemblies should explicitly state their Cls compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="NoAttr">'{0}' should be marked with CLSCompliantAttribute and its value should be true.</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in VB). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that insures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in VB) of {0} is never used. Mark the member as static (or Shared in VB) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewSqlQueriesForSecurityVulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review sql queries for security vulnerabilities</Name>
+   <Description>Sql queries built up from user input are potentially vulnerable to injection attacks. Sql Server as well as other database servers support parameterized Sql queries, a feature that will reduce the risk for injection attacks.</Description>
+   <Resolution Name="Default">Review if the query string "{0}", passed to {1} in {2}, accepts any user input. If so, consider using a parameterized Sql query instead of building up the query via string concatenations.</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="SecurityRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+   <Name>Review unused parameters</Name>
+   <Description>Review parameters in non-virtual methods that are not used in the method body to insure no correctness exists around failure to access them. Unused parameters incur maintenance and performance costs. Sometimes a violation of this rule can point to an implementation bug in the method (i.e. the parameter should actually have been used in the method body). Exclude warnings of this rule if the parameter has to exist because of backward compatibility.</Description>
+   <Resolution Name="Default">Parameter '{0}' of {1} is never used. Remove the parameter or use it in the method body.</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="UsageRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306">
+   <Name>Set locale for data types</Name>
+   <Description>In most cases, Locale should be explicitly set to CultureInfo.InvariantCulture on DataSet and DataTable instances. Upon creation of a DataSet or DataTable instance, the Locale is set to the current culture. In most cases, the Locale should be set to CultureInfo.InvariantCulture to guarantee proper sorting behavior in all cultures.</Description>
+   <Resolution Name="Default">Be sure to set the {0} Locale property wherever '{1}' creates an instance of that type.</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="8.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="Line">Line</String>
+  <String Key="LocationNotStoredInPdb">&lt;Location not stored in Pdb&gt;</String>
+  <String Key="Project">Project</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Microsoft Visual Studio 2005 Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

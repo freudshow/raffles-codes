@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Autodesk\AutoCAD\R16.2\ACAD-4001:409\Applications\YRO_Digital]
+"DESCRIPTION"="Digital Signature app"
+"LOADCTRLS"=dword:00000002
+"MANAGED"=dword:00000001
+"LOADER"="F:\\code\\Visual Studio 2005\\Projects\\DigitalSign\\DigitalSign\\bin\\Release\\DigitalSign.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\AutoCAD\R16.2\ACAD-4001:409\Applications\YRO_Digital]
+"DESCRIPTION"="Digital Signature app"
+"LOADCTRLS"=dword:00000002
+"MANAGED"=dword:00000001
+"LOADER"="F:\\code\\Visual Studio 2005\\Projects\\DigitalSign\\DigitalSign\\bin\\Release\\DigitalSign.dll"

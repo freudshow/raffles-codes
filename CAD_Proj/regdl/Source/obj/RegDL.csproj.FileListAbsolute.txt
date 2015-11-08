@@ -1,0 +1,5 @@
+C:\Plugin of the Month\RegDL.exe
+C:\Plugin of the Month\RegDL.pdb
+C:\CAD_Proj\regdl\Source\obj\Debug\ResolveAssemblyReference.cache
+C:\CAD_Proj\regdl\Source\obj\Debug\RegDL.exe
+C:\CAD_Proj\regdl\Source\obj\Debug\RegDL.pdb

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TrayPrePlanDs" targetNamespace="http://tempuri.org/TrayPrePlanDs.xsd" xmlns:mstns="http://tempuri.org/TrayPrePlanDs.xsd" xmlns="http://tempuri.org/TrayPrePlanDs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.DetailInfo.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TrayPrePlanDs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TrayPrePlanDs" msprop:Generator_DataSetName="TrayPrePlanDs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TRAY_PREPLAN_TAB" msprop:Generator_UserTableName="TRAY_PREPLAN_TAB" msprop:Generator_RowDeletedName="TRAY_PREPLAN_TABRowDeleted" msprop:Generator_RowChangedName="TRAY_PREPLAN_TABRowChanged" msprop:Generator_RowClassName="TRAY_PREPLAN_TABRow" msprop:Generator_RowChangingName="TRAY_PREPLAN_TABRowChanging" msprop:Generator_RowEvArgName="TRAY_PREPLAN_TABRowChangeEvent" msprop:Generator_RowEvHandlerName="TRAY_PREPLAN_TABRowChangeEventHandler" msprop:Generator_TableClassName="TRAY_PREPLAN_TABDataTable" msprop:Generator_TableVarName="tableTRAY_PREPLAN_TAB" msprop:Generator_RowDeletingName="TRAY_PREPLAN_TABRowDeleting" msprop:Generator_TablePropName="TRAY_PREPLAN_TAB">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:decimal" />
+              <xs:element name="TRAYNO" msprop:Generator_UserColumnName="TRAYNO" msprop:Generator_ColumnVarNameInTable="columnTRAYNO" msprop:Generator_ColumnPropNameInRow="TRAYNO" msprop:Generator_ColumnPropNameInTable="TRAYNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLOCKNO" msprop:Generator_UserColumnName="BLOCKNO" msprop:Generator_ColumnVarNameInTable="columnBLOCKNO" msprop:Generator_ColumnPropNameInRow="BLOCKNO" msprop:Generator_ColumnPropNameInTable="BLOCKNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REFER_DRAWING" msprop:Generator_UserColumnName="REFER_DRAWING" msprop:Generator_ColumnVarNameInTable="columnREFER_DRAWING" msprop:Generator_ColumnPropNameInRow="REFER_DRAWING" msprop:Generator_ColumnPropNameInTable="REFER_DRAWINGColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPOOL_NUMBER" msprop:Generator_UserColumnName="SPOOL_NUMBER" msprop:Generator_ColumnVarNameInTable="columnSPOOL_NUMBER" msprop:Generator_ColumnPropNameInRow="SPOOL_NUMBER" msprop:Generator_ColumnPropNameInTable="SPOOL_NUMBERColumn" type="xs:decimal" />
+              <xs:element name="TRAY_WEIGHT" msprop:Generator_UserColumnName="TRAY_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnTRAY_WEIGHT" msprop:Generator_ColumnPropNameInRow="TRAY_WEIGHT" msprop:Generator_ColumnPropNameInTable="TRAY_WEIGHTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RATED_HOUR" msprop:Generator_UserColumnName="RATED_HOUR" msprop:Generator_ColumnVarNameInTable="columnRATED_HOUR" msprop:Generator_ColumnPropNameInRow="RATED_HOUR" msprop:Generator_ColumnPropNameInTable="RATED_HOURColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PREPLAN_STARTTIME" msprop:Generator_UserColumnName="PREPLAN_STARTTIME" msprop:Generator_ColumnVarNameInTable="columnPREPLAN_STARTTIME" msprop:Generator_ColumnPropNameInRow="PREPLAN_STARTTIME" msprop:Generator_ColumnPropNameInTable="PREPLAN_STARTTIMEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PREPLAN_ENDTIME" msprop:Generator_UserColumnName="PREPLAN_ENDTIME" msprop:Generator_ColumnVarNameInTable="columnPREPLAN_ENDTIME" msprop:Generator_ColumnPropNameInRow="PREPLAN_ENDTIME" msprop:Generator_ColumnPropNameInTable="PREPLAN_ENDTIMEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WEEK" msprop:Generator_UserColumnName="WEEK" msprop:Generator_ColumnVarNameInTable="columnWEEK" msprop:Generator_ColumnPropNameInRow="WEEK" msprop:Generator_ColumnPropNameInTable="WEEKColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WEEKDAY" msprop:Generator_UserColumnName="WEEKDAY" msprop:Generator_ColumnVarNameInTable="columnWEEKDAY" msprop:Generator_ColumnPropNameInRow="WEEKDAY" msprop:Generator_ColumnPropNameInTable="WEEKDAYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WEEK_REAL_HOUR" msprop:Generator_UserColumnName="WEEK_REAL_HOUR" msprop:Generator_ColumnVarNameInTable="columnWEEK_REAL_HOUR" msprop:Generator_ColumnPropNameInRow="WEEK_REAL_HOUR" msprop:Generator_ColumnPropNameInTable="WEEK_REAL_HOURColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SUM_REAL_HOUR" msprop:Generator_UserColumnName="SUM_REAL_HOUR" msprop:Generator_ColumnVarNameInTable="columnSUM_REAL_HOUR" msprop:Generator_ColumnPropNameInRow="SUM_REAL_HOUR" msprop:Generator_ColumnPropNameInTable="SUM_REAL_HOURColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HOUR_PERCENT" msprop:Generator_UserColumnName="HOUR_PERCENT" msprop:Generator_ColumnVarNameInTable="columnHOUR_PERCENT" msprop:Generator_ColumnPropNameInRow="HOUR_PERCENT" msprop:Generator_ColumnPropNameInTable="HOUR_PERCENTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PROGRESS_PERCENT" msprop:Generator_UserColumnName="PROGRESS_PERCENT" msprop:Generator_ColumnVarNameInTable="columnPROGRESS_PERCENT" msprop:Generator_ColumnPropNameInRow="PROGRESS_PERCENT" msprop:Generator_ColumnPropNameInTable="PROGRESS_PERCENTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PROGRESS_HOUR" msprop:Generator_UserColumnName="PROGRESS_HOUR" msprop:Generator_ColumnVarNameInTable="columnPROGRESS_HOUR" msprop:Generator_ColumnPropNameInRow="PROGRESS_HOUR" msprop:Generator_ColumnPropNameInTable="PROGRESS_HOURColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="KPI" msprop:Generator_UserColumnName="KPI" msprop:Generator_ColumnVarNameInTable="columnKPI" msprop:Generator_ColumnPropNameInRow="KPI" msprop:Generator_ColumnPropNameInTable="KPIColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DATA_SOURCE" msprop:Generator_UserColumnName="DATA_SOURCE" msprop:Generator_ColumnVarNameInTable="columnDATA_SOURCE" msprop:Generator_ColumnPropNameInRow="DATA_SOURCE" msprop:Generator_ColumnPropNameInTable="DATA_SOURCEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROGRESS_STATE" msprop:Generator_UserColumnName="PROGRESS_STATE" msprop:Generator_ColumnVarNameInTable="columnPROGRESS_STATE" msprop:Generator_ColumnPropNameInRow="PROGRESS_STATE" msprop:Generator_ColumnPropNameInTable="PROGRESS_STATEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROJECT_ID" msprop:Generator_UserColumnName="PROJECT_ID" msprop:Generator_ColumnVarNameInTable="columnPROJECT_ID" msprop:Generator_ColumnPropNameInRow="PROJECT_ID" msprop:Generator_ColumnPropNameInTable="PROJECT_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PREPAREDBY" msprop:Generator_UserColumnName="PREPAREDBY" msprop:Generator_ColumnVarNameInTable="columnPREPAREDBY" msprop:Generator_ColumnPropNameInRow="PREPAREDBY" msprop:Generator_ColumnPropNameInTable="PREPAREDBYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PREPAREDATE" msprop:Generator_UserColumnName="PREPAREDATE" msprop:Generator_ColumnVarNameInTable="columnPREPAREDATE" msprop:Generator_ColumnPropNameInRow="PREPAREDATE" msprop:Generator_ColumnPropNameInTable="PREPAREDATEColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TRAY_PREPLAN_TAB" />
+      <xs:field xpath="mstns:ID" />
+      <xs:field xpath="mstns:TRAYNO" />
+      <xs:field xpath="mstns:BLOCKNO" />
+      <xs:field xpath="mstns:REFER_DRAWING" />
+      <xs:field xpath="mstns:SPOOL_NUMBER" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

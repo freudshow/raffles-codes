@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<Update>
+	<Soft Name="UpdateProgram.zip">
+		<Verson>2.3.9.9</Verson>
+		<DownLoad>\\172.20.64.3\FEEDShare\Services\CADPlugin\UpdateProgram.zip</DownLoad>
+	</Soft>
+	<Soft Name="try.zip">
+		<Verson>1.0</Verson>
+		<DownLoad>http://172.20.64.3/FEEDShare/Services/CADPlugin/try.zip</DownLoad>
+	</Soft>
+	<Updateinfo>更新内容:\r\n 1.修改查询录入人大小写输入bug;\r\n 2.修改管系托盘表、管系材料表、附件材料表以及重量重心表项目过滤功能</Updateinfo>
+</Update>

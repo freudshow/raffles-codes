@@ -1,0 +1,5 @@
+D:\baoshan.song\Visual Studio 2010\Projects\invoke\invoke\bin\Debug\invoke.exe
+D:\baoshan.song\Visual Studio 2010\Projects\invoke\invoke\bin\Debug\invoke.pdb
+D:\baoshan.song\Visual Studio 2010\Projects\invoke\invoke\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\baoshan.song\Visual Studio 2010\Projects\invoke\invoke\obj\x86\Debug\invoke.exe
+D:\baoshan.song\Visual Studio 2010\Projects\invoke\invoke\obj\x86\Debug\invoke.pdb

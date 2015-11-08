@@ -1,0 +1,233 @@
+create or replace package body jp_demand_api is
+FUNCTION Lock_By_Id(v_objid IN VARCHAR2, v_rowversion IN VARCHAR2)
+    RETURN jp_demand%ROWTYPE IS
+    row_changed EXCEPTION;
+    row_deleted EXCEPTION;
+    row_locked EXCEPTION;
+    PRAGMA exception_init(row_locked, -0054);
+    rec_   jp_demand%ROWTYPE;
+    dummy_ NUMBER;
+    CURSOR lock_control IS
+      SELECT *
+        FROM jp_demand
+       WHERE rowid = v_objid
+         AND rowversion = v_rowversion
+         FOR UPDATE NOWAIT;
+    CURSOR exist_control IS
+      SELECT 1 FROM jp_demand WHERE rowid = v_objid;
+  BEGIN
+    OPEN lock_control;
+    FETCH lock_control
+      INTO rec_;
+    IF (lock_control%FOUND) THEN
+      CLOSE lock_control;
+      RETURN rec_;
+    END IF;
+    CLOSE lock_control;
+    OPEN exist_control;
+    FETCH exist_control
+      INTO dummy_;
+    IF (exist_control%FOUND) THEN
+      CLOSE exist_control;
+      RAISE row_changed;
+    ELSE
+      CLOSE exist_control;
+      RAISE row_deleted;
+    END IF;
+  EXCEPTION
+    WHEN row_locked THEN
+      raise_application_error('-20001',
+                              '申请行已锁定,请稍后再进行操作!_end_');
+    WHEN row_changed THEN
+      raise_application_error('-20001',
+                              '申请行被修改,请刷新后再进行操作!_end_');
+    WHEN row_deleted THEN
+      raise_application_error('-20001', '申请行被删除,无法进行操作!_end_');
+  END Lock_By_Id;
+  procedure new_(v_demand_id   out varchar2,
+                 v_matr_seq_no      in varchar2,
+                 v_matr_seq_line_no in number,
+                 v_require_qty      in number,
+                 v_project_block    in varchar2,
+                 v_project_system   in varchar2,
+                 v_work_content     in varchar2,
+                 v_place            in varchar2,
+                 v_receiver         in varchar2,
+                 v_receiver_ic      in varchar2,
+                 v_receive_date     in varchar2,
+                 v_receiver_contact in varchar2,
+                 v_receipt_dept     in varchar2,
+                 v_crane            in varchar2,
+                 v_recorder         in varchar2,
+                 v_req_group        in varchar2,
+                 v_lack_type          in varchar2) is--ming.li 2013-3-25 增加却品是否需求字段
+    contract_     varchar2(10);
+    project_name_ varchar2(500);
+    part_unit_    varchar2(50);
+    part_name_    varchar2(400);
+    requistion_id_    varchar2(400);
+    cursor cur_ration is
+      select project_id,purch_part_no
+        from IFSAPP.PROJ_PROCU_RATION@erp_prod
+       where misc_tab_ref_no = to_number(v_matr_seq_no)
+         and material_req_seq_no = v_matr_seq_line_no;
+    ration_row__ cur_ration%rowtype;
+
+    cursor cur_part(p_part_no varchar2, p_contract varchar2) is
+      select default_buy_unit_meas, description
+        from ifsapp.purchase_part@erp_prod
+       where part_no = p_part_no
+         and contract = p_contract;
+    --part_row__ ifsapp.purchase_part@erp_prod%rowtype;
+
+  begin
+    open cur_ration;
+    fetch cur_ration
+      into ration_row__;
+    close cur_ration;
+    select IFSAPP.PROJECT_SITE_API.Get_Default_Site@erp_prod(ration_row__.project_id)
+      into contract_
+      from dual;
+    open cur_part(ration_row__.purch_part_no, contract_);
+    fetch cur_part
+      into part_unit_, part_name_;
+    close cur_part;
+    project_name_ := ifsapp.project_api.Get_Description@erp_prod(ration_row__.project_id);
+    insert into jp_demand
+      (demand_id,
+       contract,
+       matr_seq_no,
+       matr_seq_line_no,
+       part_no,
+       part_unit,
+       part_description,
+       require_qty,
+       project_id,
+       project_description,
+       project_block,
+       project_system,
+       work_content,
+       place,
+       place_description,
+       receiver,
+       receiver_ic,
+       receive_date,
+       receiver_contact,
+       receipt_dept,
+       crane,
+       recorder,
+       record_time,
+       req_group,
+       rowstate,
+       rowversion,
+       lack_type)--ming.li 2013-3-25 增加却料处理方式
+    values
+      (to_char(jp_requisition_id_seq.nextval),
+       contract_,
+       v_matr_seq_no,
+       v_matr_seq_line_no,
+       ration_row__.purch_part_no,
+       --part_row__.default_buy_unit_meas,
+       part_unit_,
+       /*IFSAPP.PURCHASE_PART_API.Get_Description@erp_prod(contract_,
+                                                                              ration_row__.purch_part_no)*/
+       --part_row__.description,
+       part_name_,
+       v_require_qty,
+       ration_row__.project_id,
+       project_name_,
+       v_project_block,
+       v_project_system,
+       v_work_content,
+       v_place,
+       jp_receipt_place_api.get_name(v_place),
+       v_receiver,
+       v_receiver_ic,
+       to_date(v_receive_date, 'yyyy-mm-dd'),
+       v_receiver_contact,
+       v_receipt_dept,
+       v_crane,
+       v_recorder,
+       sysdate,
+       v_req_group,
+       'init',
+       to_char(sysdate,'yyyymmddhh24miss'),
+       v_lack_type)--ming.li 2013-3-26 增加却料处理方式
+    returning demand_id into v_demand_id;
+    /*下面同时创建配送申请*/
+    
+    jp_requisition_api.new_(requistion_id_,
+                 v_demand_id,
+                 v_matr_seq_no,
+                 v_matr_seq_line_no ,
+                 v_require_qty,
+                 v_project_block ,
+                 v_project_system,
+                 v_work_content ,
+                 v_place        ,
+                 v_receiver     ,
+                 v_receiver_ic  ,
+                 v_receive_date ,
+                 v_receiver_contact ,
+                 v_receipt_dept     ,
+                 v_crane            ,
+                 v_recorder         ,
+                 v_req_group        ,
+                 v_lack_type  );
+  end new_;
+  
+procedure TESTA_(v_out_b   out varchar2,
+                 v_in_a      in varchar2) is
+    self_a_     varchar2(10);
+   
+  begin
+    self_a_ := '--aaa----'||v_in_a;
+    v_out_b := self_a_;
+  end TESTA_;
+
+procedure TESTB_(v_out_b   out varchar2,
+                 v_in_a      in varchar2) is
+    self_B_     varchar2(10);
+   
+  begin
+  JP_DEMAND_API.TESTA_(self_B_,v_in_a);
+    v_out_b := self_B_;
+  end TESTB_; 
+
+procedure delete_(v_objid in varchar2, v_rowversion in varchar2) is
+    state_     varchar2(20);
+    demand_id_     varchar2(20);
+  begin
+    select demand_id into demand_id_ from jp_demand t where t.rowid = v_objid and rowstate = 'init'; 
+    select rowstate into state_ from jp_demand where rowid = v_objid and rowstate = 'init'; 
+    delete from jp_demand where rowid = v_objid;
+    if state_ = 'init' then
+       delete from jp_demand where rowid = v_objid and rowstate = 'init';   
+       delete from jp_REQUISITION where demand_id = demand_id_ and rowstate = 'init';
+    end if;
+  end;
+
+function get_demand_num_of_mtr(v_mtr_seq_no  in varchar2,
+                                   v_mtr_line_no in varchar2) return number is
+    demand_num_ number;
+  begin
+    select sum(decode(rowstate,
+                      'init',--init>released>finished>canceled>confirming>lack //ming.li2013-3-27
+                      t.require_qty,
+                      'confirming',
+                      t.require_qty,
+                      'released',
+                      t.release_qty,
+                      'finished',
+                      t.require_qty,
+                      'canceled',
+                      t.issued_qty,
+                      0))
+      into demand_num_
+      from jp_demand t
+     where --rowstate <> 'cancelled' and   //ming.li2013-3-27
+     t.matr_seq_no = v_mtr_seq_no
+       and t.matr_seq_line_no = v_mtr_line_no;
+    return demand_num_;
+  end get_demand_num_of_mtr;
+end jp_demand_api;

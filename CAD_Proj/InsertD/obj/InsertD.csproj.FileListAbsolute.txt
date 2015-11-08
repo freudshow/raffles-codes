@@ -1,0 +1,9 @@
+C:\CAD_Proj\InsertD\bin\Debug\InsertD.dll
+C:\CAD_Proj\InsertD\bin\Debug\InsertD.pdb
+C:\CAD_Proj\InsertD\bin\Debug\acdbmgd.dll
+C:\CAD_Proj\InsertD\bin\Debug\acmgd.dll
+C:\CAD_Proj\InsertD\bin\Debug\AcDbMgdHost.dll
+C:\CAD_Proj\InsertD\obj\Debug\ResolveAssemblyReference.cache
+C:\CAD_Proj\InsertD\obj\Debug\InsertD.dll
+C:\CAD_Proj\InsertD\obj\Debug\InsertD.pdb
+C:\CAD_Proj\InsertD\obj\Debug\InsertD.csproj.ResolveComReference.cache

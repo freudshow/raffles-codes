@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SPLPIPEDataSet" targetNamespace="http://tempuri.org/SPLPIPEDataSet.xsd" xmlns:mstns="http://tempuri.org/SPLPIPEDataSet.xsd" xmlns="http://tempuri.org/SPLPIPEDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SPLPIPEDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SPLPIPEDataSet" msprop:Generator_DataSetName="SPLPIPEDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SPLPIPE_TAB" msprop:Generator_UserTableName="SPLPIPE_TAB" msprop:Generator_RowDeletedName="SPLPIPE_TABRowDeleted" msprop:Generator_RowChangedName="SPLPIPE_TABRowChanged" msprop:Generator_RowClassName="SPLPIPE_TABRow" msprop:Generator_RowChangingName="SPLPIPE_TABRowChanging" msprop:Generator_RowEvArgName="SPLPIPE_TABRowChangeEvent" msprop:Generator_RowEvHandlerName="SPLPIPE_TABRowChangeEventHandler" msprop:Generator_TableClassName="SPLPIPE_TABDataTable" msprop:Generator_TableVarName="tableSPLPIPE_TAB" msprop:Generator_RowDeletingName="SPLPIPE_TABRowDeleting" msprop:Generator_TablePropName="SPLPIPE_TAB">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROJECTID" msprop:Generator_UserColumnName="PROJECTID" msprop:Generator_ColumnVarNameInTable="columnPROJECTID" msprop:Generator_ColumnPropNameInRow="PROJECTID" msprop:Generator_ColumnPropNameInTable="PROJECTIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SPOOLNAME" msprop:Generator_UserColumnName="SPOOLNAME" msprop:Generator_ColumnVarNameInTable="columnSPOOLNAME" msprop:Generator_ColumnPropNameInRow="SPOOLNAME" msprop:Generator_ColumnPropNameInTable="SPOOLNAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DRAWINGNO" msprop:Generator_UserColumnName="DRAWINGNO" msprop:Generator_ColumnVarNameInTable="columnDRAWINGNO" msprop:Generator_ColumnPropNameInRow="DRAWINGNO" msprop:Generator_ColumnPropNameInTable="DRAWINGNOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SYSTEMNAME" msprop:Generator_UserColumnName="SYSTEMNAME" msprop:Generator_ColumnPropNameInRow="SYSTEMNAME" msprop:Generator_ColumnVarNameInTable="columnSYSTEMNAME" msprop:Generator_ColumnPropNameInTable="SYSTEMNAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SYSTEMID" msprop:Generator_UserColumnName="SYSTEMID" msprop:Generator_ColumnPropNameInRow="SYSTEMID" msprop:Generator_ColumnVarNameInTable="columnSYSTEMID" msprop:Generator_ColumnPropNameInTable="SYSTEMIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BLOCKNO" msprop:Generator_UserColumnName="BLOCKNO" msprop:Generator_ColumnVarNameInTable="columnBLOCKNO" msprop:Generator_ColumnPropNameInRow="BLOCKNO" msprop:Generator_ColumnPropNameInTable="BLOCKNOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SURFACETREATMENT" msprop:Generator_UserColumnName="SURFACETREATMENT" msprop:Generator_ColumnVarNameInTable="columnSURFACETREATMENT" msprop:Generator_ColumnPropNameInRow="SURFACETREATMENT" msprop:Generator_ColumnPropNameInTable="SURFACETREATMENTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PIPECHECKFIELD" msprop:Generator_UserColumnName="PIPECHECKFIELD" msprop:Generator_ColumnVarNameInTable="columnPIPECHECKFIELD" msprop:Generator_ColumnPropNameInRow="PIPECHECKFIELD" msprop:Generator_ColumnPropNameInTable="PIPECHECKFIELDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PIPEGRADE" msprop:Generator_UserColumnName="PIPEGRADE" msprop:Generator_ColumnVarNameInTable="columnPIPEGRADE" msprop:Generator_ColumnPropNameInRow="PIPEGRADE" msprop:Generator_ColumnPropNameInTable="PIPEGRADEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PRESSURETESTFIELD" msprop:Generator_UserColumnName="PRESSURETESTFIELD" msprop:Generator_ColumnVarNameInTable="columnPRESSURETESTFIELD" msprop:Generator_ColumnPropNameInRow="PRESSURETESTFIELD" msprop:Generator_ColumnPropNameInTable="PRESSURETESTFIELDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SPOOLWEIGHT" msprop:Generator_UserColumnName="SPOOLWEIGHT" msprop:Generator_ColumnVarNameInTable="columnSPOOLWEIGHT" msprop:Generator_ColumnPropNameInRow="SPOOLWEIGHT" msprop:Generator_ColumnPropNameInTable="SPOOLWEIGHTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MATERIAL" msprop:Generator_UserColumnName="MATERIAL" msprop:Generator_ColumnVarNameInTable="columnMATERIAL" msprop:Generator_ColumnPropNameInRow="MATERIAL" msprop:Generator_ColumnPropNameInTable="MATERIALColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NORM" msprop:Generator_UserColumnName="NORM" msprop:Generator_ColumnVarNameInTable="columnNORM" msprop:Generator_ColumnPropNameInRow="NORM" msprop:Generator_ColumnPropNameInTable="NORMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SURAREA" msprop:Generator_UserColumnName="SURAREA" msprop:Generator_ColumnVarNameInTable="columnSURAREA" msprop:Generator_ColumnPropNameInRow="SURAREA" msprop:Generator_ColumnPropNameInTable="SURAREAColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="JjdDs" targetNamespace="http://tempuri.org/JjdDs.xsd" xmlns:mstns="http://tempuri.org/JjdDs.xsd" xmlns="http://tempuri.org/JjdDs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="JjdDs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="JjdDs" msprop:Generator_DataSetName="JjdDs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Dt" msprop:Generator_UserTableName="Dt" msprop:Generator_RowDeletedName="DtRowDeleted" msprop:Generator_RowChangedName="DtRowChanged" msprop:Generator_RowClassName="DtRow" msprop:Generator_RowChangingName="DtRowChanging" msprop:Generator_RowEvArgName="DtRowChangeEvent" msprop:Generator_RowEvHandlerName="DtRowChangeEventHandler" msprop:Generator_TableClassName="DtDataTable" msprop:Generator_TableVarName="tableDt" msprop:Generator_RowDeletingName="DtRowDeleting" msprop:Generator_TablePropName="Dt">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="proj_id" msprop:Generator_UserColumnName="proj_id" msprop:Generator_ColumnVarNameInTable="columnproj_id" msprop:Generator_ColumnPropNameInRow="proj_id" msprop:Generator_ColumnPropNameInTable="proj_idColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="part_no" msprop:Generator_UserColumnName="part_no" msprop:Generator_ColumnVarNameInTable="columnpart_no" msprop:Generator_ColumnPropNameInRow="part_no" msprop:Generator_ColumnPropNameInTable="part_noColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="mtr_no" msprop:Generator_UserColumnName="mtr_no" msprop:Generator_ColumnVarNameInTable="columnmtr_no" msprop:Generator_ColumnPropNameInRow="mtr_no" msprop:Generator_ColumnPropNameInTable="mtr_noColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="line_no" msprop:Generator_UserColumnName="line_no" msprop:Generator_ColumnVarNameInTable="columnline_no" msprop:Generator_ColumnPropNameInRow="line_no" msprop:Generator_ColumnPropNameInTable="line_noColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="part_name" msprop:Generator_UserColumnName="part_name" msprop:Generator_ColumnVarNameInTable="columnpart_name" msprop:Generator_ColumnPropNameInRow="part_name" msprop:Generator_ColumnPropNameInTable="part_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="part_unit" msprop:Generator_UserColumnName="part_unit" msprop:Generator_ColumnVarNameInTable="columnpart_unit" msprop:Generator_ColumnPropNameInRow="part_unit" msprop:Generator_ColumnPropNameInTable="part_unitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="qty" msprop:Generator_UserColumnName="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="req_id" msprop:Generator_UserColumnName="req_id" msprop:Generator_ColumnVarNameInTable="columnreq_id" msprop:Generator_ColumnPropNameInRow="req_id" msprop:Generator_ColumnPropNameInTable="req_idColumn" type="xs:string" />
+              <xs:element name="zh_qty" msprop:Generator_UserColumnName="zh_qty" msprop:Generator_ColumnPropNameInRow="zh_qty" msprop:Generator_ColumnVarNameInTable="columnzh_qty" msprop:Generator_ColumnPropNameInTable="zh_qtyColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="xh_qty" msprop:Generator_UserColumnName="xh_qty" msprop:Generator_ColumnPropNameInRow="xh_qty" msprop:Generator_ColumnVarNameInTable="columnxh_qty" msprop:Generator_ColumnPropNameInTable="xh_qtyColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="proj_block" msprop:Generator_UserColumnName="proj_block" msprop:Generator_ColumnPropNameInRow="proj_block" msprop:Generator_ColumnVarNameInTable="columnproj_block" msprop:Generator_ColumnPropNameInTable="proj_blockColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Dt" />
+      <xs:field xpath="mstns:req_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

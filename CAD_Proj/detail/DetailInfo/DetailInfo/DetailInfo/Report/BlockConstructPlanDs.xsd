@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BlockConstructPlanDs" targetNamespace="http://tempuri.org/BlockConstructPlanDs.xsd" xmlns:mstns="http://tempuri.org/BlockConstructPlanDs.xsd" xmlns="http://tempuri.org/BlockConstructPlanDs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.DetailInfo.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BlockConstructPlanDs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="BlockConstructPlanDs" msprop:Generator_DataSetName="BlockConstructPlanDs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BLOCKCONSTRUCTIONPLAN_TAB" msprop:Generator_UserTableName="BLOCKCONSTRUCTIONPLAN_TAB" msprop:Generator_RowDeletedName="BLOCKCONSTRUCTIONPLAN_TABRowDeleted" msprop:Generator_TableClassName="BLOCKCONSTRUCTIONPLAN_TABDataTable" msprop:Generator_RowChangedName="BLOCKCONSTRUCTIONPLAN_TABRowChanged" msprop:Generator_RowClassName="BLOCKCONSTRUCTIONPLAN_TABRow" msprop:Generator_RowChangingName="BLOCKCONSTRUCTIONPLAN_TABRowChanging" msprop:Generator_RowEvArgName="BLOCKCONSTRUCTIONPLAN_TABRowChangeEvent" msprop:Generator_RowEvHandlerName="BLOCKCONSTRUCTIONPLAN_TABRowChangeEventHandler" msprop:Generator_TablePropName="BLOCKCONSTRUCTIONPLAN_TAB" msprop:Generator_TableVarName="tableBLOCKCONSTRUCTIONPLAN_TAB" msprop:Generator_RowDeletingName="BLOCKCONSTRUCTIONPLAN_TABRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:decimal" />
+              <xs:element name="PROJECTID" msprop:Generator_UserColumnName="PROJECTID" msprop:Generator_ColumnPropNameInRow="PROJECTID" msprop:Generator_ColumnVarNameInTable="columnPROJECTID" msprop:Generator_ColumnPropNameInTable="PROJECTIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLOCKNO" msprop:Generator_UserColumnName="BLOCKNO" msprop:Generator_ColumnPropNameInRow="BLOCKNO" msprop:Generator_ColumnVarNameInTable="columnBLOCKNO" msprop:Generator_ColumnPropNameInTable="BLOCKNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRAWINGNO" msprop:Generator_UserColumnName="DRAWINGNO" msprop:Generator_ColumnPropNameInRow="DRAWINGNO" msprop:Generator_ColumnVarNameInTable="columnDRAWINGNO" msprop:Generator_ColumnPropNameInTable="DRAWINGNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PLAN_BLOCK_PRE_START" msdata:DateTimeMode="Unspecified" msprop:Generator_UserColumnName="PLAN_BLOCK_PRE_START" msprop:Generator_ColumnPropNameInRow="PLAN_BLOCK_PRE_START" msprop:Generator_ColumnVarNameInTable="columnPLAN_BLOCK_PRE_START" msprop:Generator_ColumnPropNameInTable="PLAN_BLOCK_PRE_STARTColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PLAN_BLOCK_PRE_FINISH" msprop:Generator_UserColumnName="PLAN_BLOCK_PRE_FINISH" msprop:Generator_ColumnPropNameInRow="PLAN_BLOCK_PRE_FINISH" msprop:Generator_ColumnVarNameInTable="columnPLAN_BLOCK_PRE_FINISH" msprop:Generator_ColumnPropNameInTable="PLAN_BLOCK_PRE_FINISHColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ACTUAL_BLOCK_PRE_START" msdata:DateTimeMode="Unspecified" msprop:Generator_UserColumnName="ACTUAL_BLOCK_PRE_START" msprop:Generator_ColumnPropNameInRow="ACTUAL_BLOCK_PRE_START" msprop:Generator_ColumnVarNameInTable="columnACTUAL_BLOCK_PRE_START" msprop:Generator_ColumnPropNameInTable="ACTUAL_BLOCK_PRE_STARTColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ACTUAL_BLOCK_PRE_FINISH" msdata:DateTimeMode="Unspecified" msprop:Generator_UserColumnName="ACTUAL_BLOCK_PRE_FINISH" msprop:Generator_ColumnPropNameInRow="ACTUAL_BLOCK_PRE_FINISH" msprop:Generator_ColumnVarNameInTable="columnACTUAL_BLOCK_PRE_FINISH" msprop:Generator_ColumnPropNameInTable="ACTUAL_BLOCK_PRE_FINISHColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PLAN_BLOCK_ASS_START" msdata:DateTimeMode="Unspecified" msprop:Generator_UserColumnName="PLAN_BLOCK_ASS_START" msprop:Generator_ColumnPropNameInRow="PLAN_BLOCK_ASS_START" msprop:Generator_ColumnVarNameInTable="columnPLAN_BLOCK_ASS_START" msprop:Generator_ColumnPropNameInTable="PLAN_BLOCK_ASS_STARTColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PLAN_BLOCK_ASS_FINISH" msdata:DateTimeMode="Unspecified" msprop:Generator_UserColumnName="PLAN_BLOCK_ASS_FINISH" msprop:Generator_ColumnPropNameInRow="PLAN_BLOCK_ASS_FINISH" msprop:Generator_ColumnVarNameInTable="columnPLAN_BLOCK_ASS_FINISH" msprop:Generator_ColumnPropNameInTable="PLAN_BLOCK_ASS_FINISHColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ACTUAL_BLOCK_ASS_START" msdata:DateTimeMode="Unspecified" msprop:Generator_UserColumnName="ACTUAL_BLOCK_ASS_START" msprop:Generator_ColumnPropNameInRow="ACTUAL_BLOCK_ASS_START" msprop:Generator_ColumnVarNameInTable="columnACTUAL_BLOCK_ASS_START" msprop:Generator_ColumnPropNameInTable="ACTUAL_BLOCK_ASS_STARTColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ACTUAL_BLOCK_ASS_FINISH" msdata:DateTimeMode="Unspecified" msprop:Generator_UserColumnName="ACTUAL_BLOCK_ASS_FINISH" msprop:Generator_ColumnPropNameInRow="ACTUAL_BLOCK_ASS_FINISH" msprop:Generator_ColumnVarNameInTable="columnACTUAL_BLOCK_ASS_FINISH" msprop:Generator_ColumnPropNameInTable="ACTUAL_BLOCK_ASS_FINISHColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PREPAREDBY" msprop:Generator_UserColumnName="PREPAREDBY" msprop:Generator_ColumnPropNameInRow="PREPAREDBY" msprop:Generator_ColumnVarNameInTable="columnPREPAREDBY" msprop:Generator_ColumnPropNameInTable="PREPAREDBYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PREPAREDATE" msprop:Generator_UserColumnName="PREPAREDATE" msprop:Generator_ColumnPropNameInRow="PREPAREDATE" msprop:Generator_ColumnVarNameInTable="columnPREPAREDATE" msprop:Generator_ColumnPropNameInTable="PREPAREDATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="REMARK" msprop:Generator_UserColumnName="REMARK" msprop:Generator_ColumnPropNameInRow="REMARK" msprop:Generator_ColumnVarNameInTable="columnREMARK" msprop:Generator_ColumnPropNameInTable="REMARKColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BLOCKCONSTRUCTIONPLAN_TAB" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

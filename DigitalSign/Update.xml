@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<Update>
+	<Soft Name="UpdateProgram.zip">
+		<Verson>1.0.0.0</Verson>
+		<DownLoad>http://172.16.7.55/Services/Digital/UpdateProgram.zip</DownLoad>
+	</Soft>
+	<Updateinfo>更新内容:
+	1.自动填写员工IC卡号;
+	2.显示预览签名</Updateinfo>
+</Update>

@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio 8\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.Xsl"?>
+<FxCopReport Version="8">
+ <Targets>
+  <Target Name="C:\CAD_Proj\AutoUpdate\bin\Debug\AutoUpdate.exe">
+   <Modules>
+    <Module Name="autoupdate.exe">
+     <Messages>
+      <Message TypeName="AssembliesShouldDeclareMinimumSecurity" Category="Microsoft.Usage" CheckId="CA2209" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+       <Issue Certainty="95" Level="CriticalError">未找到程序集“AutoUpdate”的有效权限请求。应始终使用 SecurityAction.RequestMinimum 指定最小的安全权限。</Issue>
+      </Message>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">用强名称密钥对“AutoUpdate”进行签名。</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+       <Issue Name="NoAttr" Certainty="95" Level="Error">应使用 CLSCompliantAttribute 来标记“AutoUpdate”，其值应为 true。</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithComVisible" Category="Microsoft.Design" CheckId="CA1017" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+       <Issue Name="NoAttribute" Certainty="95" Level="CriticalError">在程序集级别上将“AutoUpdate”标记为 ComVisible(false)，然后将该程序集中应向 COM 客户端公开的所有类型标记为 ComVisible(true)。</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="AutoUpdate">
+       <Types>
+        <Type Name="AppUpdater" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name=".ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="C:\CAD_Proj\AutoUpdate" File="AppUpdater.cs" Line="19">AppUpdater.AppUpdater() 将类型为 System.Boolean 的字段 disposed 初始化为 false。由于此初始化过程将由运行库自动完成，因此请移除它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="CheckForUpdate(System.String,System.String,System.Collections.Hashtable&amp;):System.Int32" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="2#" TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="C:\CAD_Proj\AutoUpdate" File="AppUpdater.cs" Line="74">考虑不要求将“updateFileList”作为 out 参数的设计。</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\CAD_Proj\AutoUpdate" File="AppUpdater.cs" Line="74">从未使用 AppUpdater.CheckForUpdate(String, String, Hashtable&amp;):Int32 的“this”参数(VB 中为“Me”)。根据需要，将成员标记为 static (VB 中为“Shared”)，或者在方法体或至少一个属性访问器中使用“this”/“Me”。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="CloseHandle(System.IntPtr):System.Boolean" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">向 PInvoke AppUpdater.CloseHandle(IntPtr):Boolean 的返回类型添加 MarshalAsAttribute。如果对应的非托管返回类型为 4 字节的 Win32“BOOL”，则使用 MarshalAs(UnmanagedType.Bool)；对于 1 字节的 C++“bool”，使用 MarshalAs(UnmanagedType.U1)。</Issue>
+            </Message>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于 AppUpdater.CloseHandle(IntPtr):Boolean 是 DllImport 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="DownAutoUpdateFile(System.String):System.Void" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\CAD_Proj\AutoUpdate" File="AppUpdater.cs" Line="215">修改“AppUpdater.DownAutoUpdateFile(String):Void”以便捕捉比“System.Object”更具体的异常，或者再次引发该异常。</Issue>
+             <Issue Certainty="95" Level="CriticalError" Path="C:\CAD_Proj\AutoUpdate" File="AppUpdater.cs" Line="221">修改“AppUpdater.DownAutoUpdateFile(String):Void”以便捕捉比“System.Object”更具体的异常，或者再次引发该异常。</Issue>
+            </Message>
+            <Message TypeName="PassSystemUriObjectsInsteadOfStrings" Category="Microsoft.Usage" CheckId="CA2234" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\CAD_Proj\AutoUpdate" File="AppUpdater.cs" Line="199">修改 AppUpdater.DownAutoUpdateFile(String):Void 以调用 WebRequest.Create(Uri):WebRequest 而不调用 WebRequest.Create(String):WebRequest。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="UpdaterUrl" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="AppUpdater.cs" Line="28">将属性“UpdaterUrl”的类型从字符串更改为 System.Uri。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FrmUpdate" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name=".ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="334">FrmUpdate.FrmUpdate() 将类型为 System.Int32 的字段 availableUpdate 初始化为 0。由于此初始化过程将由运行库自动完成，因此请移除它。</Issue>
+             <Issue Certainty="90" Level="Warning" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="335">FrmUpdate.FrmUpdate() 将类型为 System.Boolean 的字段 isRun 初始化为 false。由于此初始化过程将由运行库自动完成，因此请移除它。</Issue>
+             <Issue Certainty="90" Level="Warning" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="333">FrmUpdate.FrmUpdate() 将类型为 AutoUpdate.XmlFiles 的字段 updaterXmlFiles 初始化为 null。由于此初始化过程将由运行库自动完成，因此请移除它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="btnFinish_Click(System.Object,System.EventArgs):System.Void" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="560">修改“FrmUpdate.btnFinish_Click(Object, EventArgs):Void”以便捕捉比“System.Exception”更具体的异常，或者再次引发该异常。</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="562">更改 FrmUpdate.btnFinish_Click(Object, EventArgs):Void 以调用指定 MessageBoxOptions 的 MessageBox.Show 重载；如果在父控件上将 RightToLeft 设置为 RightToLeft.Yes，则要确保设置 MessageBoxOptions.RightAlign 和 MessageBoxOptions.RtlReading；如果它设置为 RightToLeft.Inherit，则检查其父级，直至找到一个表示“是”或“否”的值。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="btnNext_Click(System.Object,System.EventArgs):System.Void" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)" TypeName="DoNotPassLiteralsAsLocalizedParameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="427">FrmUpdate.btnNext_Click(Object, EventArgs):Void 将文本作为对 MessageBox.Show(String, String, MessageBoxButtons, MessageBoxIcon):DialogResult 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“没有可用的更新!”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="427">FrmUpdate.btnNext_Click(Object, EventArgs):Void 将文本作为对 MessageBox.Show(String, String, MessageBoxButtons, MessageBoxIcon):DialogResult 的调用的参数 2 进行传递。请改为从资源表中检索以下字符串参数:“自动更新”</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="427">更改 FrmUpdate.btnNext_Click(Object, EventArgs):Void 以调用指定 MessageBoxOptions 的 MessageBox.Show 重载；如果在父控件上将 RightToLeft 设置为 RightToLeft.Yes，则要确保设置 MessageBoxOptions.RightAlign 和 MessageBoxOptions.RtlReading；如果它设置为 RightToLeft.Inherit，则检查其父级，直至找到一个表示“是”或“否”的值。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="CreateDirtory(System.String):System.Void" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotConcatenateStringsInsideLoops" Category="Microsoft.Performance" CheckId="CA1818" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="515">将 FrmUpdate.CreateDirtory(String):Void 更改为使用 StringBuilder 而不使用 String.Concat 或 +=</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="508">从未使用 FrmUpdate.CreateDirtory(String):Void 的“this”参数(VB 中为“Me”)。根据需要，将成员标记为 static (VB 中为“Shared”)，或者在方法体或至少一个属性访问器中使用“this”/“Me”。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="DownUpdateFile():System.Void" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="this.mainAppExe" TypeName="AvoidUnnecessaryStringCreation" Category="Microsoft.Performance" CheckId="CA1807" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Name="UseStringCompareLocal" Certainty="90" Level="Warning" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="440">在将局部变量“this.mainAppExe”转换为大写或小写后，FrmUpdate.DownUpdateFile():Void 调用 String.op_Equality(String, String):Boolean。如果可能，请消除该字符串创建，并调用 String.Compare 的重载，该重载执行不区分大小写的比较。</Issue>
+            </Message>
+            <Message Id="System.Windows.Forms.Control.set_Text(System.String)" TypeName="DoNotPassLiteralsAsLocalizedParameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="460">FrmUpdate.DownUpdateFile():Void 将文本作为对 Control.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“正在下载更新文件,请稍后...”</Issue>
+            </Message>
+            <Message Id="System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)" TypeName="DoNotPassLiteralsAsLocalizedParameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="500">FrmUpdate.DownUpdateFile():Void 将文本作为对 MessageBox.Show(String, String, MessageBoxButtons, MessageBoxIcon):DialogResult 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“更新文件下载失败！__”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="500">FrmUpdate.DownUpdateFile():Void 将文本作为对 MessageBox.Show(String, String, MessageBoxButtons, MessageBoxIcon):DialogResult 的调用的参数 2 进行传递。请改为从资源表中检索以下字符串参数:“错误”</Issue>
+            </Message>
+            <Message Id="wcClient" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="433">FrmUpdate.DownUpdateFile():Void 声明类型为 System.Net.WebClient 的局部变量“wcClient”，但从未使用过该变量或只对其进行过赋值。请使用此局部变量或移除它。</Issue>
+            </Message>
+            <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="440">FrmUpdate.DownUpdateFile():Void 对未显式提供 CultureInfo 的 System.String.ToLower 进行调用。此操作应改为对 System.String.ToLower(System.Globalization.CultureInfo) 的调用。</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="440">FrmUpdate.DownUpdateFile():Void 对未显式提供 CultureInfo 的 System.String.ToLower 进行调用。此操作应改为对 System.String.ToLower(System.Globalization.CultureInfo) 的调用。</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="484">FrmUpdate.DownUpdateFile():Void 对未显式提供 IFormatProvider 的 System.Int32.ToString 进行调用。此操作应改为对 System.Int32.ToString(System.IFormatProvider) 的调用。</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="500">更改 FrmUpdate.DownUpdateFile():Void 以调用指定 MessageBoxOptions 的 MessageBox.Show 重载；如果在父控件上将 RightToLeft 设置为 RightToLeft.Yes，则要确保设置 MessageBoxOptions.RightAlign 和 MessageBoxOptions.RtlReading；如果它设置为 RightToLeft.Inherit，则检查其父级，直至找到一个表示“是”或“否”的值。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="FrmUpdate_Load(System.Object,System.EventArgs):System.Void" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="362">修改“FrmUpdate.FrmUpdate_Load(Object, EventArgs):Void”以便捕捉比“System.Object”更具体的异常，或者再次引发该异常。</Issue>
+             <Issue Certainty="95" Level="CriticalError" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="380">修改“FrmUpdate.FrmUpdate_Load(Object, EventArgs):Void”以便捕捉比“System.Object”更具体的异常，或者再次引发该异常。</Issue>
+            </Message>
+            <Message Id="System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)" TypeName="DoNotPassLiteralsAsLocalizedParameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="382">FrmUpdate.FrmUpdate_Load(Object, EventArgs):Void 将文本作为对 MessageBox.Show(String, String, MessageBoxButtons, MessageBoxIcon):DialogResult 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“与服务器连接失败,操作超时!”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="364">FrmUpdate.FrmUpdate_Load(Object, EventArgs):Void 将文本作为对 MessageBox.Show(String, String, MessageBoxButtons, MessageBoxIcon):DialogResult 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“配置文件出错!”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="382">FrmUpdate.FrmUpdate_Load(Object, EventArgs):Void 将文本作为对 MessageBox.Show(String, String, MessageBoxButtons, MessageBoxIcon):DialogResult 的调用的参数 2 进行传递。请改为从资源表中检索以下字符串参数:“提示”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="364">FrmUpdate.FrmUpdate_Load(Object, EventArgs):Void 将文本作为对 MessageBox.Show(String, String, MessageBoxButtons, MessageBoxIcon):DialogResult 的调用的参数 2 进行传递。请改为从资源表中检索以下字符串参数:“错误”</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="364">更改 FrmUpdate.FrmUpdate_Load(Object, EventArgs):Void 以调用指定 MessageBoxOptions 的 MessageBox.Show 重载；如果在父控件上将 RightToLeft 设置为 RightToLeft.Yes，则要确保设置 MessageBoxOptions.RightAlign 和 MessageBoxOptions.RtlReading；如果它设置为 RightToLeft.Inherit，则检查其父级，直至找到一个表示“是”或“否”的值。</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="382">更改 FrmUpdate.FrmUpdate_Load(Object, EventArgs):Void 以调用指定 MessageBoxOptions 的 MessageBox.Show 重载；如果在父控件上将 RightToLeft 设置为 RightToLeft.Yes，则要确保设置 MessageBoxOptions.RightAlign 和 MessageBoxOptions.RtlReading；如果它设置为 RightToLeft.Inherit，则检查其父级，直至找到一个表示“是”或“否”的值。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="InitializeComponent():System.Void" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.ColumnHeader.set_Text(System.String)" TypeName="DoNotPassLiteralsAsLocalizedParameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="170">FrmUpdate.InitializeComponent():Void 将文本作为对 ColumnHeader.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“版本号”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="165">FrmUpdate.InitializeComponent():Void 将文本作为对 ColumnHeader.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“组件名”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="175">FrmUpdate.InitializeComponent():Void 将文本作为对 ColumnHeader.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“进度”</Issue>
+            </Message>
+            <Message Id="System.Windows.Forms.Control.set_Text(System.String)" TypeName="DoNotPassLiteralsAsLocalizedParameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="262">FrmUpdate.InitializeComponent():Void 将文本作为对 Control.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“     程序更新完成,如果程序更新期间被关闭,点击"完成"自动更新程序会自动重新启动系统。”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="253">FrmUpdate.InitializeComponent():Void 将文本作为对 Control.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“groupBox2”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="148">FrmUpdate.InitializeComponent():Void 将文本作为对 Control.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“groupBox2”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="279">FrmUpdate.InitializeComponent():Void 将文本作为对 Control.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“http://www.e10000.cn”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="207">FrmUpdate.InitializeComponent():Void 将文本作为对 Control.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“下一步(&amp;N)&gt;”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="288">FrmUpdate.InitializeComponent():Void 将文本作为对 Control.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“中国亿万电器网”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="138">FrmUpdate.InitializeComponent():Void 将文本作为对 Control.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“以下为更新文件列表”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="216">FrmUpdate.InitializeComponent():Void 将文本作为对 Control.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“取消(&amp;C)”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="234">FrmUpdate.InitializeComponent():Void 将文本作为对 Control.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“完成(&amp;F)”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="226">FrmUpdate.InitializeComponent():Void 将文本作为对 Control.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“感谢使用在线升级”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="270">FrmUpdate.InitializeComponent():Void 将文本作为对 Control.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“欢迎以后继续关注我们的产品。”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="191">FrmUpdate.InitializeComponent():Void 将文本作为对 Control.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“点击“下一步”开始更新文件”</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="321">FrmUpdate.InitializeComponent():Void 将文本作为对 Control.set_Text(String):Void 的调用的参数 1 进行传递。请改为从资源表中检索以下字符串参数:“自动更新”</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="IsMainAppRun():System.Boolean" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="mainAppExe" TypeName="AvoidUnnecessaryStringCreation" Category="Microsoft.Performance" CheckId="CA1807" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Name="UseStringCompareLocal" Certainty="90" Level="Warning" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="589">在将局部变量“mainAppExe”转换为大写或小写后，FrmUpdate.IsMainAppRun():Boolean 调用 String.op_Equality(String, String):Boolean。如果可能，请消除该字符串创建，并调用 String.Compare 的重载，该重载执行不区分大小写的比较。</Issue>
+            </Message>
+            <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="589">FrmUpdate.IsMainAppRun():Boolean 对未显式提供 CultureInfo 的 System.String.ToLower 进行调用。此操作应改为对 System.String.ToLower(System.Globalization.CultureInfo) 的调用。</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="589">FrmUpdate.IsMainAppRun():Boolean 对未显式提供 CultureInfo 的 System.String.ToLower 进行调用。此操作应改为对 System.String.ToLower(System.Globalization.CultureInfo) 的调用。</Issue>
+            </Message>
+            <Message Id="isRun" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="582">“isRun”(FrmUpdate.IsMainAppRun():Boolean 中声明的局部变量)与该类型的某一实例字段同名。请更改其中一项的名称。</Issue>
+            </Message>
+            <Message Id="mainAppExe" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="FrmUpdate.cs" Line="582">“mainAppExe”(FrmUpdate.IsMainAppRun():Boolean 中声明的局部变量)与该类型的某一实例字段同名。请更改其中一项的名称。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IniFiles" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name=".ctor(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="IniFiles.cs" Line="18">更正参数名“INIPath”的大小写。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="GetPrivateProfileString(System.String,System.String,System.String,System.Text.StringBuilder,System.Int32,System.String):System.Int32" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于 IniFiles.GetPrivateProfileString(String, String, String, StringBuilder, Int32, String):Int32 是 DllImport 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="IniReadvalue(System.String,System.String):System.String" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="IniFiles.cs" Line="39">更正参数名“Section”的大小写。</Issue>
+            </Message>
+            <Message Id="1#" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="IniFiles.cs" Line="39">更正参数名“Key”的大小写。</Issue>
+            </Message>
+            <Message Id="i" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\CAD_Proj\AutoUpdate" File="IniFiles.cs" Line="39">IniFiles.IniReadvalue(String, String):String 声明类型为 System.Int32 的局部变量“i”，但从未使用过该变量或只对其进行过赋值。请使用此局部变量或移除它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="IniWritevalue(System.String,System.String,System.String):System.Void" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="IniFiles.cs" Line="29">更正参数名“Section”的大小写。</Issue>
+            </Message>
+            <Message Id="1#" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\CAD_Proj\AutoUpdate" File="IniFiles.cs" Line="29">更正参数名“Key”的大小写。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="path" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“path”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="WritePrivateProfileString(System.String,System.String,System.String,System.String):System.Int64" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于 IniFiles.WritePrivateProfileString(String, String, String, String):Int64 是 DllImport 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义它。</Issue>
+            </Message>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，PInvoke IniFiles.WritePrivateProfileString(String, String, String, String):Int64 的返回类型在 32 位 平台上的字节宽度将为 8。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 32 位 平台上的字节宽度应为 4。有关帮助信息，请参考 MSDN Platform SDK 文档以确定应使用哪种数据类型代替“System.Int64”。</Issue>
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，PInvoke IniFiles.WritePrivateProfileString(String, String, String, String):Int64 的返回类型在 64 位 平台上的字节宽度将为 8。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 64 位 平台上的字节宽度应为 4。有关帮助信息，请参考 MSDN Platform SDK 文档以确定应使用哪种数据类型代替“System.Int64”。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="XmlFiles" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="CollectionsShouldImplementGenericInterface" Category="Microsoft.Design" CheckId="CA1010" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">“XmlFiles”可能是非泛型的强类型集合。将实现添加到 IEnumerable&lt;T&gt; 的实例，其中 T 为 XmlFiles 的基础元素类型。</Issue>
+          </Message>
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="DependsOnFix">
+           <Issue Certainty="90" Level="Error">“AutoUpdate.XmlFiles”被标记为 ComVisible(true)，但在其对象层次结构中具有下列 ComVisible(false) 类型:  System.Xml.XmlDocument, System.Xml.XmlNode</Issue>
+          </Message>
+          <Message TypeName="IdentifiersShouldHaveCorrectSuffix" Category="Microsoft.Naming" CheckId="CA1710" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">重命名“AutoUpdate.XmlFiles”使其以“Collection”结尾。</Issue>
+          </Message>
+          <Message Id="System.Xml.XmlDocument" TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="Breaking">
+           <Issue Name="System.Xml.XmlDocument" Certainty="75" Level="Error">更改 XmlFiles 的基类型，以便它不再扩展 System.Xml.XmlDocument。首选设计是使用包容而不是继承将基础 XmlDocument 表示形式与类型的接口分离。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name=".ctor(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-01-02 07:20:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\CAD_Proj\AutoUpdate" File="XmlFiles.cs" Line="21">“XmlFiles.XmlFiles(String)”包含调用链，该调用链导致调用类所定义的虚方法。请检查调用堆栈 &#xD;&#xA;&#xD;&#xA;XmlFiles.XmlFiles(String)&#xD;&#xA;XmlDocument.Load(String):Void，查找意外结果。</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\CAD_Proj\AutoUpdate" File="XmlFiles.cs" Line="21">“XmlFiles.XmlFiles(String)”包含调用链，该调用链导致调用类所定义的虚方法。请检查调用堆栈 &#xD;&#xA;&#xD;&#xA;XmlFiles.XmlFiles(String)&#xD;&#xA;XmlDocument.Load(String):Void&#xD;&#xA;XmlDocument.Load(XmlReader):Void，查找意外结果。</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\CAD_Proj\AutoUpdate" File="XmlFiles.cs" Line="21">“XmlFiles.XmlFiles(String)”包含调用链，该调用链导致调用类所定义的虚方法。请检查调用堆栈 &#xD;&#xA;&#xD;&#xA;XmlFiles.XmlFiles(String)&#xD;&#xA;XmlDocument.Load(String):Void&#xD;&#xA;XmlDocument.Load(XmlReader):Void&#xD;&#xA;XmlNode.RemoveAll():Void，查找意外结果。</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\CAD_Proj\AutoUpdate" File="XmlFiles.cs" Line="21">“XmlFiles.XmlFiles(String)”包含调用链，该调用链导致调用类所定义的虚方法。请检查调用堆栈 &#xD;&#xA;&#xD;&#xA;XmlFiles.XmlFiles(String)&#xD;&#xA;XmlDocument.Load(String):Void&#xD;&#xA;XmlDocument.Load(XmlReader):Void&#xD;&#xA;XmlNode.RemoveAll():Void&#xD;&#xA;XmlNode.get_FirstChild():XmlNode，查找意外结果。</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\CAD_Proj\AutoUpdate" File="XmlFiles.cs" Line="21">“XmlFiles.XmlFiles(String)”包含调用链，该调用链导致调用类所定义的虚方法。请检查调用堆栈 &#xD;&#xA;&#xD;&#xA;XmlFiles.XmlFiles(String)&#xD;&#xA;XmlDocument.Load(String):Void&#xD;&#xA;XmlDocument.Load(XmlReader):Void&#xD;&#xA;XmlNode.RemoveAll():Void&#xD;&#xA;XmlNode.get_FirstChild():XmlNode&#xD;&#xA;XmlNode.get_LastNode():XmlLinkedNode，查找意外结果。</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\CAD_Proj\AutoUpdate" File="XmlFiles.cs" Line="21">“XmlFiles.XmlFiles(String)”包含调用链，该调用链导致调用类所定义的虚方法。请检查调用堆栈 &#xD;&#xA;&#xD;&#xA;XmlFiles.XmlFiles(String)&#xD;&#xA;XmlDocument.Load(String):Void&#xD;&#xA;XmlDocument.Load(XmlReader):Void&#xD;&#xA;XmlNode.RemoveAll():Void&#xD;&#xA;XmlNode.RemoveChild(XmlNode):XmlNode，查找意外结果。</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\CAD_Proj\AutoUpdate" File="XmlFiles.cs" Line="21">“XmlFiles.XmlFiles(String)”包含调用链，该调用链导致调用类所定义的虚方法。请检查调用堆栈 &#xD;&#xA;&#xD;&#xA;XmlFiles.XmlFiles(String)&#xD;&#xA;XmlDocument.Load(String):Void&#xD;&#xA;XmlDocument.Load(XmlReader):Void&#xD;&#xA;XmlNode.RemoveAll():Void&#xD;&#xA;XmlNode.RemoveChild(XmlNode):XmlNode&#xD;&#xA;XmlNode.AfterEvent(XmlNodeChangedEventArgs):Void，查找意外结果。</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\CAD_Proj\AutoUpdate" File="XmlFiles.cs" Line="21">“XmlFiles.XmlFiles(String)”包含调用链，该调用链导致调用类所定义的虚方法。请检查调用堆栈 &#xD;&#xA;&#xD;&#xA;XmlFiles.XmlFiles(String)&#xD;&#xA;XmlDocument.Load(String):Void&#xD;&#xA;XmlDocument.Load(XmlReader):Void&#xD;&#xA;XmlNode.RemoveAll():Void&#xD;&#xA;XmlNode.RemoveChild(XmlNode):XmlNode&#xD;&#xA;XmlNode.BeforeEvent(XmlNodeChangedEventArgs):Void，查找意外结果。</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\CAD_Proj\AutoUpdate" File="XmlFiles.cs" Line="21">“XmlFiles.XmlFiles(String)”包含调用链，该调用链导致调用类所定义的虚方法。请检查调用堆栈 &#xD;&#xA;&#xD;&#xA;XmlFiles.XmlFiles(String)&#xD;&#xA;XmlDocument.Load(String):Void&#xD;&#xA;XmlDocument.Load(XmlReader):Void&#xD;&#xA;XmlNode.RemoveAll():Void&#xD;&#xA;XmlNode.RemoveChild(XmlNode):XmlNode&#xD;&#xA;XmlNode.get_IsContainer():Boolean，查找意外结果。</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\CAD_Proj\AutoUpdate" File="XmlFiles.cs" Line="21">“XmlFiles.XmlFiles(String)”包含调用链，该调用链导致调用类所定义的虚方法。请检查调用堆栈 &#xD;&#xA;&#xD;&#xA;XmlFiles.XmlFiles(String)&#xD;&#xA;XmlDocument.Load(String):Void&#xD;&#xA;XmlDocument.Load(XmlReader):Void&#xD;&#xA;XmlNode.RemoveAll():Void&#xD;&#xA;XmlNode.RemoveChild(XmlNode):XmlNode&#xD;&#xA;XmlNode.GetEventArgs(XmlNode, XmlNode, XmlNode, String, String, XmlNodeChangedAction):XmlNodeChangedEventArgs，查找意外结果。</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\CAD_Proj\AutoUpdate" File="XmlFiles.cs" Line="21">“XmlFiles.XmlFiles(String)”包含调用链，该调用链导致调用类所定义的虚方法。请检查调用堆栈 &#xD;&#xA;&#xD;&#xA;XmlFiles.XmlFiles(String)&#xD;&#xA;XmlDocument.Load(String):Void&#xD;&#xA;XmlDocument.Load(XmlReader):Void&#xD;&#xA;XmlNode.RemoveAll():Void&#xD;&#xA;XmlNode.RemoveChild(XmlNode):XmlNode&#xD;&#xA;XmlNode.GetEventArgs(XmlNode, XmlNode, XmlNode, String, String, XmlNodeChangedAction):XmlNodeChangedEventArgs&#xD;&#xA;XmlNode.get_OwnerDocument():XmlDocument，查找意外结果。</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\CAD_Proj\AutoUpdate" File="XmlFiles.cs" Line="21">“XmlFiles.XmlFiles(String)”包含调用链，该调用链导致调用类所定义的虚方法。请检查调用堆栈 &#xD;&#xA;&#xD;&#xA;XmlFiles.XmlFiles(String)&#xD;&#xA;XmlDocument.Load(String):Void&#xD;&#xA;XmlDocument.Load(XmlReader):Void&#xD;&#xA;XmlNode.RemoveAll():Void&#xD;&#xA;XmlNode.RemoveChild(XmlNode):XmlNode&#xD;&#xA;XmlNode.set_LastNode(XmlLinkedNode):Void，查找意外结果。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldDeclareMinimumSecurity" Category="Microsoft.Usage" CheckId="CA2209">
+   <Name>程序集应声明最小安全性</Name>
+   <Description>权限请求可防止在程序集中的代码开始执行后引发安全异常。当在某个程序集上指定权限请求后，如果程序集没有足够的权限，则在运行时不会加载该程序集。若要解决与此规则冲突的情况，请添加属性以指定该程序集将需要或可能需要的权限，以及不希望授予它的权限。若要指定所需权限，请使用 SecurityAction.Minimum。若要指定程序集可能需要的权限，请使用 SecurityAction.RequestOptional。若要指定不得授予程序集的权限，请使用 SecurityAction.RequestRefuse。</Description>
+   <Resolution Name="Default">未找到程序集“{0}”的有效权限请求。应始终使用 SecurityAction.RequestMinimum 指定最小的安全权限。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="UsageRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>程序集应具有有效的强名称</Name>
+   <Description>程序集没有强名称，强名称无效，或者强名称只有经过计算机配置后才有效。不应部署处于这种状态的程序集。出现这种情况最常见原因有: 1) 对程序集进行签名后，修改了该程序集的内容；2) 签名过程失败；3) 延迟了程序集签名；4) 存在一个允许检查通过(原本不应通过)的注册表项。</Description>
+   <Resolution Name="NoStrongName">用强名称密钥对“{0}”进行签名。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021">
+   <Name>避免使用 out 参数</Name>
+   <Description>使用 out 参数可能表示存在设计缺陷。虽然有时允许使用 out 参数，但频繁使用这些参数则表示设计没有遵守托管代码的设计原则。</Description>
+   <Resolution Name="Default">考虑不要求将“{0}”作为 out 参数的设计。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnnecessaryStringCreation" Category="Microsoft.Performance" CheckId="CA1807">
+   <Name>避免创建不必要的字符串</Name>
+   <Description>避免不必要地创建字符串。在将字符串转换为大写或小写时，如果需要，请缓存结果而不是重复创建以前的字符串。在执行不区分大小写的比较时，请首选使用 String.Compare，而不是将字符串转换为大小或小写。不要创建不会随后赋给变量的字符串。</Description>
+   <Resolution Name="UseStringCompareLocal">在将局部变量“{2}”转换为大写或小写后，{0} 调用 {1}。如果可能，请消除该字符串创建，并调用 String.Compare 的重载，该重载执行不区分大小写的比较。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="CollectionsShouldImplementGenericInterface" Category="Microsoft.Design" CheckId="CA1010">
+   <Name>集合应实现泛型接口</Name>
+   <Description>非泛型强类型集合应实现泛型集合接口之一。这样可以更好地将集合与泛型 API 集成。</Description>
+   <Resolution Name="Default">“{0}”可能是非泛型的强类型集合。将实现添加到 {1}&lt;T&gt; 的实例，其中 T 为 {0} 的基础元素类型。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405">
+   <Name>Com 可见类型的基类型应为 ComVisible</Name>
+   <Description>COM 可见类型应具有 COM 一致可见的对象层次结构。</Description>
+   <Resolution Name="Default">“{0}”被标记为 ComVisible(true)，但在其对象层次结构中具有下列 ComVisible(false) 类型: {1}</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="InteroperabilityRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>不要在构造函数中调用可重写的方法</Name>
+   <Description>不应通过构造函数调用类中定义的虚方法。如果某个派生类已重写该虚方法，则将在调用派生类的构造函数前，调用此派生类重写后的方法。</Description>
+   <Resolution Name="Default">“{0}”包含调用链，该调用链导致调用类所定义的虚方法。请检查调用堆栈 {1}，查找意外结果。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="UsageRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>不要捕捉一般异常类型</Name>
+   <Description>不应捕捉 Exception 或 SystemException。捕捉一般异常类型会使库用户看不到运行时问题，并会使调试复杂化。您应该仅捕捉自己可以进行适当处理的异常。</Description>
+   <Resolution Name="Default">修改“{0}”以便捕捉比“{1}”更具体的异常，或者再次引发该异常。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotConcatenateStringsInsideLoops" Category="Microsoft.Performance" CheckId="CA1818">
+   <Name>不要在循环中串联字符串</Name>
+   <Description>请改用 StringBuilder。</Description>
+   <Resolution Name="Default">将 {0} 更改为使用 StringBuilder 而不使用 String.Concat 或 +=</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+   <Name>不要声明可见实例字段</Name>
+   <Description>公共的或受保护的实例字段会限制您更改这些数据项的实现详细信息的能力。请使用属性，因为属性不会损害可用性和性能，并且能够提供灵活性，因为属性隐藏了基础数据的实现详细信息。</Description>
+   <Resolution Name="Default">将“{0}”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805">
+   <Name>避免进行不必要的初始化</Name>
+   <Description>不要执行运行库已完成的初始化过程。</Description>
+   <Resolution Name="Default">{0} 将类型为 {2} 的字段 {1} 初始化为 {3}。由于此初始化过程将由运行库自动完成，因此请移除它。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotPassLiteralsAsLocalizedParameters" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>请不要将文本作为本地化参数传递</Name>
+   <Description>嵌入源代码的字符串难以进行本地化。对于通常应进行本地化的字符串，要避免将其作为参数来传递。例如，多数本地化的应用程序应对传递给异常构造函数的字符串参数进行本地化。因此，创建异常实例时，从字符串表检索的字符串参数比字符串更为适合。</Description>
+   <Resolution Name="Default">{0} 将文本作为对 {2} 的调用的参数 {1} 进行传递。请改为从资源表中检索以下字符串参数:“{3}”</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>标识符的大小写应当正确</Name>
+   <Description>类型、命名空间和成员标识符应采用 Pascal 大小写格式。参数标识符应采用 Camel 大小写格式。Pascal 大小写格式约定每个单词的首字母大写，如 BackColor。Camel 大小写格式约定第一个单词的首个字母小写，所有后续单词的首个字母都大写，如 backgroundColor。</Description>
+   <Resolution Name="Parameter">更正参数名“{0}”的大小写。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldHaveCorrectSuffix" Category="Microsoft.Naming" CheckId="CA1710">
+   <Name>标识符应具有正确的后缀</Name>
+   <Description>扩展特定基类型的类型具有指定的名称后缀。例如，扩展 Attribute 的类型应具有“Attribute”后辍，如 ObsoleteAttribute。此规则检查扩展几种基类型扩展的类型，这些基类型包括 Attribute、Exception、EventArgs、IMembershipPermission、Stream 等。</Description>
+   <Resolution Name="Default">重命名“{0}”使其以“{1}”结尾。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>用 CLSCompliant 标记程序集</Name>
+   <Description>程序集应使用 CLSCompliant 属性显式说明其 ClS 符合性。没有此属性的程序集不符合 CLS。即使程序集、模块或类型的某些部分不符合 CLS，这些程序集、模块或类型本身也可以符合 CLS。适用下列规则: 1) 如果将元素标记为 CLSCompliant，则对于不符合 CLS 的所有成员来说，必须将其 CLSCompliant 属性的参数设置为 false。2) 对于每个不符合 CLS 的成员，必须提供一个可比较的符合 CLS 的备选成员。</Description>
+   <Resolution Name="NoAttr">应使用 CLSCompliantAttribute 来标记“{0}”，其值应为 true。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithComVisible" Category="Microsoft.Design" CheckId="CA1017">
+   <Name>用 ComVisible 标记程序集</Name>
+   <Description>System.Runtime.InteropServices.ComVisible 属性指示 COM 客户端能否使用库。良好的设计要求开发人员显式指示 COM 可见性。此属性的默认值为“true”。但最佳设计应是: 将程序集的 ComVisible 属性标记为 false，然后根据需要将类型、接口和单个成员的 ComVisible 属性标记为 true。</Description>
+   <Resolution Name="NoAttribute">在程序集级别上将“{0}”标记为 ComVisible(false)，然后将该程序集中应向 COM 客户端公开的所有类型标记为 ComVisible(true)。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError, Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414">
+   <Name>用 MarshalAs 标记布尔型 pinvoke 参数</Name>
+   <Description>应使用 MarshalAs 属性对所有布尔型 pinvoke 参数和返回类型进行显式标记。默认情况下，系统会将所有布尔值封送为 4 字节的 UnmanagedType.Bool。这一行为对 Win32“BOOL”参数来说是正确的，但对 C++“bool”参数来说却是不正确的，在这种情况下，应封送为 1 字节的 UnmanagedType.U1。为便于代码的维护，始终要为布尔型参数和返回值显式指定封送处理信息。</Description>
+   <Resolution Name="Return">向 PInvoke {0} 的返回类型添加 MarshalAsAttribute。如果对应的非托管返回类型为 4 字节的 Win32“BOOL”，则使用 MarshalAs(UnmanagedType.Bool)；对于 1 字节的 C++“bool”，使用 MarshalAs(UnmanagedType.U1)。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="InteroperabilityRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>将成员标记为 static</Name>
+   <Description>不访问实例数据或调用实例方法的方法可标记为 Static (在 VB 中为 Shared)。这样，编译器会向这些成员发出非虚调用点，以防止在运行时对每个调用进行旨在确保当前对象指针为非空的检查。这样可以使对性能比较敏感的代码获得显著的性能提升。在某些情况下，无法访问当前对象实例表明情况正常。</Description>
+   <Resolution Name="Default">从未使用 {0} 的“this”参数(VB 中为“Me”)。根据需要，将成员标记为 static (VB 中为“Shared”)，或者在方法体或至少一个属性访问器中使用“this”/“Me”。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+   <Name>将 pinvoke 移到本机方法类</Name>
+   <Description>此类型包含具有 DllImport 属性的成员。具有 DllImport 属性的成员应包含在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中。</Description>
+   <Resolution Name="Default">由于 {0} 是 DllImport 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义它。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="PassSystemUriObjectsInsteadOfStrings" Category="Microsoft.Usage" CheckId="CA2234">
+   <Name>传递系统 URI 对象而不是字符串</Name>
+   <Description>如果有两个重载方法，一个采用 System.Uri，另一个采用 System.String，则库代码永远不会调用基于字符串的重载方法。</Description>
+   <Resolution Name="Default">修改 {0} 以调用 {1} 而不调用 {2}。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="UsageRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901">
+   <Name>PInvoke 声明应为可移植声明</Name>
+   <Description>.</Description>
+   <Resolution Name="Return">如代码中所声明的，PInvoke {0} 的返回类型在 {2} 平台上的字节宽度将为 {1}。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 {2} 平台上的字节宽度应为 {3}。有关帮助信息，请参考 MSDN Platform SDK 文档以确定应使用哪种数据类型代替“{4}”。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="PortabilityRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>移除未使用的局部变量</Name>
+   <Description>移除方法实现中未使用过的或只赋过值的局部变量。</Description>
+   <Resolution Name="Default">{0} 声明类型为 {2} 的局部变量“{1}”，但从未使用过该变量或只对其进行过赋值。请使用此局部变量或移除它。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304">
+   <Name>指定 CultureInfo</Name>
+   <Description>如果存在一个将 System.Globalization.CultureInfo 作为参数的重载，则应始终调用该重载，而不使用不带有该参数的重载。CultureInfo 类型包含区域特定的信息，这些信息是执行数字和字符串运算(如大小写转换、格式设置和字符串比较)所必需的。如果区域之间的转换和分析行为应始终不变，请指定 CultureInfo.InvariantCulture。</Description>
+   <Resolution Name="Default">{0} 对未显式提供 CultureInfo 的 {1} 进行调用。此操作应改为对 {2} 的调用。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>指定 IFormatProvider</Name>
+   <Description>如果存在一个将 IFormatProvider 作为参数的重载，则应始终调用该重载，而不使用不具有该参数的重载。公共语言运行库中的某些方法执行值与字符串表示形式之间的相互转换，并使用一个叫做格式说明符的字符串参数，该参数包含一个或多个字符，用于指示如何对值进行转换。如果格式说明符的含义因区域性而异，则格式设置对象提供在字符串表示形式中使用的实际字符。如果区域之间的排序和比较行为应始终不变，请指定 CultureInfo.InvariantCulture。</Description>
+   <Resolution Name="Default">{0} 对未显式提供 IFormatProvider 的 {1} 进行调用。此操作应改为对 {2} 的调用。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300">
+   <Name>指定 MessageBoxOptions</Name>
+   <Description>为在从右向左的系统上正确运行，对 MessageBox.Show 的所有调用都应使用指定 MessageBoxOptions 作为参数的重载。程序在运行时应检测其是否在从右向左的系统上运行，并传递相应的 MessageBoxOptions 值以便正确显示。</Description>
+   <Resolution Name="Default">更改 {0} 以调用指定 MessageBoxOptions 的 MessageBox.Show 重载；如果在父控件上将 RightToLeft 设置为 RightToLeft.Yes，则要确保设置 MessageBoxOptions.RightAlign 和 MessageBoxOptions.RtlReading；如果它设置为 RightToLeft.Inherit，则检查其父级，直至找到一个表示“是”或“否”的值。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058">
+   <Name>类型不应扩展某些基类型</Name>
+   <Description>类型不会扩展易继承的类型。</Description>
+   <Resolution Name="System.Xml.XmlDocument">更改 {0} 的基类型，以便它不再扩展 {1}。首选设计是使用包容而不是继承将基础 XmlDocument 表示形式与类型的接口分离。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056">
+   <Name>URI 属性不应是字符串</Name>
+   <Description>如果某属性的名称包含“uri”、“url”或“urn”，并且该属性被类型化为字符串，则应将其更改为 System.Uri。</Description>
+   <Resolution Name="Default">将属性“{0}”的类型从字符串更改为 System.Uri。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500">
+   <Name>变量名不应与字段名相同</Name>
+   <Description>在同一个范围内，实例字段和变量名不应相同。</Description>
+   <Resolution Name="Local">“{0}”({1} 中声明的局部变量)与该类型的某一实例字段同名。请更改其中一项的名称。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="MaintainabilityRules.dll" Version="8.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="Line">行</String>
+  <String Key="LocationNotStoredInPdb">&lt;Location not stored in Pdb&gt;</String>
+  <String Key="Project">项目</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">Microsoft Visual Studio 2005 代码分析报告</String>
+ </Localized>
+</FxCopReport>
